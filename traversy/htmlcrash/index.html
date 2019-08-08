@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML cheat sheet</title>
+</head>
+<body>
+    <a href="blog.html">Go to blog</a>
+    <hr>
+    <!-- Headings-->
+    <h1>Heading one</h1>
+    <h2>Heading two</h2>
+    <h3>Heading three</h3>
+    <h4>Heading four</h4>
+    <h5>Heading five</h5>
+    <h6>Heading six</h6>
+
+    <!-- Paragraph-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam impedit eius facilis, sequi <strong>molestias nam ipsa libero?</strong>Necessitatibus, eaque? Iure provident possimus obcaecati aspernatur harum tempore. Veritatis, rem eveniet!</p>
+    <p>Lorem ipsum <em>dolor sit amet consectetur adipisicing</em> elit. Repellat aperiam impedit eius facilis, <a href="http://wp.pl" target="_blank">sequi molestias nam ipsa</a> libero? Necessitatibus, eaque? Iure provident possimus obcaecati aspernatur harum tempore. Veritatis, rem eveniet!</p>
+
+    <!-- Lists-->
+
+    <ul>
+        <li>List item 1</li>
+    </ul>
+    <ol>
+        <li>xd 1</li>
+    </ol>
+    <br>
+
+    <!-- Tabels-->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                <td>Brad Traversy</td>
+                <td>brad@xd.pl</td>
+                <td>100</td> 
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <!-- Forms-->
+    <form action="process.php" method="POST">
+        <div>
+        <label>First name</label>
+        <input type="text" name="firstName" placeholder="Enter first name">
+        </div>
+        <br>
+        <div>
+        <label>Last name</label>
+        <input type="text" name="lastName">
+        </div>
+        <br>
+        <div>
+                <label>Email</label>
+                <input type="email" name="email">
+        </div>
+        <div>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+        </div>
+        <div>
+                <label>Gender</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">other</option>
+                </select>
+        </div>
+        <br>
+        <div>
+            <label>Age</label>
+            <input type="number" name="age" value="30">
+        </div>
+        <br>
+        <div>
+            <label>Birthday:</label>
+            <input type="date" name="birthday">
+        </div>
+
+        <input type="submit" name="submit" value="submit">
+    </form>
+
+    <!-- Button-->
+    
+    <br>
+    <button click="function.php">Click me</button>
+
+    <!-- Image-->
+    <br>
+    <a href="./img/sample1_l.jpg">
+    <img src="./img/sample1_l.jpg" alt="ptok" width="200" height="50">
+    </a>
+    <br>
+
+    <!-- Quotations-->
+    <blockquote cite="http://traversymedia.com">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas provident eius, nam rerum commodi minus tenetur iusto cupiditate facilis totam expedita inventore sapiente dolorum in voluptatibus culpa, reiciendis necessitatibus facere!
+    </blockquote>
+
+    <p>The <abbr title="Wordld Wide Web">www</abbr> is awesome</p>
+    <p><cite>HTML crash course</cite> by Brad Traversy</p>
+</body>
+</html>

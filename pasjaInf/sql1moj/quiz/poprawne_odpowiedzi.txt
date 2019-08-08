@@ -1,0 +1,27 @@
+Poprawne odpowiedzi:
+
+1. SELECT * FROM pytania WHERE id=15
+
+2. SELECT * FROM pytania WHERE answer="a"
+
+3. SELECT * FROM pytania WHERE rok=2007
+
+4. SELECT * FROM pytania WHERE rok=2009 AND kategoria="programowanie"
+
+5. SELECT id, tresc, odpa, odpb, odpc, odpd FROM pytania WHERE rok=2010
+
+6. SELECT * FROM pytania ORDER BY tresc ASC
+
+7. SELECT tresc FROM pytania WHERE id>=10 AND id<=12 
+   albo" SELECT tresc FROM pytania WHERE id BETWEEN 10 AND 12
+
+8. SELECT * FROM pytania WHERE tresc LIKE "Jak%"
+
+9. SELECT * FROM pytania WHERE tresc LIKE '%C++%' 
+   OR odpa LIKE '%C++%' OR odpb LIKE '%C++%'
+   OR odpc LIKE '%C++%' OR odpd LIKE '%C++%'
+
+10. SELECT * FROM pytania WHERE 
+   (kategoria="programowanie" OR
+    kategoria="systemy operacyjne i sieci")
+    AND rok=2012

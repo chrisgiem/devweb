@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head> 
+        <meta charset="utf-8" />
+        <title>Stylizowanie formularzy</title>
+        <meta name="description" content="Nauka podstawowego stylizowania elementów formularzy" />
+        <meta name="keywords" content="css, odcinek" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <link rel="stylesheet" href="style.css" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <div id="container">
+            <form>
+
+                <input type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" >
+
+                <input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'" >
+
+                <input type="submit" value="Zaloguj się">
+                
+            </form>
+        </div>
+        
+    </body>
+</html>

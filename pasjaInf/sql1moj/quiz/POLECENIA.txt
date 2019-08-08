@@ -1,0 +1,12 @@
+ZnajdŸ w bazie:
+
+1. Pytanie nr 15
+2. Pytania, w których poprawn¹ odpowiedzi¹ jest "a"
+3. Pytania z roku 2007
+4. Pytania z programowania z roku 2009
+5. Tylko treœci pytañ i 4 odpowiedzi z roku 2010
+6. Pytania u³o¿one alfabetycznie wg treœci
+7. Treœci pytañ o numerach 10-12
+8. Pytania zaczynaj¹ce siê od s³ów “Jak”
+9. Pytania zawieraj¹ce frazê "C++"
+10. Pytania z programowania oraz systemów operacyjnych i sieci z roku 2012

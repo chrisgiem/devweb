@@ -1,0 +1,202 @@
+body
+{
+    background-color: #191d21;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #efefef;
+}
+
+a:link
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: #fff;
+}
+
+a:hover
+{
+    color: #fff;
+}
+
+a:active
+{
+    color: #fff;
+}
+
+.container
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.postcard
+{
+    display: inline-block;
+    width: 460px;
+    text-align: center;
+    padding: 5px;
+}
+
+.postcard p
+{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+h1
+{
+    font-size: 32px;
+    font-weight: 400;
+    color: #39a5f1;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+/* Hover effects */
+
+.photo1
+{
+    width: 450px;
+    transition: all 0.2s ease-in-out;
+}
+
+.photo1:hover
+{
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.photo2
+{
+    width: 450px;
+    transition: transform .2s ease-in-out;
+}
+
+.photo2:hover
+{
+    -webkit-transform: scale(0.95) rotate(5deg);
+    -ms-transform: scale(0.95) rotate(5deg);
+    transform: scale(0.95) rotate(5deg);
+}
+
+.photo3
+{
+    width: 450px;
+}
+
+.overlay
+{
+    position: relative;
+    width: 450px;
+    height: 278px;
+}
+
+.overlay .link
+{
+    position: absolute;
+    display: block;
+    width: 450px;
+    height: 65px;
+    background-color: #111;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.overlay:hover .link
+{
+    opacity: 0.8;
+}
+
+.photo4
+{
+    width: 450px;
+}
+
+.overlayT
+{
+    position: relative;
+    width: 450px;
+    height: 278px;
+}
+
+.overlayT .link
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #27a38d;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.overlayT:hover .link
+{
+    opacity: 0.9;
+}
+
+.icon
+{
+    display: block;
+    top: 25%;
+    position: relative;
+    font-size: 72px;
+}
+
+.icon p
+{
+    font-size: 20px;
+}
+
+.photo5
+{
+    width: 450px;
+    height: 278px;
+    overflow: hidden;
+}
+
+.photo5 img
+{
+    transition: all 0.5s ease-in-out;
+}
+
+.photo5:hover img
+{
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.photo6
+{
+    width: 450px;
+    height: 278px;
+    overflow: hidden;
+}
+
+.photo6 img
+{
+    transition: all 0.7s ease-in-out;
+}
+
+.photo6:hover img
+{
+    -webkit-transform: scale(1.2) rotate(-5deg);
+    -ms-transform: scale(1.2) rotate(-5deg);
+    transform: scale(1.2) rotate(-5deg);
+}
