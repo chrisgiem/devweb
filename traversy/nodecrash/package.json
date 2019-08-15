@@ -4,7 +4,8 @@
   "description": "Node crash course",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "author": "Chris",
   "license": "ISC",
