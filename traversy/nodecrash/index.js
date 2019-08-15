@@ -88,7 +88,7 @@ const server = http.createServer((req, res) => {
     // read file
     fs.readFile(filePath, (err, content) => {
         if(err) {
-            if(err.code == 'ENONET') {
+            if(err.code == 'ENOENT') {
                 // page not found
                 fs.readFile(path.join(__dirname, 'public', '404.html'), (err, content) => {
                     res.writeHead(200, { 'Content-Type': 'text/html' });
@@ -101,7 +101,7 @@ const server = http.createServer((req, res) => {
             }
         } else {
             // success
-            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.writeHead(200, { 'Content-Type': contentType });
             res.end(content, 'utf8');
         }
     });
