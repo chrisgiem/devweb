@@ -25,3 +25,9 @@ const arr = [1, 2, 3, 4, 5];
 console.log('logged output: arr', arr);
 
 arr.forEach(num => console.log(num));
+
+const person = {
+  name: 'Brad'
+};
+
+// xd xd xd 15:18
