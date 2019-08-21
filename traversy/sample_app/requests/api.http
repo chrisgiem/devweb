@@ -1,0 +1,11 @@
+GET https://jsonplaceholder.typicode.com/posts
+
+###
+
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+    "title": "My Post",
+    "body": "This is my post"
+}
