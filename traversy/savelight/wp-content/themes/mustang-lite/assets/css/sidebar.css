@@ -1,0 +1,365 @@
+/**
+ * Sidebar
+ *
+ * @version  1.5
+ */
+
+	.sidebar {position: relative}
+		.sidebar.sidebar-left {float: left}
+
+		/* sidebar widgets */
+			.sidebar > .widget {
+				position: relative;
+				padding: 20px;
+				margin: 0 0 20px;
+			}
+
+		/* widget lists */
+			.widget ul {margin-top: 0}
+			.widget ul li {
+				padding: .1em 0;
+				margin: 0;
+				list-style: none;
+			}
+			.widget li ul {
+				padding-left: .62em;
+				margin: 0;
+			}
+				.widget li a,
+				.widget_nav_menu .inner {
+					display: block;
+					width: 100%;
+					padding: .15em 0;
+				}
+
+
+
+/**
+ * Widgets
+ */
+
+
+
+	/**
+	 * Archives, Categories, Recent Comments and Recent Posts widget
+	 */
+
+		.widget_archive ul li a,
+		.widget [class*="archives-"] ul li a,
+		.widget .cat-item a,
+		.widget .recentcomments a {display: inline}
+
+		.widget .recentcomments,
+		.widget_recent_entries ul li,
+		.widget [class*="recent-posts-"] ul li {
+			margin-left: 1.62em;
+			list-style: disc;
+		}
+			.widget .recentcomments + .recentcomments {margin-top: .62em}
+
+
+
+	/**
+	 * Calendar
+	 */
+
+		#calendar_wrap table {margin: 0}
+		#calendar_wrap tr th,
+		#calendar_wrap tr td {
+			width: auto;
+			height: 2.62em;
+			padding: 0;
+			text-align: center;
+		}
+		#calendar_wrap caption {padding-top: 0}
+		#calendar_wrap tbody a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			line-height: 2.62em;
+		}
+		#calendar_wrap tfoot a {color: inherit}
+
+
+
+	/**
+	 * RSS
+	 */
+
+		.widget_rss li + li {margin-top: 1.62em}
+
+
+
+	/**
+	 * WebMan Submenu, Pages and Menu widget
+	 * + bbPress Topic Views List, Forums List widgets
+	 */
+
+		.widget .page_item a:before,
+		.widget .menu-item a:before,
+		.widget .sub-nav a:before,
+		.widget_display_views a:before,
+		.widget_display_forums a:before {
+			content: 'F';
+			display: inline-block;
+			width: 1em;
+			text-align: left;
+			font-family: 'basic-icons';
+			font-style: normal;
+			font-weight: normal;
+			speak: none;
+		}
+			.widget .menu-item:before,
+			.topbar .widget .page_item a:before,
+			.topbar .widget .menu-item a:before,
+			.topbar .widget .sub-nav a:before,
+			.credits .widget .page_item a:before,
+			.credits .widget .menu-item a:before,
+			.credits .widget .sub-nav a:before {display: none}
+
+
+
+	/**
+	 * Tag cloud widget
+	 */
+
+		.widget .tagcloud a {
+			position: relative;
+			display: inline-block;
+			width: auto;
+			padding: .1em .5em;
+			margin: .1em;
+			white-space: nowrap;
+			font-size: 1em !important;
+			border-radius: 4px;
+			opacity: .75;
+			filter: alpha(opacity=75); /* For IE8 */
+			-webkit-transition-duration: .2s;
+			   -moz-transition-duration: .2s;
+			    -ms-transition-duration: .2s;
+			        transition-duration: .2s;
+		}
+			.widget .tagcloud a:hover {
+				opacity: 1;
+				filter: alpha(opacity=100); /* For IE8 */
+				-webkit-box-shadow: 0 0 1.62em 0 rgba(0,0,0, .25);
+				        box-shadow: 0 0 1.62em 0 rgba(0,0,0, .25);
+			}
+
+
+
+	/**
+	 * Text widget
+	 */
+
+		.widget_text:before,
+		.widget_text:after {
+			content: ' ';
+			display: table;
+		}
+		.widget_text:after {clear: both}
+
+
+
+	/**
+	 * WebMan Content Module and Text widget
+	 */
+
+		.textwidget p + ul,
+		.sidebar .wm-content-module p + ul {margin-top: 1.62em}
+
+			.textwidget ul > li,
+			.sidebar .wm-content-module ul > li {
+				padding: 0;
+				margin-left: 1.62em;
+				list-style: disc;
+			}
+
+
+
+	/**
+	 * WebMan Contact
+	 */
+
+		.widget .address-container .contact-info {
+			position: relative;
+			padding: 0 0 .5em 1.62em;
+		}
+			.widget .address-container .contact-info:before {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				left: 0;
+				top: .25em;
+				line-height: 14px;
+				font-family: 'basic-icons';
+				font-size: 14px;
+			}
+			.widget .address-container .address:before {content: 'B'}
+			.widget .address-container .hours:before {content: 'c'}
+			.widget .address-container .phone:before {content: 'N'}
+			.widget .address-container .email:before {content: '?'}
+
+			.contact-info p,
+			.contact-info table { margin: 0; }
+
+		.widget .address-container .hours table {
+			width: auto;
+			margin: 0 -.5em;
+			border: 0;
+		}
+			.widget .address-container .hours table td {
+				padding: .25em .5em;
+				border: 0;
+			}
+			.widget .address-container .hours table td:first-child {padding-right: 2em}
+
+
+
+	/**
+	 * WebMan Posts and Projects
+	 */
+
+		.widget .wm-posts {margin: 0}
+			.widget .wm-posts .image-container {border-radius: 4px}
+
+		/* Posts */
+			.widget .wm-posts-post article,
+			.widget .wm-posts-post article:hover {
+				margin: 1.62em 0 0;
+				text-align: left;
+				border: 0 !important;
+				border-radius: 0;
+				-webkit-box-shadow: none;
+				        box-shadow: none;
+			}
+			.widget .wm-posts-post .wm-posts-item.wm-column.width-1-1,
+			.responsive-design .masonry-this .wm-posts-post .wm-posts-item.wm-column.width-1-1 {width: 100%}
+			.widget .wm-posts-post .wm-column + .wm-column {margin-top: 1.62em}
+			.widget .wm-posts-post article:first-child {margin: 0}
+
+				.widget .wm-posts-post .image {
+					float: left;
+					width: 25%;
+					margin: 0 1em 0 0;
+					z-index: 1;
+				}
+
+				.widget .wm-posts-post .title {padding: 0}
+
+				.widget .wm-posts-post .meta {
+					margin-top: .28em;
+					padding: 0;
+					border: 0;
+				}
+
+				.widget .wm-posts-post .more-link {
+					margin: .62em 0 0;
+					text-align: right;
+				}
+
+		/* Projects */
+			.widget .wm-posts-wm_projects .wm-posts-item {
+				float: left;
+				width: 25% !important;
+				padding: 0 1px 1px 0;
+				margin: 0;
+				border: 0 !important;
+			}
+			.masonry-this.with-margin .widget .wm-posts-wm_projects .wm-posts-item {margin: 0 !important}
+				.widget .wm-posts-wm_projects.columns-2 .wm-posts-item {width: 50% !important}
+				.sidebar .wm-posts-wm_projects .wm-posts-item,
+				.widget .wm-posts-wm_projects.columns-3 .wm-posts-item {width: 33.33% !important}
+				.widget .wm-posts-wm_projects.columns-4 .wm-posts-item {width: 25% !important}
+				.widget .wm-posts-wm_projects.columns-5 .wm-posts-item {width: 20% !important}
+
+
+
+	/**
+	 * WebMan Tabbed Widgets
+	 */
+
+		.wm-tabbed-widgets .wm-tab-links li,
+		.wm-tabbed-widgets .wm-tab-links li:first-child,
+		.wm-tabbed-widgets .wm-tabs.layout-top .wm-tab-links li.active {
+			background: none !important;
+			border: 0;
+			border-color: inherit; /* for border color inheritance support */
+		}
+			.wm-tabbed-widgets .wm-tab-links li a {
+				padding: .38em .62em;
+				color: inherit;
+			}
+				.wm-tabbed-widgets .wm-tab-links li:first-child a {
+					padding-left: 0;
+					border: 0;
+				}
+
+				.wm-tabbed-widgets .wm-tab-links li [class*="icon-"] {margin: 0}
+
+		.wm-tabbed-widgets .wm-tabs .wm-item {
+			padding: 1.62em 0 0;
+			background: none;
+			border: 0;
+		}
+
+		.wm-tabbed-widgets .tab-title {display: none}
+
+
+
+	/**
+	 * WebMan Twitter
+	 */
+
+		.wm-twitter-container .user-info {
+			position: relative;
+			min-height: 2em;
+			padding: 0 0 1.62em 4.24em;
+			margin: 0;
+		}
+			.wm-twitter-container .user-info h3 {margin: 0 0 .25em}
+			.wm-twitter-container .user-info img {
+				position: absolute;
+				width: 2.62em;
+				height: 2.62em;
+				left: 0;
+				top: 0;
+				border-radius: 50%;
+			}
+
+			.wm-twitter-container ul li {
+				position: relative;
+				padding: 0 0 0 1.62em;
+				margin-top: 1.62em;
+				margin-left: 0;
+				list-style: none;
+			}
+			.wm-twitter-container ul li:first-child {margin-top: 0}
+				.wm-twitter-container li:before {
+					content: '`';
+					position: absolute;
+					display: inline-block;
+					width: 1em;
+					left: 0;
+					top: .5em;
+					line-height: 1em;
+					font-family: 'basic-icons';
+					font-size: 1em;
+					font-style: normal;
+					font-weight: normal;
+					speak: none;
+					text-align: center;
+				}
+					.wm-twitter-container li a {
+						display: inline;
+						padding: 0;
+					}
+					.wm-twitter-container .tweet-time {
+						text-transform: uppercase;
+						opacity: .6;
+						filter: alpha(opacity=60); /* For IE8 */
+					}
+
+
+
+

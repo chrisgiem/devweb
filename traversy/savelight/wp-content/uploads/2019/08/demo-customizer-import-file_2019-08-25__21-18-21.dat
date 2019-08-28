@@ -1,0 +1,80 @@
+a:4:{s:8:"template";s:4:"airi";s:4:"mods";a:6:{s:18:"custom_css_post_id";i:204;s:18:"nav_menu_locations";a:1:{s:6:"menu-1";i:3;}s:16:"x1_header_social";a:2:{i:0;a:2:{s:4:"icon";s:11:"fa-facebook";s:8:"link_url";s:32:"https://facebook.com/yourprofile";}i:1;a:2:{s:4:"icon";s:10:"fa-twitter";s:8:"link_url";s:31:"https://twitter.com/yourprofile";}}i:0;b:0;s:13:"color_primary";s:7:"#1eaf12";s:11:"custom_logo";i:373;}s:7:"options";a:2:{s:9:"site_icon";s:1:"0";s:23:"nav_menus_created_posts";a:0:{}}s:6:"wp_css";s:1641:"/* Testimonials */
+.atu-hc-testimonial .elementor-testimonial-content {
+	padding: 30px;
+	background-color: #f7f7f7;
+}
+.atu-hc-testimonial .elementor-testimonial-meta-inner {
+	margin-left: 20px;
+}
+.atu-hc-testimonial .elementor-testimonial-image {
+	position: relative
+}
+.atu-hc-testimonial .elementor-testimonial-image::after {
+	content: '';
+	position: absolute;
+	top: -21px;
+	left: 20px;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #f7f7f7;
+}
+
+/* Contact form */
+.atu-hc-contact input:not(.wpcf7-submit) {
+	width: 100%;
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+.atu-hc-contact .contact-row {
+	margin-bottom: 10px;
+}
+.atu-hc-contact .col-md-6:first-of-type {
+	padding-right: 5px;
+}
+.atu-hc-contact .col-md-6:last-of-type {
+	padding-left: 5px;
+}
+.atu-hc-form {
+	max-width: 470px;
+}
+
+/* Contact page map */
+.contact-page-map #atu-map {
+	height: 400px;
+}
+.contact-page-form label,
+.contact-page-form input:not(.wpcf7-submit),
+.contact-page-form select {
+	width: 100%;
+	max-width: 100%;
+}
+.contact-page-form select {
+	padding: 17px 20px;
+}
+.contact-page-form .wpcf7-submit {
+	width: auto;
+	margin: 0 auto;
+	display: table;
+	border-radius: 30px;
+	box-shadow: 0 5px 35px 0 rgba(51, 51, 51, 0.26);
+}
+.contact-page-form .row {
+	margin-bottom: 10px;
+}
+.menuStyle2 .main-navigation .header-search-toggle a:hover:after {
+	display: none;
+}
+@media ( max-width: 1024px ) {
+	.atu-hc-form {
+		max-width: 100%;
+	}
+	.atu-hc-contact .col-md-6:first-of-type {
+		padding: 0 15px;
+		margin-bottom: 10px;
+	}
+	.atu-hc-contact .col-md-6:last-of-type {
+		padding: 0 15px;
+	}	
+}";}

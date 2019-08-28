@@ -1,0 +1,178 @@
+/**
+ * Borders
+ *
+ * @version  1.8.2
+ */
+
+	.no-border {border: 0 !important}
+
+	.content-section {
+		/*(*/
+		border-color: #e3e3e3;
+		/*)*/
+		/*//
+		border-color: ___border_color;
+		//*/
+	}
+
+
+
+	/**
+	 * Allround borders
+	 */
+
+		button,
+		input,
+		select,
+		textarea,
+		pre,
+		.frame, .frame-items article, .frame-items .wm-items-container .wm-column,
+		.bordered, .type-bordered, .type-bordered-striped,
+		.breadcrumbs-separator[class*="iconwm-"],
+		.wm-pagination a, .wm-pagination span,
+		.woocommerce-pagination a, .woocommerce-pagination span,
+		.bbp-pagination-links a, .bbp-pagination-links a:hover, .bbp-pagination-links span,
+		.list-articles article,
+		.post-table-of-contents.top,
+		.wp-caption figure, figure.wp-caption,
+		.wm-call-to-action,
+		.color-blue, .color-gray, .color-green, .color-orange, .color-red,
+		.wm-message,
+		.wm-button, button, [type="button"], [type="submit"],
+		.wm-accordion .wm-item-title,
+		.wm-tabs .wm-item,
+		.wm-tour-nav,
+		.wm-price-header, .wm-price-features,
+		.wm-posts .wm-posts-item,
+		.sidebar > .widget,
+		.widget .tagcloud a,
+		.lie8 .nav-main li ul {
+			border: 1px solid;
+			border-color: inherit;
+		}
+
+
+
+	/**
+	 * Top only
+	 */
+
+		hr,
+		td, th,
+		.border-top,
+		.wm-tabbed-widgets .wm-tabs .wm-item,
+		.wm-divider,
+		.wm-tabs.layout-left .wm-tab-links li:first-child,
+		.wm-tabs.layout-right .wm-tab-links li:first-child,
+		.wm-price-features li, .wm-price-feature-row,
+		.post-table-of-contents {
+			border-top: 1px solid;
+			border-color: inherit;
+		}
+
+		/* Dashed */
+			.comment-list,
+			.comment-list .children,
+			.wm-testimonials .source {
+				border-top: 1px dashed;
+				border-color: inherit;
+			}
+
+
+
+	/**
+	 * Top and bottom
+	 */
+
+		.main-heading,
+		.entry-meta,
+		div.sharedaddy,
+		.wm-tab-links li,
+		.wm-price.type-legend h3.wm-price-caption, .wm-price.type-legend .wm-price-features ul,
+		.wm-separator-heading .pattern-holder:before,
+		.list-articles .entry-header .entry-meta + .entry-meta {
+			border-top: 1px solid;
+			border-bottom: 1px solid;
+			border-color: inherit;
+		}
+
+		/* Dotted */
+			.wm-divider.type-dotted {
+				border-top: 2px dotted;
+				border-color: inherit;
+			}
+
+		/* Dashed */
+			.wm-divider.type-dashed {
+				border-top: 2px dashed;
+				border-color: inherit;
+			}
+
+
+
+	/**
+	 * Bottom only
+	 */
+
+		.border-bottom,
+		.topbar,
+		.topbar-extra,
+		.wm-divider.type-double-line,
+		.wm-accordion .wm-item-content,
+		.wm-tabs.layout-left .wm-tab-links li,
+		.wm-tabs.layout-right .wm-tab-links li,
+		.wm-tabs .wm-tour-nav.bottom,
+		.wm-posts-wm_staff .title,
+		.widget-heading {
+			border-bottom: 1px solid;
+			border-color: inherit;
+		}
+			.topbar-extra {border-bottom-width: 5px}
+
+		/* Dashed */
+			.comment-list > li,
+			.comment-list .children > li,
+			.nav-main li.megamenu > ul > li > span.inner,
+			.nav-main li.megamenu > ul > li > a {
+				border-bottom: 1px dashed;
+				border-color: inherit;
+			}
+
+
+
+	/**
+	 * Left only
+	 */
+
+		.border-left {
+			border-left: 1px solid;
+			border-color: inherit;
+		}
+
+
+
+	/**
+	 * Right only
+	 */
+
+		.border-right {
+			border-right: 1px solid;
+			border-color: inherit;
+		}
+
+
+
+	/**
+	 * Left and right
+	 */
+
+		.wm-tabs.layout-left .wm-tab-links li,
+		.wm-tabs.layout-right .wm-tab-links li {
+			border-left: 1px solid;
+			border-right: 1px solid;
+			border-color: inherit;
+		}
+
+
+
+

@@ -1,0 +1,1185 @@
+/**
+ * RTL Styles
+ *
+ * Adds support for languages written in a Right To Left (RTL) direction.
+ * Styles are sorted in order in which they are included into main stylesheet file.
+ *
+ * @since    1.0
+ * @version  1.8.2
+ *
+ * @link  http://codex.wordpress.org/Right_to_Left_Language_Support
+ */
+
+	body {
+		direction: rtl;
+		unicode-bidi: bidi-override;
+	}
+
+
+
+	/**
+	 * 10
+	 *
+	 * reset.css
+	 */
+
+		/* no styles required */
+
+
+
+	/**
+	 * 20
+	 *
+	 * icons-basic.css
+	 */
+
+		.wmicon-search:before { content: '\3e'; } /* '>' */
+		.wmicon-tags:before   { content: '\3c'; } /* '<' */
+
+
+
+	/**
+	 * 30
+	 *
+	 * core.css
+	 */
+
+		/* Global elements and classes */
+
+			/* Tables */
+				th, tfoot td {text-align: right}
+
+			/* Classes */
+				.screen-reader-text:focus {
+					left: auto;
+					right: .38rem;
+				}
+
+		/* Pagination */
+			.wm-pagination,
+			.bbp-pagination .bbp-pagination-links,
+			.woocommerce-page nav.woocommerce-pagination {text-align: left}
+
+			/* WP-PageNavi plugin support */
+				.wm-pagination .pages {float: right}
+
+
+
+	/**
+	 * 40
+	 *
+	 * columns.css
+	 */
+
+		/* .pane {float: right} */
+
+
+
+	/**
+	 * 50
+	 *
+	 * typography.css
+	 */
+
+		/* no styles required */
+
+
+
+	/**
+	 * 60
+	 *
+	 * wp-styles.css
+	 */
+
+		/* no styles required */
+
+
+
+	/**
+	 * 70
+	 *
+	 * forms.css
+	 */
+
+		/* Basic form styles */
+
+			/* Checkboxes and radio buttons */
+				[type="checkbox"],
+				[type="radio"] {
+					margin-right: 0;
+					margin-left: .28em;
+				}
+				label + [type="checkbox"] {
+					margin-left: 0;
+					margin-right: .28em;
+				}
+
+		/* Search form */
+			.form-search,
+			.woocommerce-product-search,
+			#searchform,
+			#bbp-search-form {text-align: right}
+
+			.form-search:before,
+			.woocommerce-product-search:before,
+			#searchform:before,
+			#bbp-search-form:before,
+			#menu-search a:before {content: '\3e'}
+
+				.form-search [type="text"],
+				.widget .form-search [type="text"],
+				.widget .woocommerce-product-search [type="search"],
+				#searchform [type="text"],
+				#bbp-search-form [type="text"] {
+					left: auto;
+					right: 0;
+					padding-left: .62em;
+					padding-right: 2em;
+				}
+
+			.form-search [type="submit"],
+			.widget .woocommerce-product-search [type="submit"],
+			#searchform [type="submit"],
+			#bbp-search-form [type="submit"] {
+				left: auto;
+				right: 0;
+				text-indent: 999em;
+			}
+
+			/* Search form in header */
+				#menu-search a,
+				#menu-search a:hover,
+				#menu-search a:active {
+					margin-left: 0;
+					margin-right: .62em;
+				}
+
+				#search-container,
+				#search-container .form-close {
+					left: auto;
+					right: 0;
+				}
+
+				#search-container input {
+					padding-right: 0;
+					padding-left: 60px;
+				}
+
+				#search-container .form-close {
+					right: auto;
+					left: 0;
+				}
+					#search-container .form-close:before {
+						right: auto;
+						left: 0;
+						margin: -16px -16px 0 0;
+					}
+
+		/* Comments form */
+
+			/* Title */
+				.comment-reply-title small {float: left}
+
+			/* Labels */
+				.comment-form-author label,
+				.comment-form-email label,
+				.comment-form-url label,
+				.comment-form-comment label {
+					left: auto;
+					right: 0;
+				}
+					.comment-form-author label:before,
+					.comment-form-email label:before,
+					.comment-form-url label:before,
+					.comment-form-comment label:before {
+						left: auto;
+						right: 0;
+					}
+
+			/* Inputs */
+				.comment-respond .comment-form-author,
+				.comment-respond .comment-form-email,
+				.comment-respond .comment-form-url {
+					float: right;
+					margin: 0 2% 0 0;
+				}
+				.comment-respond .comment-form-author {margin: 0}
+					.comment-form-url input,
+					.comment-form-email input,
+					.comment-form-author input,
+					.comment-form-comment textarea {
+						padding-left: .62em;
+						padding-right: 2.62em;
+					}
+
+
+
+	/**
+	 * 80
+	 *
+	 * headings.css
+	 */
+
+		/* Main heading */
+			.main-heading-widgets {
+				right: auto;
+				left: 20px;
+			}
+
+
+
+	/**
+	 * 90
+	 *
+	 * header.css
+	 */
+
+		/* Topbar */
+
+			/* Basic topbar */
+				.topbar .widget {
+					margin-left: 0;
+					margin-right: 2.62em;
+				}
+					.topbar .widget:first-child {margin-right: 0}
+
+				.topbar .widgets-count-2 .widget,
+				.topbar .widgets-count-3 .widget,
+				.topbar .widgets-count-4 .widget {float: right}
+				.topbar .widgets-count-2 .widget + .widget,
+				.topbar .widgets-count-3 .widget + .widget + .widget,
+				.topbar .widgets-count-4 .widget + .widget + .widget,
+				.topbar .widgets-count-4 .widget + .widget + .widget + .widget {float: left}
+
+					.topbar .widget li {
+						margin-left: 0;
+						margin-right: 1em;
+					}
+						.topbar .widget li:first-child {margin-right: 0}
+
+			/* Extra topbar */
+				.topbar-extra {
+					left: auto;
+					right: 0;
+				}
+
+				.topbar-extra-switch {
+					right: auto;
+					left: 0;
+				}
+
+		/* Header */
+			.header-shadow,
+			.woocommerce .header-shadow,
+			.woocommerce-page .header-shadow,
+			.header-wrapper.is-sticky {
+				left: auto;
+				right: 0;
+			}
+
+			/* Logo */
+				.logo,
+				h1.logo {float: right}
+
+			/* Navigation */
+				.nav-main {float: left}
+
+				.nav-main li {float: right}
+
+				/* Icon in navigation */
+					.nav-main a[class*="icon-"]:before,
+					.nav-main span.inner[class*="icon-"]:before {margin: 0 -.28em 0 .62em}
+
+			/* Submenu expander button */
+
+				.nav-main .expander {
+					right: auto;
+					left: .62em;
+				}
+
+				.nav-main li.menu-item-has-children > .inner {
+					padding-right: 1em;
+					padding-left: 2.38em;
+				}
+
+					.nav-main li li.menu-item-has-children > .inner {
+						padding-left: 1.62em;
+					}
+
+				/* Submenu */
+					.nav-main li ul {
+						left: auto;
+						right: 0;
+					}
+
+				/* Sub-submenu */
+					.nav-main li li ul {
+						left: 115%;
+						right: auto;
+					}
+						.nav-main li li:hover > ul {
+							left: 100%;
+							right: auto;
+						}
+
+				/* Megamenu */
+					.nav-main li.megamenu > ul {
+						right: auto;
+						left: 0;
+					}
+
+					.nav-main li.megamenu > ul > li > ul {
+						left: auto;
+						right: 0;
+					}
+
+
+
+	/**
+	 * 100
+	 *
+	 * slider.css
+	 */
+
+		.static-slider .caption {text-align: right}
+
+
+
+	/**
+	 * 110
+	 *
+	 * content.css
+	 */
+
+		/* Main content area */
+
+			/* Lists stylings */
+				ul,
+				ol {
+					margin-left: 0;
+					margin-right: 0;
+				}
+
+				ol {
+					margin-left: 0;
+					margin-right: 2.28em;
+				}
+					ol > li:before {
+						left: auto;
+						right: -2.9em;
+					}
+
+				ul > li {
+					margin-left: 0;
+					margin-right: 1.62em;
+				}
+
+				li > ul {
+					margin-left: 0;
+					margin-right: -.25em;
+				}
+
+				dd {
+					margin-left: 0;
+					margin-right: 1.62em;
+				}
+
+			/* Posts parts (post table of contents) */
+				.post-table-of-contents.top {
+					float: right;
+					margin-right: 0;
+					margin-left: 1.62em;
+				}
+
+			/* List of articles */
+
+				/* Post formats */
+
+					/* Link */
+						.format-link:before {
+							right: auto;
+							left: 20px;
+						}
+
+					/* Quote */
+						.format-quote .quote-container {
+							padding-left: 0;
+							padding-right: 80px;
+						}
+							.format-quote .quote-container .image-container img {
+								left: auto;
+								right: 0;
+							}
+
+					/* Status */
+						.format-status .avatar,
+						.format-quote .image-container img {
+							float: right;
+							margin: 0 0 0 1.62em;
+						}
+
+				/* Search list */
+					.list-search .entry-title img {
+						float: right;
+						margin: 0 0 20px 20px;
+					}
+
+			/* Entry meta */
+				.entry-meta-element {
+					margin-left: 0;
+					margin-right: 1.62em;
+				}
+
+				.entry-meta-element:first-child {margin-right: 0}
+				.entry-meta-element:before,
+				.entry-permalink.entry-meta-element a {
+					margin-right: 0;
+					margin-left: .62em;
+				}
+
+				.tag-links.entry-meta-element:before {content: '\3c'}
+
+				.entry-permalink.entry-meta-element {float: left}
+
+				.list-articles .entry-title + .entry-meta,
+				.list-articles .entry-header .entry-meta + .entry-meta {
+					left: auto;
+					right: 0;
+				}
+
+		/* Previous/next post link */
+			.next-prev-post-in-tax {
+				left: auto;
+				right: 0;
+			}
+				.next-prev-post-in-tax a {
+					left: auto;
+					right: -24px;
+					padding: 0 24px 0 0;
+				}
+					.next-prev-post-in-tax a:hover {
+						left: auto;
+						right: -4px;
+						padding: 0 4px 0 0;
+					}
+						.next-prev-post-in-tax .next:hover {
+							right: auto;
+							left: -4px;
+							padding: 0 0 0 4px;
+						}
+
+					.next-prev-post-in-tax .next {
+						right: auto;
+						left: -24px;
+						padding: 0 0 0 24px;
+					}
+
+				.next-prev-post-in-tax a:before {content: 'F'}
+				.next-prev-post-in-tax .next:before {content: 'f'}
+
+
+
+	/**
+	 * 120
+	 *
+	 * comments.css
+	 */
+
+		.comments-area {
+			padding-left: 0;
+			padding-right: 5.6em;
+		}
+
+			.comments-title {
+				left: auto;
+				right: 0;
+			}
+				.comments-title .comments-count:before {
+					left: auto;
+					right: 0;
+				}
+
+		/* Comments list */
+			.comment-list > li,
+			.comment-list .children > li {padding: 20px 80px 20px 0}
+			.comment-list .children {margin: 20px -50px 0 0}
+
+		/* Author details */
+			.comment-meta .avatar {
+				left: auto;
+				right: 0;
+			}
+
+			.comment-author {float: right}
+
+			.comment-metadata,
+			.pingback .edit-link {float: left}
+				.comment-metadata .edit-link,
+				.pingback .edit-link {
+					padding-left: 0;
+					padding-right: 1.62em;
+				}
+
+		/* Comment content */
+			.comment-content ul,
+			.comment-content ol {margin-right: 0}
+			.comment-content ol {
+				margin-left: 0;
+				margin-right: 1.75em;
+			}
+			.comment-content ul > li {
+				margin-left: 0;
+				margin-right: 1.62em;
+			}
+
+			.comment-edit-link:before,
+			.comment-reply-link:before {
+				margin-right: 0;
+				margin-left: .62em;
+			}
+
+		/* Comments pagination */
+			.comment-navigation .nav-previous {float: right}
+			.comment-navigation .nav-next {float: left}
+
+
+
+	/**
+	 * 130
+	 *
+	 * sidebar.css
+	 */
+
+		.widget li ul {
+			padding-left: 0;
+			padding-right: .62em;
+		}
+
+		/* Archives, Categories, Recent Comments and Recent Posts widget */
+			.widget .recentcomments,
+			.widget_recent_entries ul li,
+			.widget [class*="recent-posts-"] ul li {
+				margin-left: 0;
+				margin-right: 1.62em;
+			}
+
+		/* WebMan Submenu, Pages and Menu widget + bbPress Topic Views List, Forums List widgets */
+			.widget .page_item a:before,
+			.widget .menu-item a:before,
+			.widget .sub-nav a:before,
+			.widget_display_views a:before,
+			.widget_display_forums a:before {
+				content: 'f';
+				text-align: right;
+			}
+
+		/* WebMan Content Module and Text widget */
+			.textwidget ul > li,
+			.wm-content-module ul > li {
+				margin-left: 0;
+				margin-right: 1.62em;
+			}
+
+		/* WebMan Contact */
+			.widget .address-container .contact-info {padding: 0 1.62em .5em 0}
+				.widget .address-container .contact-info:before {
+					left: auto;
+					right: 0;
+				}
+
+				.widget .address-container .hours table td:first-child {
+					padding-right: .5em;
+					padding-left: 2em;
+				}
+
+		/* WebMan Posts and Projects */
+
+			/* Posts */
+				.widget .wm-posts-post article,
+				.widget .wm-posts-post article:hover {text-align: right}
+
+				.widget .wm-posts-post .image {
+					float: right;
+					margin: 0 0 0 1em;
+				}
+
+				.widget .wm-posts-post .more-link {text-align: left}
+
+			/* Projects */
+				.widget .wm-posts-wm_projects .wm-posts-item {
+					float: right;
+					padding: 0 0 1px 1px;
+				}
+
+		/* WebMan Tabbed Widgets */
+			.wm-tabbed-widgets .wm-tab-links li:first-child a {
+				padding-left: .62em;
+				padding-right: 0;
+			}
+
+		/* WebMan Twitter */
+			.wm-twitter-container .user-info {padding: 0 4.24em 1.62em 0}
+				.wm-twitter-container .user-info img {
+					left: auto;
+					right: 0;
+				}
+
+				.wm-twitter-container ul li {
+					padding: 0 1.62em 0 0;
+					margin-right: 0;
+				}
+					.wm-twitter-container li:before {
+						left: auto;
+						right: 0;
+					}
+
+
+
+	/**
+	 * 140
+	 *
+	 * footer.css
+	 */
+
+		/* Credits area */
+			.credits .widgets-count-2 .widget,
+			.credits .widgets-count-3 .widget {
+				float: left;
+				text-align: left;
+			}
+
+			.credits .widgets-count-2 .widget:first-child {
+				float: right;
+				text-align: right;
+			}
+
+			.credits .widgets-count-3 .widget:first-child {text-align: right}
+			.credits .widgets-count-3 .widget:first-child + .widget {
+				float: right;
+				text-align: right;
+			}
+
+		/* To the top button */
+			.top-of-page {
+				right: auto;
+				left: 2%;
+				border-radius: 50% 0 50% 50%;
+			}
+
+
+
+	/**
+	 * 150
+	 *
+	 * prettyphoto.css
+	 */
+
+		div.pp_default .pp_content {
+			position: relative;
+			left: -6px;
+		}
+		a.pp_expand, a.pp_contract {right: 10px}
+
+		.pp_nav .pp_play,.pp_nav .pp_pause,
+		a.pp_arrow_previous, a.pp_arrow_next,
+		a.pp_next,
+		a.pp_previous,
+		a.pp_expand, a.pp_contract,
+		a.pp_close {text-indent: 10000px}
+
+
+
+	/**
+	 * 160
+	 *
+	 * plugins.css
+	 */
+
+		/* Love It (Pro) */
+			.love-it-wrapper .love-it,
+			.love-it-wrapper .love-it.loved,
+			.love-it-wrapper .loved {text-indent: 999em}
+			.love-it-wrapper .love-it:before,
+			.love-it-wrapper .loved:before {
+				left: auto;
+				right: 0;
+				margin-right: 0;
+				margin-left: .62em;
+			}
+
+			.love-it-wrapper .loved .love-count {
+				left: auto;
+				right: 1.4em;
+			}
+
+		/* Rotating Tweets */
+			.rotatingtweet {
+				padding-left: 0;
+				padding-right: 2.62em;
+			}
+				.rotatingtweets_format_0 .rotatingtweet:before {
+					left: auto;
+					right: 0;
+				}
+
+		/* WPML */
+			#lang_sel ul ul {
+				left: auto;
+				right: 0;
+			}
+			.widget #lang_sel ul ul a,
+			.widget #lang_sel ul ul a:visited {padding: .25em 1em .25em 3em}
+
+		/* ZillaLikes */
+			.zilla-likes:before {
+				margin-right: 0;
+				margin-left: .62em;
+			}
+
+
+
+	/**
+	 * 170
+	 *
+	 * shortcodes.css
+	 */
+
+		/**
+		 * Call to action
+		 */
+
+			.wm-call-to-action-button {
+				padding-left: 0;
+				padding-right: 1.62em;
+				text-align: left;
+			}
+
+
+
+		/**
+		 * Column
+		 */
+
+			.wm-column,
+			.widget-columns > .widget,
+			.masonry-disabled .footer-widgets-container > .widget {
+				float: right;
+				margin: 0 0 0 4%;
+			}
+				.wm-column.no-margin {margin: 0}
+				.wm-column.last,
+				.wm-row > .wm-column:last-child,
+				.pane > .wm-column:last-child {margin-left: 0 !important}
+				.lie8 .wm-column.last {margin-left: 0 !important} /* must be on new line for IE8 */
+
+				/* no-masonry footer */
+					.widget-columns > .widget {margin: 0 4% 0 0}
+					.widget-columns > .widget:first-child {margin: 0}
+
+					.masonry-disabled .footer-widgets-container > .widget {
+						margin-right: 4%;
+						margin-left: 0;
+					}
+					.masonry-disabled .footer-widgets-container > .widget:first-child {margin-right: 0}
+
+
+
+		/**
+		 * Content Module
+		 */
+
+			.wm-iconbox-module .wm-content-module-element {
+				padding-left: 0;
+				padding-right: 100px;
+			}
+				.small-icons .wm-iconbox-module .wm-content-module-element {
+					padding-left: 0;
+					padding-right: 68px;
+				}
+
+			.wm-iconbox-module .wm-content-module-element.image {
+				left: auto;
+				right: 0;
+				padding: 0;
+			}
+
+			.wm-content-module.text-center .wm-content-module-element {padding-right: 0}
+
+
+
+		/**
+		 * Dropcap
+		 */
+
+			.wm-dropcap {
+				float: right;
+				margin: .25em 0 0 .5em;
+			}
+			.wm-dropcap.shape-half-circle {
+				padding-left: 0;
+				padding-right: .25em;
+				border-radius: 0 1em 1em 0;
+			}
+
+
+
+		/**
+		 * Icon (social icon)
+		 */
+
+			h1 .wm-icon,
+			h2 .wm-icon,
+			h3 .wm-icon,
+			h4 .wm-icon,
+			h5 .wm-icon,
+			h6 .wm-icon,
+			.wm-button [class^="icon-"],
+			.wm-button [class*=" icon-"],
+			.wm-progress-caption .wm-icon {
+				margin-right: 0;
+				margin-left: .28em;
+			}
+
+			.wm-social-icon + .wm-social-icon {
+				margin-left: 0;
+				margin-right: .25em;
+			}
+
+
+
+		/**
+		 * Item
+		 */
+
+			/* Item caption */
+
+				/* Accordion / Toggle */
+					.wm-accordion .wm-item-title:before {
+						float: left;
+						margin-left: 0;
+						margin-right: .62em;
+					}
+
+
+
+		/**
+		 * List
+		 */
+
+			.wm-icon-list li,
+			li[class*="icon-"] {
+				padding-left: 0;
+				padding-right: 1.62em;
+				margin-right: 0;
+			}
+			.wm-icon-list li:before,
+			li[class*="icon-"]:before {
+				left: auto;
+				right: 0;
+			}
+
+
+
+		/**
+		 * Message
+		 */
+
+			/* Message with icon */
+				.wm-message[class*="icon-"]:before {
+					left: 0;
+					right: .9em;
+				}
+
+			/* Message sizes */
+				/* m, default */
+					.wm-message[class*="icon-"] {
+						padding-left: 2.62em;
+						padding-right: 5.25em;
+					}
+				/* l */
+					.wm-message.size-large[class*="icon-"] {
+						padding-left: 2.62em;
+						padding-right: 6em;
+					}
+				/* xl */
+					.wm-message.size-extra-large[class*="icon-"] {
+						padding-left: 2.62em;
+						padding-right: 8em;
+					}
+					.wm-message.size-extra-large[class*="icon-"]:before {
+						left: auto;
+						right: .62em;
+					}
+
+
+
+		/**
+		 * Posts
+		 */
+
+			/* Posts filter */
+				.wm-filter ul > li:first-child {
+					padding-left: .62em;
+					padding-right: 0;
+				}
+
+			/* Posts display */
+				.wm-posts .wm-posts-item.no-margin {
+					margin-right: 0 !important;
+					margin-left: -1px !important;
+				}
+
+
+
+		/**
+		 * Price
+		 */
+
+			.wm-price.no-margin + .wm-price {
+				margin-left: 0;
+				margin-right: -1px;
+			}
+
+			/* Featured */
+				.wm-price.type-featured {margin-top: -10px}
+
+			/* Legend */
+				.wm-price.type-legend:first-child,
+				.wm-price.type-legend:first-child h3.wm-price-caption {text-align: left}
+				.wm-price.type-legend.last,
+				.wm-price.type-legend.last h3.wm-price-caption {text-align: right}
+
+
+
+		/**
+		 * Progress
+		 */
+
+			.wm-progress-bar {
+				left: auto;
+				right: 0;
+			}
+
+
+
+		/**
+		 * Pullquote
+		 */
+
+			blockquote.alignright {
+				padding-right: 0;
+				text-align: left;
+				border-right: 0;
+			}
+
+
+
+		/**
+		 * Separator heading
+		 */
+
+			.wm-separator-heading .text-holder {padding: 0 0 0 .62em}
+				.wm-separator-heading.text-center .text-holder {padding-right: .62em}
+				.wm-separator-heading.text-right .text-holder {padding: 0 .62em 0 0}
+
+
+
+		/**
+		 * Tabs
+		 */
+
+			.wm-tab-links li [class*="icon-"],
+			.wm-tour-nav span [class*="icon-"],
+			.wm-item-title [class*="icon-"] {
+				margin-right: 0;
+				margin-left: .62em;
+			}
+
+			/* Tour tabs */
+				.wm-tour-nav .next {text-align: left}
+				.wm-tour-nav .prev a:before,
+				.wm-tour-nav .next a:after {display: none}
+				.wm-tour-nav .prev a:after {content: '« '}
+				.wm-tour-nav .next a:before {content: ' »'}
+
+
+
+		/**
+		 * Testimonials
+		 */
+
+			.wm-testimonials .wm-testimonials-item.no-margin {
+				margin-right: 0 !important;
+				margin-left: -1px !important;
+			}
+
+			/* Quote */
+				.wm-testimonials blockquote:before {
+					float: right;
+					margin: 0 0 0 .62em;
+				}
+
+			/* Quote source */
+				.wm-testimonials .source:before {
+					left: auto;
+					right: 16px;
+				}
+
+				.wm-testimonials .image {
+					float: right;
+					margin-right: 0;
+					margin-left: .62em;
+				}
+
+
+
+		/**
+		 * jQuery plugins
+		 */
+
+			/**
+			 * Isotope filter styles
+			 */
+
+				.filter-this.with-margin .wm-column,
+				.masonry-this.with-margin .wm-column {
+					margin-right: 0;
+					margin-left: 3.7462%; /* should be 3.8462%, lowering it for better layout implementation */
+				}
+
+
+
+			/**
+			 * Slick Slider
+			 */
+
+				.slick-prev::before {
+					content: "F";
+				}
+
+				.slick-next::before {
+					content: "f";
+				}
+
+				.slick-prev {
+					left: auto;
+					right: 0;
+					-webkit-transform: translateX(25%) translateY(-50%);
+					-ms-transform: translateX(25%) translateY(-50%);
+					transform: translateX(25%) translateY(-50%);
+				}
+
+				.slick-next {
+					left: 0;
+					right: auto;
+					-webkit-transform: translateX(-25%) translateY(-50%);
+					-ms-transform: translateX(-25%) translateY(-50%);
+					transform: translateX(-25%) translateY(-50%);
+				}
+
+				@media only screen and (min-width: 80em) {
+
+					.slick-prev {
+						-webkit-transform: translateX(75%) translateY(-50%);
+						-ms-transform: translateX(75%) translateY(-50%);
+						transform: translateX(75%) translateY(-50%);
+					}
+
+					.slick-next {
+						-webkit-transform: translateX(-75%) translateY(-50%);
+						-ms-transform: translateX(-75%) translateY(-50%);
+						transform: translateX(-75%) translateY(-50%);
+					}
+
+				}
+
+
+	/**
+	 * 180
+	 *
+	 * borders.css
+	 */
+
+		/* see borders-rtl.css */
+
+
+
+	/**
+	 * 210
+	 *
+	 * specials.css
+	 */
+
+		/* Lists */
+			ul.no-bullets li {margin-right: 0}
+
+			.lining dd:before,
+			.dictionary dt + dt:before {
+				margin-left: 0;
+				margin-right: -0.2em;
+			}
+
+		/* Button groups */
+			.wm-button.group,
+			.wm-button.group-first,
+			.wm-button.group-last {
+				margin-right: 0;
+				margin-left: -1px;
+			}
+				.wm-button.group-first,
+				.wm-button.group.first {
+					margin-right: 0;
+					margin-left: -1px;
+					border-radius: 0 4px 4px 0;
+				}
+				.wm-button.group-last,
+				.wm-button.group.last {border-radius: 4px 0 0 4px}
+
+				.wm-button.group.white-transparent,
+				.wm-button.group.black-transparent,
+				.wm-button.group.first.white-transparent,
+				.wm-button.group.first.black-transparent,
+				.wm-button.group-first.white-transparent,
+				.wm-button.group-first.black-transparent {
+					margin-right: 0;
+					margin-left: -2px;
+				}
+
+		/* Content Modules */
+
+			/* Icon small size */
+				.small-icons .wm-iconbox-module .wm-content-module-element {
+					padding-left: 0;
+					padding-right: 68px;
+				}
+				.small-icons .wm-iconbox-module .wm-content-module-element.image,
+				.text-center.small-icons .wm-iconbox-module .wm-content-module-element {padding-right: 0}
+
+			/* Remove icon background */
+				.no-icon-background .wm-iconbox-module .wm-content-module-element {
+					padding-left: 0;
+					padding-right: 80px;
+				}
+				.no-icon-background.small-icons .wm-iconbox-module .wm-content-module-element {
+					padding-left: 0;
+					padding-right: 58px;
+				}
+				.no-icon-background.text-center .wm-iconbox-module .wm-content-module-element {padding-right: 0}
+
+				.no-icon-background .wm-iconbox-module .font-icon,
+				.no-icon-background.text-center .wm-iconbox-module .font-icon,
+				.no-icon-background.small-icons .wm-iconbox-module .font-icon {padding: 0}
+
+
+
+	/**
+	 * 1000
+	 *
+	 * high-dpi.css
+	 */
+
+		/* no styles required */
+
+
+
+

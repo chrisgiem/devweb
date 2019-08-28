@@ -1,0 +1,775 @@
+/**
+ * Special CSS classes and animations
+ *
+ * @version  1.6
+ */
+
+
+
+	/**
+	 * CSS animations definitions
+	 */
+
+		@-webkit-keyframes sectionFlip {
+			0% {
+				-webkit-transform: perspective(600px) rotateX(15deg);
+				        transform: perspective(600px) rotateX(15deg);
+			}
+
+			100% {
+				-webkit-transform: perspective(600px) rotateX(0deg);
+				        transform: perspective(600px) rotateX(0deg);
+			}
+		}
+
+		@keyframes sectionFlip {
+			0% {
+				-webkit-transform: perspective(600px) rotateX(15deg);
+				    -ms-transform: perspective(600px) rotateX(15deg);
+				        transform: perspective(600px) rotateX(15deg);
+			}
+
+			100% {
+				-webkit-transform: perspective(600px) rotateX(0deg);
+				    -ms-transform: perspective(600px) rotateX(0deg);
+				        transform: perspective(600px) rotateX(0deg);
+			}
+		}
+
+		.sectionFlip {
+			-webkit-backface-visibility: visible !important;
+			    -ms-backface-visibility: visible !important;
+			        backface-visibility: visible !important;
+			-webkit-animation-duration: .6s;
+			        animation-duration: .6s;
+			-webkit-animation-fill-mode: both;
+			        animation-fill-mode: both;
+			-webkit-animation-name: sectionFlip;
+			        animation-name: sectionFlip;
+		}
+
+		[class*="animation-"] {opacity: 0}
+		.animated {opacity: 1}
+
+
+
+	/**
+	 * Navigation
+	 */
+
+		/**
+		 * See the header.css file for Megamenu classes.
+		 */
+
+		/**
+		 * Icons
+		 *
+		 * Apply icon class directly on menu item.
+		 */
+
+
+
+	/**
+	 * Visibility classes
+	 */
+
+		/**
+		 * See the responsive.css file for device specific
+		 * display classes.
+		 */
+
+		/**
+		 * Mobile text alignement:
+		 * .mobile-text-left
+		 * .mobile-text-right
+		 */
+
+
+
+	/**
+	 * Display and floating classes
+	 */
+
+		.hide {display: none !important}
+
+		.float-left {float: left !important}
+		.float-right {float: right !important}
+
+
+
+	/**
+	 * Margins and paddings
+	 */
+
+		.mt {margin-top: 1.62em !important}
+		.mt0 {margin-top: 0 !important}
+		.mt10 {margin-top: 10px !important}
+		.mt20 {margin-top: 20px !important}
+		.mt30 {margin-top: 30px !important}
+		.mt40 {margin-top: 40px !important}
+		.mt50 {margin-top: 50px !important}
+		.mt60 {margin-top: 60px !important}
+		.mt70 {margin-top: 70px !important}
+		.mt80 {margin-top: 80px !important}
+		.mt90 {margin-top: 90px !important}
+		.mt100 {margin-top: 100px !important}
+		.mt110 {margin-top: 110px !important}
+		.mt120 {margin-top: 120px !important}
+
+		.mt-10 {margin-top: -10px !important}
+		.mt-20 {margin-top: -20px !important}
+		.mt-30 {margin-top: -30px !important}
+		.mt-40 {margin-top: -40px !important}
+		.mt-50 {margin-top: -50px !important}
+		.mt-60 {margin-top: -60px !important}
+		.mt-70 {margin-top: -70px !important}
+		.mt-80 {margin-top: -80px !important}
+		.mt-90 {margin-top: -90px !important}
+		.mt-100 {margin-top: -100px !important}
+		.mt-110 {margin-top: -110px !important}
+		.mt-120 {margin-top: -120px !important}
+
+		.mb-10 {margin-bottom: -10px !important}
+		.mb-20 {margin-bottom: -20px !important}
+		.mb-30 {margin-bottom: -30px !important}
+		.mb-40 {margin-bottom: -40px !important}
+		.mb-50 {margin-bottom: -50px !important}
+		.mb-60 {margin-bottom: -60px !important}
+		.mb-70 {margin-bottom: -70px !important}
+		.mb-80 {margin-bottom: -80px !important}
+		.mb-90 {margin-bottom: -90px !important}
+		.mb-100 {margin-bottom: -100px !important}
+		.mb-110 {margin-bottom: -110px !important}
+		.mb-120 {margin-bottom: -120px !important}
+
+		.p0 {padding: 0 !important}
+		.p10 {padding: 10px !important}
+		.p20 {padding: 20px !important}
+		.p30 {padding: 30px !important}
+		.p40 {padding: 40px !important}
+		.p50 {padding: 50px !important}
+		.p60 {padding: 60px !important}
+
+		.p1c {padding: 1% !important}
+		.p2c {padding: 2% !important}
+		.p3c {padding: 3% !important}
+		.p4c {padding: 4% !important}
+		.p5c {padding: 5% !important}
+		.p6c {padding: 6% !important}
+		.p7c {padding: 7% !important}
+		.p8c {padding: 8% !important}
+		.p9c {padding: 9% !important}
+		.p10c {padding: 10% !important}
+
+
+
+	/**
+	 * Width classes
+	 */
+
+		.max-width-25 {max-width: 25% !important}
+		.max-width-33 {max-width: 33.33% !important}
+		.max-width-50 {max-width: 50% !important}
+		.max-width-66 {max-width: 66.66% !important}
+		.max-width-75 {max-width: 75% !important}
+
+
+
+	/**
+	 * Background classes
+	 */
+
+		.background-transparent,
+		        .bg-transparent {background: transparent !important}
+
+		.background-attachment-scroll,
+		        .bg-attachment-scroll {background-attachment: scroll !important}
+		.background-attachment-fixed,
+		        .bg-attachment-fixed {
+			position: static; /* Fixes Chrome bug. Really! */
+			background-attachment: fixed !important;
+		}
+
+		.background-position-center,
+		        .bg-position-center {background-position: 50% 50% !important}
+		.background-position-center-top,
+		        .bg-position-center-top {background-position: 50% 0 !important}
+		.background-position-center-bottom,
+		        .bg-position-center-bottom {background-position: 50% 100% !important}
+
+		.background-repeat-repeat,
+		        .bg-repeat-repeat {background-repeat: repeat !important}
+		.background-repeat-repeat-x,
+		        .bg-repeat-repeat-x {background-repeat: repeat-x !important}
+		.background-repeat-repeat-y,
+		        .bg-repeat-repeat-y {background-repeat: repeat-y !important}
+		.background-repeat-no-repeat,
+		        .bg-repeat-no-repeat {background-repeat: no-repeat !important}
+
+		.background-size-auto,
+		        .bg-size-auto {background-size: auto !important}
+		.background-size-cover,
+		        .bg-size-cover {background-size: cover !important}
+		.background-size-contain,
+		        .bg-size-contain {background-size: contain !important}
+
+
+
+	/**
+	 * Forms
+	 */
+
+		input.fullwidth,
+		input.stretch,
+		select.fullwidth,
+		select.stretch,
+		textarea.fullwidth,
+		textarea.stretch {width: 100%}
+
+
+
+	/**
+	 * Lists
+	 */
+
+		ul.no-bullets li {
+			margin-left: 0;
+			list-style: none;
+		}
+
+		ul.list-inline li {
+			display: inline;
+			white-space: nowrap;
+		}
+
+		ul.hover-enlarge li:before {
+			-webkit-transition: all .15s ease-in-out;
+			   -moz-transition: all .15s ease-in-out;
+			    -ms-transition: all .15s ease-in-out;
+			        transition: all .15s ease-in-out;
+		}
+			ul.hover-enlarge li:hover:before {
+				margin-left: -.2em;
+				-webkit-transform: scale( 1.66 );
+				   -moz-transform: scale( 1.66 );
+				    -ms-transform: scale( 1.66 );
+				        transform: scale( 1.66 );
+			}
+
+		/**
+		 * Lining definition style markup:
+		 * <dl class="lining"><dt><b></b></dt><dd></dd></dl>
+		 */
+			.lining dt,
+			.lining dd {
+				display: inline;
+				margin: 0;
+			}
+			.lining dt + dt:before,
+			.lining dd + dt:before {
+				content: '\A';
+				white-space: pre;
+			}
+			.lining dd + dd:before {content: ', '}
+			.lining dd:before {
+				content: ': ';
+				margin-left: -0.2em;
+			}
+
+		/**
+		 * Dictionary definition style markup:
+		 * <dl class="dictionary-style"><dt><b></b></dt><dd></dd></dl>
+		 */
+			.dictionary dt {
+				display: inline;
+				counter-reset: definitions;
+			}
+				.dictionary dt + dt:before {
+					content: ', ';
+					margin-left: -0.2em;
+				}
+			.dictionary dd {
+				display: block;
+				counter-increment: definitions;
+			}
+				.dictionary dd:before {content: counter(definitions, decimal) '. '}
+
+
+
+	/**
+	 * Frames
+	 */
+
+			.frame,
+			.wm-column.frame,
+			.frame-items article,
+			.frame-items .wm-items-container .wm-column {
+				padding: .62em;
+				border-radius: 4px;
+			}
+
+			/**
+			 * Border classes:
+			 *
+			 * .bordered
+			 * .border-top
+			 * .border-bottom
+			 * .border-left
+			 * .border-right
+			 */
+
+			/**
+			 * Icon shortcode:
+			 *
+			 * .round-border
+			 */
+
+
+
+	/**
+	 * Shadows
+	 */
+
+			.drop-shadow,
+			.drop-shadow-items article,
+			.drop-shadow-items .wm-items-container .wm-column {
+				-webkit-box-shadow: 0 .2em 1em 0 rgba(0,0,0, .2);
+				        box-shadow: 0 .2em 1em 0 rgba(0,0,0, .2);
+			}
+
+			.inner-shadow,
+			.inner-shadow-items article,
+			.inner-shadow-items .wm-items-container .wm-column {
+				-webkit-box-shadow: inset 0 1px 20px 0 rgba(0,0,0, .1);
+				        box-shadow: inset 0 1px 20px 0 rgba(0,0,0, .1);
+			}
+
+			.bottom-shadow,
+			.bottom-shadow-items article,
+			.bottom-shadow-items .wm-items-container .wm-column {
+				position: relative;
+				overflow: visible;
+			}
+				.bottom-shadow:after,
+				.bottom-shadow-items article:after,
+				.bottom-shadow-items .wm-items-container .wm-column:after {
+					content: ' ';
+					position: absolute;
+					width: 110%;
+					height: 2em;
+					left: -5%;
+					bottom: -2em;
+					/*(*/
+					background-image: url('../img/shadow-bottom.png');
+					/*)*/
+					/*//
+					background-image: url('___theme_assets_url/img/shadow-bottom.png');
+					//*/
+					background-repeat: no-repeat;
+					background-position: 50% 0;
+					background-size: 100% 100%;
+				}
+				.ie8 .bottom-shadow:after,
+				.ie8 .bottom-shadow-items article:after,
+				.ie8 .bottom-shadow-items .wm-items-container .wm-column:after {display: none}
+
+
+
+	/**
+	 * Text classes
+	 */
+
+		.nowrap-words,
+		.nobr {white-space: nowrap}
+		.wrap-words {white-space: normal !important}
+
+		.uppercase,
+		.uppercase-title .title {text-transform: uppercase}
+
+		.text-left {text-align: left !important}
+		.text-center {text-align: center !important}
+		.text-right {text-align: right !important}
+
+
+
+	/**
+	 * Colors:
+	 */
+
+		.text-color-accent {}
+		.background-color-accent,
+		        .bg-color-accent {}
+			/* See custom styles generator for above color classes */
+
+		.color-blue,
+		.color-gray,
+		.color-green,
+		.color-orange,
+		.color-red {background-repeat: repeat-x}
+
+		.white-black {
+			background: #000 !important;
+			background: rgba(0,0,0, .85) !important;
+			color: #fff !important;
+		}
+		.black-white {
+			background: #fff !important;
+			background: rgba(255,255,255, .85) !important;
+			color: #000 !important;
+		}
+
+
+
+	/**
+	 * Shortcodes:
+	 */
+
+		/**
+		 * Buttons
+		 *
+		 * Apply classes in shortcode "class" attribute.
+		 */
+
+			/* Fullwidth / stretched */
+				.wm-button.fullwidth,
+				.wm-button.stretch {
+					width: 100%;
+					text-align: center;
+				}
+
+			/* White/black transparent bordered buttons */
+				.wm-button.white-transparent,
+				.wm-button.black-transparent,
+				.wm-button.white-transparent.color-blue,
+				.wm-button.black-transparent.color-blue,
+				.wm-button.white-transparent.color-gray,
+				.wm-button.black-transparent.color-gray,
+				.wm-button.white-transparent.color-green,
+				.wm-button.black-transparent.color-green,
+				.wm-button.white-transparent.color-orange,
+				.wm-button.black-transparent.color-orange,
+				.wm-button.white-transparent.color-red,
+				.wm-button.black-transparent.color-red,
+				.wm-button.white-transparent:hover,
+				.wm-button.black-transparent:hover,
+				.wm-button.white-transparent:active,
+				.wm-button.black-transparent:active {
+					text-transform: uppercase;
+					text-shadow: none !important;
+					letter-spacing: .1em;
+					background: transparent !important;
+					color: #fff !important;
+					border: 2px solid #fff !important;
+					opacity: 1; /* Fix for animating buttons */
+					-webkit-box-shadow: inset 0 0 0 #fff;
+					        box-shadow: inset 0 0 0 #fff;
+				}
+					.wm-button.black-transparent,
+					.wm-button.black-transparent.color-blue,
+					.wm-button.black-transparent.color-gray,
+					.wm-button.black-transparent.color-green,
+					.wm-button.black-transparent.color-orange,
+					.wm-button.black-transparent.color-red,
+					.wm-button.black-transparent:hover,
+					.wm-button.black-transparent:active {
+						color: #000 !important;
+						border-color: #000 !important;
+						-webkit-box-shadow: inset 0 0 0 #000;
+						        box-shadow: inset 0 0 0 #000;
+					}
+					.wm-button.white-transparent:hover,
+					.wm-button.white-transparent:active {
+						background: #fff !important;
+						color: #000 !important;
+						-webkit-box-shadow: inset 0 100px 0 #fff;
+						        box-shadow: inset 0 100px 0 #fff;
+					}
+					.wm-button.black-transparent:hover,
+					.wm-button.black-transparent:active {
+						background: #000 !important;
+						color: #fff !important;
+						-webkit-box-shadow: inset 0 100px 0 #000;
+						        box-shadow: inset 0 100px 0 #000;
+					}
+
+					.wm-button.white-transparent:active,
+					.wm-button.black-transparent:active {
+						-webkit-transition: all .1s ease-in-out;
+						   -moz-transition: all .1s ease-in-out;
+						    -ms-transition: all .1s ease-in-out;
+						        transition: all .1s ease-in-out;
+						-webkit-transform: scale( .975 );
+						   -moz-transform: scale( .975 );
+						    -ms-transform: scale( .975 );
+						        transform: scale( .975 );
+					}
+
+			/* Button groups */
+				.wm-button.group,
+				.wm-button.group-first,
+				.wm-button.group.first,
+				.wm-button.group-last,
+				.wm-button.group.last {
+					margin-right: -1px;
+					border-radius: 0;
+				}
+					.wm-button.group-first,
+					.wm-button.group.first {
+						margin-right: -1px;
+						border-radius: 4px 0 0 4px;
+					}
+					.wm-button.group-last,
+					.wm-button.group.last {border-radius: 0 4px 4px 0}
+
+					.wm-button.group.white-transparent,
+					.wm-button.group.black-transparent,
+					.wm-button.group.first.white-transparent,
+					.wm-button.group.first.black-transparent,
+					.wm-button.group-first.white-transparent,
+					.wm-button.group-first.black-transparent {margin-right: -2px}
+
+
+
+		/**
+		 * Columns
+		 *
+		 * Apply classes in shortcode "class" attribute.
+		 */
+
+			.wm-column.alignleft {
+				float: left;
+				margin: 0 4% 0 0;
+			}
+			.wm-column.alignright {
+				float: right;
+				margin: 0 0 0 4%;
+			}
+			.wm-column.aligncenter {
+				float: none;
+				clear: both;
+				margin: 0 auto;
+			}
+			.wm-column.no-margin.alignleft,
+			.wm-column.no-margin.alignright {margin: 0}
+
+
+
+		/**
+		 * Content Modules
+		 * Posts (custom posts)
+		 * Testimonials
+		 *
+		 * Apply classes in shortcode "class" attribute.
+		 */
+
+			/**
+			 * Activate masonry layout:
+			 *
+			 * .masonry
+			 */
+
+
+
+			/**
+			 * Content Modules
+			 */
+
+				/* Icon small size */
+					.small-icons .wm-iconbox-module .wm-content-module-element {padding-left: 68px}
+					.small-icons .wm-iconbox-module .wm-content-module-element.image,
+					.text-center.small-icons .wm-iconbox-module .wm-content-module-element {padding-left: 0}
+
+					.small-icons .wm-iconbox-module .image {
+						width: 48px;
+						height: 48px;
+						line-height: 48px;
+						font-size: 24px;
+					}
+
+					.text-center.small-icons .wm-iconbox-module .image {
+						width: 80px;
+						height: 80px;
+						line-height: 80px;
+						font-size: 32px;
+					}
+
+				/* Remove icon background */
+					.no-icon-background .wm-iconbox-module .wm-content-module-element {padding-left: 80px}
+					.no-icon-background.small-icons .wm-iconbox-module .wm-content-module-element {padding-left: 58px}
+					.no-icon-background.text-center .wm-iconbox-module .wm-content-module-element,
+					.text-center .no-icon-background .wm-iconbox-module .wm-content-module-element,
+					.no-icon-background.text-center .wm-iconbox-module .wm-content-module-element {padding-left: 0}
+
+					.no-icon-background .wm-iconbox-module .font-icon,
+					.no-icon-background.text-center .wm-iconbox-module .font-icon,
+					.no-icon-background.small-icons .wm-iconbox-module .font-icon {
+						width: 60px;
+						height: auto;
+						padding: 0;
+						line-height: 1;
+						font-size: 48px;
+						background: none;
+						color: inherit;
+					}
+						.no-icon-background.small-icons .wm-iconbox-module .font-icon {
+							width: 40px;
+							font-size: 32px;
+						}
+						.no-icon-background.text-center .wm-iconbox-module .font-icon {
+							width: 100%;
+							font-size: 64px;
+						}
+							.no-icon-background.text-center.small-icons .wm-iconbox-module .font-icon {font-size: 48px}
+
+					.no-icon-background .wm-iconbox-module.wm-content-module-item:hover .image [class^="icon-"]:before,
+					.no-icon-background .wm-iconbox-module.wm-content-module-item:hover .image [class*=" icon-"]:before {text-shadow: none !important}
+
+					.no-icon-background .wm-iconbox-module.wm-content-module-item:hover .image [class^="icon-"]:before,
+					.no-icon-background .wm-iconbox-module.wm-content-module-item:hover .image [class*=" icon-"]:before {
+						-webkit-transform: none;
+						   -moz-transform: none;
+						    -ms-transform: none;
+						        transform: none;
+					}
+
+				/* Banner style */
+					.wm-content-module.banner .wm-content-module-item,
+					.wm-content-module.banners .wm-content-module-item {position: relative}
+
+						.wm-content-module.banner .title,
+						.wm-content-module.banner .more-link,
+						.wm-content-module.banner .tag,
+						.wm-content-module.banners .title,
+						.wm-content-module.banners .more-link,
+						.wm-content-module.banners .tag {display: none}
+						.wm-content-module.banner .image,
+						.wm-content-module.banners .image {margin: 0}
+
+						.wm-content-module.banner .content,
+						.wm-content-module.banners .content {
+							display: block;
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							left: 0;
+							top: 0;
+						}
+							.wm-content-module.banner .banner-table,
+							.wm-content-module.banners .banner-table {
+								display: table;
+								width: 100%;
+								height: 100%;
+								text-align: center;
+								vertical-align: middle;
+								color: #fff;
+								-webkit-transition: all .2s ease-in-out;
+								   -moz-transition: all .2s ease-in-out;
+								    -ms-transition: all .2s ease-in-out;
+								        transition: all .2s ease-in-out;
+								-webkit-box-shadow: inset 0 0 0 1em rgba(0,0,0, .25);
+								        box-shadow: inset 0 0 0 1em rgba(0,0,0, .25);
+							}
+							.wm-content-module.banner .banner-table:hover,
+							.wm-content-module.banners .banner-table:hover {
+								-webkit-box-shadow: none;
+								        box-shadow: none;
+							}
+							.wm-content-module.banner .banner-table a,
+							.wm-content-module.banner .banner-table a:hover,
+							.wm-content-module.banners .banner-table a,
+							.wm-content-module.banners .banner-table a:hover {
+								color: inherit;
+								text-decoration: none;
+							}
+								.wm-content-module.banner .banner-cell,
+								.wm-content-module.banners .banner-cell {
+									display: table-cell;
+									vertical-align: middle;
+									background: rgba(0,0,0, .15);
+									-webkit-transition: all .2s ease-in-out;
+									   -moz-transition: all .2s ease-in-out;
+									    -ms-transition: all .2s ease-in-out;
+									        transition: all .2s ease-in-out;
+								}
+								.wm-content-module.banner .banner-cell:hover,
+								.wm-content-module.banners .banner-cell:hover {background: rgba(0,0,0, .25)}
+								.wm-content-module.banner.plain .banner-cell,
+								.wm-content-module.banners.plain .banner-cell,
+								.wm-content-module.banner.plain .banner-cell:hover,
+								.wm-content-module.banners.plain .banner-cell:hover {background: none}
+
+
+
+		/**
+		 * Tabs
+		 *
+		 * Apply classes in shortcode "class" attribute.
+		 */
+
+			.wm-tabs.layout-top.center-tabs .wm-tab-links {
+				display: block;
+				text-align: center;
+			}
+
+
+
+		/**
+		 * Testimonials
+		 *
+		 * Apply classes in shortcode "class" attribute.
+		 */
+
+			.wm-testimonials.text-center {font-size: 1.17em}
+
+				.wm-testimonials.text-center blockquote {
+					margin: 1em 0 0;
+					font-size: 1.28em;
+					font-style: normal;
+				}
+					.wm-testimonials.text-center blockquote:before,
+					.wm-testimonials.text-center .source:after {
+						content: 'M';
+						float: none;
+						display: block;
+						width: 100%;
+						margin: 0 0 .28em;
+						text-align: center;
+						font-family: 'basic-icons';
+						font-size: 32px;
+						speak: none;
+					}
+
+				.wm-testimonials.text-center .source {
+					margin-top: 0;
+					padding-top: .28em;
+					font-size: 1em;
+					font-style: italic;
+					border: 0;
+				}
+					.wm-testimonials.text-center .source .image,
+					.wm-testimonials.text-center .source:before {display: none}
+					.wm-testimonials.text-center .source:after {
+						content: ',';
+						margin: .62em 0 0;
+						font-size: 32px;
+						font-style: normal;
+					}
+					.wm-testimonials.text-center .image + .author {top: 0}
+
+
+
+		/**
+		 * Widget Area
+		 *
+		 * Apply classes in shortcode "class" attribute.
+		 */
+
+			/**
+			 * Widget area columned layout:
+			 *
+			 * .widget-columns
+			 */
+
+
+
+

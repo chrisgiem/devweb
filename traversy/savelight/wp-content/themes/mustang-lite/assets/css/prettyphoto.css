@@ -1,0 +1,276 @@
+/**
+ * PrettyPhoto v3.1.5
+ *
+ * WebMan Custom Skin
+ *
+ * @since    1.1
+ * @version  1.5
+ *
+ * Use these PrettyPhoto JS setup options:
+ * overlay_gallery    : false,
+ * show_title         : false,
+ * slideshow          : 6000,
+ * social_tools       : false,
+ * theme              : 'pp_webman',
+ * opacity            : '0.66',
+ * default_width      : 800,
+ * default_height     : 450,
+ * horizontal_padding : 0,
+ * ie6_fallback       : false,
+ * markup             : '<div class="pp_pic_holder"><div class="ppt">&nbsp;</div><div class="pp_content_container"><div class="pp_content"><div class="pp_loaderIcon"></div><div class="pp_fade"><a class="pp_close" href="#">Close</a><a href="#" class="pp_expand" title="Expand the image">Expand</a><div class="pp_nav"><a href="#" class="pp_arrow_previous">Previous</a><p class="currentTextHolder">0/0</p><a href="#" class="pp_arrow_next">Next</a></div><div class="pp_hoverContainer"><a class="pp_next" href="#">next</a><a class="pp_previous" href="#">previous</a></div><div id="pp_full_res"></div><div class="pp_details"><p class="pp_description"></p></div></div></div></div></div><div class="pp_overlay"></div>'
+ */
+
+	/* Overlay */
+		.pp_overlay {
+			display: none;
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 0;
+			background: #000;
+			z-index: 9500;
+		}
+			.pp_overlay,
+			.pp_webman .pp_content_container a.pp_close {
+				cursor: -webkit-zoom-out;
+				cursor: -moz-zoom-out;
+				cursor: zoom-out;
+			}
+
+	/* Image container wrapper */
+		.pp_pic_holder.pp_webman {
+			display: none;
+			position: absolute;
+			width: 100px;
+			z-index: 10000;
+		}
+			.pp_webman .ppt {display: none !important}
+
+	/* Image container */
+		.pp_webman .pp_content_container {
+			position: relative;
+			width: 100%;
+			padding: 40px 0 4px;
+			text-align: left;
+			background: #fff;
+			color: #888;
+			border-radius: 3px;
+			overflow: hidden;
+			-webkit-box-shadow: 0 0 80px rgba(0,0,0, .5);
+			        box-shadow: 0 0 80px rgba(0,0,0, .5);
+		}
+
+			.pp_webman .pp_content {
+				height: 40px;
+				min-width: 40px;
+				margin: 0 auto;
+			}
+				.pp_webman .pp_content a,
+				.pp_webman .pp_content a:hover {color: inherit}
+
+				/* Loader icon */
+					.pp_webman .pp_loaderIcon {
+						display: block;
+						position: absolute;
+						width: 24px;
+						height: 24px;
+						left: 50%;
+						top: 50%;
+						margin: -12px 0 0 -12px;
+						/*(*/
+						background-image: url('../img/prettyphoto/default/loader.gif');
+						/*)*/
+						/*//
+						background-image: url('___theme_assets_url/img/prettyphoto/default/loader.gif');
+						//*/
+						background-position: 50% 50%;
+						background-repeat: no-repeat;
+					}
+
+				.pp_webman .pp_fade {display: none}
+
+				/* Close, expand/contract buttons, gallery navigation */
+					.pp_webman a.pp_close,
+					.pp_webman a.pp_expand,
+					.pp_webman a.pp_contract,
+					.pp_webman .pp_nav a {
+						display: none;
+						position: absolute;
+						width: 18px;
+						height: 18px;
+						left: 11px;
+						top: 11px;
+						line-height: 17px;
+						text-indent: -10000px;
+						font-size: 10px;
+						font-weight: 400;
+						border: 1px solid;
+						border-radius: 50%;
+						cursor: pointer;
+						z-index: 20000;
+					}
+					.pp_webman a.pp_close {display: block}
+					.pp_webman a.pp_pause {border-radius: 3px}
+					.pp_webman a.pp_expand,
+					.pp_webman a.pp_contract {left: 40px}
+						a.pp_close:before,
+						a.pp_expand:before,
+						a.pp_contract:before,
+						.pp_nav a:before {
+							content: 'X';
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							left: 0;
+							top: 0;
+							text-align: center;
+							text-indent: 0;
+							font-family: 'basic-icons';
+						}
+						a.pp_expand:before {content: 'J'}
+						a.pp_contract:before {content: 'j'}
+
+					.pp_webman .pp_nav {
+						position: absolute;
+						height: 20px;
+						right: 11px;
+						top: 11px;
+						line-height: 20px;
+						text-align: right;
+						font-size: 10px;
+					}
+						.pp_webman .pp_nav p {
+							display: inline-block;
+							margin: 0 4px;
+							vertical-align: top;
+						}
+						.pp_webman .pp_nav a {
+							display: inline-block;
+							position: relative;
+							left: auto;
+							top: auto;
+							margin: 0 2px;
+							text-align: left;
+							font-size: 13px;
+						}
+							.pp_webman a.pp_play:before {content: 'H'}
+							.pp_webman a.pp_pause:before {content: 'j'}
+							.pp_webman a.pp_arrow_next:before {content: 'F'}
+							.pp_webman a.pp_arrow_previous:before {content: 'f'}
+
+				/* Image hover navigation */
+					.pp_webman .pp_hoverContainer {
+						position: absolute;
+						width: 100%;
+						top: 40px;
+						z-index: 2000;
+					}
+						.pp_webman .pp_hoverContainer a {
+							float: right;
+							display: block;
+							position: relative;
+							height: 100%;
+							width: 49%;
+							text-indent: -10000px;
+							cursor: pointer;
+							overflow: hidden;
+						}
+						.pp_webman .pp_hoverContainer a.pp_previous {float: left}
+							.pp_webman .pp_hoverContainer a:before {
+								content: 'F';
+								display: none;
+								position: absolute;
+								width: 40px;
+								height: 40px;
+								right: 0;
+								top: 50%;
+								margin-top: -20px;
+								line-height: 40px;
+								text-align: center;
+								text-indent: 0;
+								text-shadow: 0 0 1px #fff;
+								font-family: 'basic-icons';
+								font-size: 32px;
+								color: #000;
+							}
+							.pp_webman .pp_hoverContainer a.pp_previous:before {
+								content: 'f';
+								left: 0;
+								right: auto;
+							}
+								.pp_webman .pp_hoverContainer a:hover:before {display: block}
+
+				/* PrettyPhoto content (image, inline, video) */
+					.pp_webman #pp_full_res {line-height: 1 !important}
+						.pp_webman #pp_full_res .pp_inline {text-align: left}
+						.pp_webman #pp_full_res .pp_inline p {margin: 0 0 1em}
+
+				/* Description text */
+					.pp_webman .pp_details {
+						float: left;
+						margin: 0;
+						font-size: .9em;
+						line-height: 1.4em;
+					}
+						.pp_webman .pp_description {
+							display: none;
+							margin: 10px 0 0;
+							text-align: center;
+						}
+
+
+
+	/**
+	 * RTL Styles
+	 */
+
+		/* Image container */
+			html[dir='rtl'] .pp_webman .pp_content_container {text-align: right}
+
+		/* Close, expand/contract buttons, gallery navigation */
+			html[dir='rtl'] .pp_webman a.pp_close,
+			html[dir='rtl'] .pp_webman a.pp_expand,
+			html[dir='rtl'] .pp_webman a.pp_contract,
+			html[dir='rtl'] .pp_webman .pp_nav a {
+				left: auto;
+				right: 11px;
+				text-indent: 10000px;
+			}
+			html[dir='rtl'] .pp_webman a.pp_expand,
+			html[dir='rtl'] .pp_webman a.pp_contract {right: 44px}
+
+			html[dir='rtl'] .pp_webman .pp_nav {
+				right: auto;
+				left: 11px;
+				text-align: left;
+			}
+				html[dir='rtl'] .pp_webman .pp_nav a {
+					left: auto;
+					right: auto;
+				}
+					html[dir='rtl'] .pp_webman a.pp_arrow_next:before {content: 'f'}
+					html[dir='rtl'] .pp_webman a.pp_arrow_previous:before {content: 'F'}
+
+		/* Image hover navigation */
+			html[dir='rtl'] .pp_webman .pp_hoverContainer a {float: left}
+			html[dir='rtl'] .pp_webman .pp_hoverContainer a.pp_previous {float: right}
+				html[dir='rtl'] .pp_webman .pp_hoverContainer a:before {
+					content: 'f';
+					right: auto;
+					left: 0;
+				}
+				html[dir='rtl'] .pp_webman .pp_hoverContainer a.pp_previous:before {
+					content: 'F';
+					right: 0;
+					left: auto;
+				}
+
+		/* PrettyPhoto content (image, inline, video) */
+			html[dir='rtl'] .pp_webman #pp_full_res .pp_inline {text-align: right}
+
+		/* Description text */
+			html[dir='rtl'] .pp_webman .pp_details {float: right}
+
+
+
+

@@ -1,0 +1,186 @@
+/**
+ * Comments
+ *
+ * @version  1.5
+ */
+
+	.comments-area {
+		position: relative;
+		padding-left: 5.6em;
+		margin-top: 1.62em;
+	}
+
+		.comments-title {
+			position: absolute;
+			left: 0;
+			top: -.62em;
+			margin: 0;
+		}
+			.comments-title .comments-count {
+				display: inline-block;
+				position: relative;
+				width: 3.2em;
+				line-height: 3.84em;
+				text-align: center;
+			}
+				.comments-title .comments-count:before {
+					content: 'v';
+					position: absolute;
+					left: 0;
+					top: .05em;
+					font-family: 'basic-icons';
+					font-size: 3.84em;
+					opacity: .1;
+				}
+				.lie8 .comments-title .comments-count:before {display: none}
+
+
+
+	/**
+	 * Comments list
+	 */
+
+		.comment-list {
+			padding: 0;
+			margin: 0;
+		}
+		.comments-closed + .comment-list {margin-top: 1.62em}
+			.comment-list > li,
+			.comment-list .children > li {
+				position: relative;
+				min-height: 100px;
+				padding: 20px 0 20px 80px;
+				margin: 0;
+				list-style: none;
+				background: none;
+				overflow: hidden;
+			}
+			.comment-list .children {
+				clear: both;
+				margin: 20px 0 0 -50px;
+			}
+
+			.comment-list .pingback {
+				min-height: 0;
+				padding: 20px 0;
+				overflow: hidden;
+			}
+
+
+
+	/**
+	 * Author details
+	 */
+
+		.comment-meta {
+			clear: both;
+			padding-bottom: 10px;
+			overflow: hidden;
+		}
+
+		/* Avatar */
+			.comment-meta .avatar {
+				position: absolute;
+				left: 0;
+				top: 20px;
+				width: 60px;
+				border-radius: 50%;
+			}
+			.lie8 .comment-meta .avatar {width: 60px !important}
+
+		/* Name */
+			.comment-author {float: left}
+			.bypostauthor .comment-author .fn {
+				padding: 0 .5em;
+				/*(*/
+				background: #f6f6f6;
+				/*)*/
+				/*//
+				background: ___bg_color_brighter;
+				//*/
+				border-radius: 4px;
+			}
+
+		/* Metadata */
+			.comment-metadata,
+			.pingback .edit-link {
+				float: right;
+				opacity: .6;
+			}
+				.comment-metadata .edit-link,
+				.pingback .edit-link {padding-left: 1.62em}
+
+
+
+	/**
+	 * Comment content
+	 */
+
+		.comment-content {padding-bottom: 10px}
+
+			.comment-content p {margin-top: 1em}
+			.comment-content p:first-child {margin-top: 0}
+
+			.comment-content ol > li {list-style: decimal}
+			.comment-content ol ol > li {list-style: upper-alpha}
+			.comment-content ol ol ol > li {list-style: lower-roman}
+			.comment-content ol ol ol ol > li {list-style: lower-alpha}
+				.comment-content ul,
+				.comment-content ol {
+					margin: 1.62em 0 0;
+					margin-left: 0;
+				}
+				.comment-content li ul,
+				.comment-content li ol {
+					margin-top: .5em;
+					margin-bottom: 0;
+				}
+				.comment-content ol {margin-left: 1.75em}
+					.comment-content li,
+					.comment-content li li {
+						padding: 0;
+						margin-top: .5em;
+						overflow: visible;
+					}
+					.comment-content ul > li {
+						padding: 0;
+						margin-left: 1.62em;
+						list-style: disc;
+					}
+
+			.comment-edit-link:before,
+			.comment-reply-link:before {
+				content: 'v';
+				margin-right: .62em;
+				font-family: 'basic-icons';
+				font-size: 1.17em;
+				font-style: normal;
+				speak: none;
+			}
+				.comment-edit-link:before {content: 'e'}
+
+
+
+	/**
+	 * Comments pagination
+	 */
+
+		.comment-navigation {
+			position: relative;
+			display: block;
+			clear: both;
+			padding: 20px 0;
+			overflow: hidden;
+		}
+			.comment-navigation .nav-previous {
+				float: left;
+				margin: 0;
+			}
+			.comment-navigation .nav-next {
+				float: right;
+				margin: 0;
+			}
+
+
+
+

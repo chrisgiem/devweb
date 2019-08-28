@@ -1,0 +1,419 @@
+/**
+ * Core styles
+ *
+ * @version  1.9.1
+ */
+
+
+
+	/**
+	 * Main elements
+	 */
+
+		.wrap {
+			position: relative;
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+			background-color: #fff;
+			color: #333;
+			z-index: 1;
+		}
+
+		.website-container {margin: 0 auto}
+			.boxed .website-container {
+				-webkit-box-shadow: 0 0 50px 0 rgba(0,0,0, .1);
+				        box-shadow: 0 0 50px 0 rgba(0,0,0, .1);
+			}
+
+		.boxed .website-container,
+		.boxed .wrap,
+		.wrap.boxed,
+		.boxed.post-meta-layout .wrap,
+		.wrap-inner {max-width: 100%}
+
+
+
+	/**
+	 * Global elements and classes
+	 */
+
+		a {
+			text-decoration: none;
+			color: #03c;
+		}
+		a:hover {text-decoration: underline}
+		a:active {}
+		a:visited {}
+		a:focus {outline: 0}
+			.no-js .email-nospam {display: none}
+
+		abbr[title],
+		acronym[title] {cursor: help}
+
+		blockquote {
+			position: relative;
+			padding: 0 1em;
+			margin: 1.62em 0 0;
+			border-radius: .5em;
+		}
+			cite {border: 0}
+			blockquote cite {display: block}
+
+			/* inline quotation */
+				q:before {content: '\201C'}
+				q:after {content: '\201D'}
+
+		code {
+			padding: .28em .62em;
+			background: rgba(0,0,0, .05);
+		}
+
+		del,
+		strike,
+		s {
+			text-decoration: line-through;
+			color: inherit;
+			opacity: .75;
+		}
+
+		img,
+		iframe {vertical-align: middle}
+			img[width],
+			img[height] {height: auto}
+			.lie8 img[width] {width: auto}
+			iframe {
+				border: 0;
+				outline: 0;
+			}
+				p + iframe {margin-top: 1.62em}
+
+			.wm-column img,
+			.widget img,
+			.pane img,
+			.wm-column iframe,
+			.widget iframe,
+			.pane iframe {max-width: 100%}
+
+		p {word-wrap: break-word}
+
+		pre {
+			padding: 15px;
+			margin: 0;
+			line-height: 30px;
+			word-wrap: break-word;
+			/*(*/
+			background-image: url('../img/lines.png');
+			/*)*/
+			/*//
+			background-image: url('___theme_assets_url/img/lines.png');
+			//*/
+			background-repeat: repeat;
+			background-position: 0 -16px;
+		}
+			h1 + pre,
+			h2 + pre,
+			h3 + pre,
+			h4 + pre,
+			h5 + pre,
+			h6 + pre,
+			div + pre,
+			ul + pre,
+			ol + pre,
+			p + pre {margin-top: 1.62em}
+
+
+
+		/**
+		 * Tables
+		 */
+
+			table {
+				width: 100%;
+				margin: 1.62em 0 0;
+				border-radius: 4px;
+			}
+				caption {padding: 1em 0}
+				td, th {padding: .5em 1em}
+				th, tfoot td {text-align: left}
+
+				caption + thead tr:first-child th,
+				caption + thead tr:first-child td,
+				colgroup + thead tr:first-child th,
+				colgroup + thead tr:first-child td,
+				thead:first-child tr:first-child th,
+				thead:first-child tr:first-child td {border-top: 0}
+
+				thead + tbody tr:first-child td,
+				thead + tbody tr:first-child th {border-top-width: .25em}
+
+				tbody tr:hover td,
+				tbody tr:hover th {background-color: rgba(0,0,0, .05)}
+
+			/* Special table classes */
+				table.bordered {border-collapse: separate}
+				.bordered th:first-child,
+				.bordered td:first-child {border-left: 0}
+
+
+
+		/**
+		 * Classes
+		 */
+
+			span.br {
+				clear: both;
+				display: block;
+				width: 100%;
+				height: 1.62em;
+			}
+
+			.logo .description,
+			.comments-link .comments-title,
+			.entry-permalink.entry-meta-element span,
+			.woocommerce-page #review_form #respond p.comment-form-rating label,
+			.screen-reader-text {
+				position: absolute !important;
+				width: 1px;
+				height: 1px;
+				padding: 0;
+				margin: -1px;
+				line-height: 1px;
+				word-wrap: normal !important;
+				clip-path: inset( 50% );
+				clip: rect( 1px, 1px, 1px, 1px );
+				overflow: hidden;
+			}
+				.screen-reader-text:focus {
+					position: static !important;
+					height: auto;
+					width: auto;
+					left: .38rem;
+					top: .38rem;
+					padding: 1rem;
+					line-height: inherit;
+					word-wrap: break-word !important;
+					clip-path: none;
+					clip: auto;
+					overflow: visible;
+
+					text-decoration: none;
+					font-size: .81rem;
+					font-weight: 700;
+					background-color: #47c;
+					color: #fff;
+					z-index: 100000; /* Above WP toolbar. */
+				}
+
+			.image-container {position: relative}
+				.image-container img {width: 100%}
+
+			mark,
+			.marker {
+				padding: 2px 5px;
+				color: #444;
+				background-color: #eee;
+				border-radius: 4px;
+			}
+
+			.cursor-zoom-in {
+				cursor: -webkit-zoom-in;
+				cursor: -moz-zoom-in;
+				cursor: zoom-in;
+			}
+				.lie8 .cursor-zoom-in {cursor: pointer}
+
+
+
+		/**
+		 * Definition lists
+		 */
+
+			h1 + dl,
+			h2 + dl,
+			h3 + dl,
+			h4 + dl,
+			h5 + dl,
+			h6 + dl,
+			div + dl,
+			p + dl {margin-top: 1.62em}
+
+
+
+		/**
+		 * Clearing
+		 */
+
+			.clear {clear: both}
+				.lie8 .last + .clear {min-height: 1px}
+			/* Supports Firefox 3.5+, Safari 4+, Chrome, Opera 9+, IE 8+ */
+			/* Thanks to http://nicolasgallagher.com/micro-clearfix-hack/ */
+				.clearfix:before,
+					.clearfix:after,
+				.pane:before,
+					.pane:after,
+				.row:before,
+					.row:after,
+				.wm-row:before,
+					.wm-row:after,
+				.wrap-inner:before,
+					.wrap-inner:after {
+					content: ' ';
+					display: table;
+				}
+				.clearfix:after,
+				.pane:after,
+				.row:after,
+				.wm-row:after,
+				.wrap-inner:after {clear: both}
+
+
+
+	/**
+	 * Breadcrumbs
+	 */
+
+		.breadcrumbs {opacity: .6}
+			.breadcrumbs a {color: inherit}
+			.breadcrumbs-separator[class*="iconwm-"] {
+				display: inline-block;
+				position: relative;
+				width: 12px;
+				height: 12px;
+				top: -1px;
+				margin: 0 .75em;
+				line-height: 9px;
+				text-align: center;
+				font-size: 8px;
+				border-radius: 50%;
+			}
+
+
+
+	/**
+	 * Pagination
+	 *
+	 * Supports WP-PageNavi, bbPress and WooCommerce plugin.
+	 */
+
+		.wm-pagination,
+		.bbp-pagination .bbp-pagination-links,
+		.woocommerce-page nav.woocommerce-pagination {
+			clear: both;
+			padding: 1.62em 0 0;
+			text-align: right;
+		}
+		.list-articles + .wm-pagination {margin-top: 2.62em}
+			.wm-pagination a,
+			.wm-pagination span,
+			.bbp-pagination .bbp-pagination-links a,
+			.bbp-pagination .bbp-pagination-links span,
+			.woocommerce-pagination a,
+			.woocommerce-pagination span {
+				display: inline-block;
+				width: 3em;
+				height: 3em;
+				padding: 0;
+				margin: 0 .15em;
+				line-height: 2.85em;
+				text-align: center;
+				text-decoration: none;
+				/*(*/
+				background: #f6f6f6;
+				/*)*/
+				/*//
+				background: ___bg_color_brighter;
+				//*/
+				color: #666;
+				border-radius: 1.5em;
+			}
+				.wm-pagination a span,
+				.bbp-pagination .bbp-pagination-links a span,
+				.woocommerce-pagination a span { /* post pages */
+					display: inline;
+					min-width: auto;
+					padding: 0;
+					margin: 0;
+					background: transparent;
+					border: 0;
+				}
+				.wm-pagination a:hover,
+				.bbp-pagination .bbp-pagination-links a:hover,
+				.woocommerce-pagination a:hover {
+					-webkit-box-shadow: inset 0 1px 10px rgba(0,0,0, .25);
+					        box-shadow: inset 0 1px 10px rgba(0,0,0, .25);
+				}
+
+			/* Pagination link active, current page */
+				.wm-pagination > span,
+				.wm-pagination a:active,
+				.wm-pagination .current,
+				.bbp-pagination .bbp-pagination-links > span,
+				.bbp-pagination .bbp-pagination-links a:active,
+				.bbp-pagination .bbp-pagination-links .current,
+				.woocommerce-pagination > span,
+				.woocommerce-pagination a:active,
+				.woocommerce-pagination .current {
+					/*(*/
+					background: #3b5998;
+					/*)*/
+					/*//
+					background: ___accent_color;
+					//*/
+					-webkit-box-shadow: inset 0 1px 5px rgba(0,0,0, .1);
+					        box-shadow: inset 0 1px 5px rgba(0,0,0, .1);
+				}
+
+			/* Dots */
+				.wm-pagination > span.dots,
+				.wm-pagination .extend,
+				.bbp-pagination .bbp-pagination-links > span.dots,
+				.woocommerce-pagination > span.dots {
+					min-width: auto;
+					padding: 0 .5em;
+					background: transparent;
+					color: inherit;
+					border: 0;
+					-webkit-box-shadow: none;
+					        box-shadow: none;
+				}
+
+			/* WP-PageNavi plugin support */
+				.wm-pagination .pages {
+					float: left;
+					width: auto;
+					background: none;
+					border: 0;
+				}
+				.wm-pagination .first,
+				.wm-pagination .last {display: none}
+
+
+
+	/**
+	 * MediaElement player
+	 */
+
+		.mejs-container {
+			margin-bottom: 1.62em;
+		}
+
+			.mejs-container::last-child {
+				margin-bottom: 0;
+			}
+
+		.posts .mejs-container {
+			min-width: 0 !important;
+		}
+
+		.entry-media .mejs-container a {
+			width: auto;
+		}
+
+			.entry-media .mejs-container .mejs-horizontal-volume-slider {
+				width: 56px;
+			}
+
+
+
+

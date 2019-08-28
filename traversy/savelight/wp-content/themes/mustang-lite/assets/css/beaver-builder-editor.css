@@ -1,0 +1,44 @@
+/**
+ * Beaver Builder editor styles
+ *
+ * @since    1.6
+ * @version  1.8.2
+ */
+
+.fl-builder .header,
+.fl-builder .main-heading,
+.fl-builder .footer {
+	z-index: 0;
+}
+
+.fl-lightbox button,
+.fl-lightbox [type="button"],
+.fl-lightbox [type="submit"] {
+	text-shadow: none;
+	color: inherit !important;
+	box-shadow: none;
+}
+
+.fl-lightbox h1 + div,
+.fl-lightbox h2 + div,
+.fl-lightbox h3 + div {
+	margin-top: auto;
+}
+
+body .fl-builder-lightbox .fl-lightbox { width: 720px; }
+
+body .fl-builder-settings-tab { width: 100%; }
+
+.ui-draggable-dragging .fl-lightbox-content-wrap { opacity: 0; }
+
+.ui-draggable-dragging.fl-lightbox { background: transparent; border: 1px dotted #dfdfdf; box-shadow: rgba(0, 0, 0, 0.33) 0 4px 20px; }
+
+.wp-editor-wrap button { box-shadow: none; }
+
+.wm-posts .comments-area, .posts .comments-area { display: none; }
+
+.fl-row:not(:hover) { z-index: 0; }
+
+.fl-col-content .fl-module:hover { position: relative; z-index: 999; }
+
+.fl-builder-content .wm-divider.type-whitespace { border-top: 4px dashed rgba(255, 255, 255, 0.5); border-bottom: 4px dashed rgba(0, 0, 0, 0.5); }

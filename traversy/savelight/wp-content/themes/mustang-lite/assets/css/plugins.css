@@ -1,0 +1,358 @@
+/**
+ * Basic plugins support style tweaks
+ *
+ * @version  1.7
+ */
+
+
+
+	/**
+	 * Breadcrumb NavXT
+	 *
+	 * See the "Breadcrumbs" section inside the core.css file.
+	 */
+
+
+
+	/**
+	 * Comprehensive Google Map Plugin
+	 */
+
+		.website-container .google-map-placeholder {border: 0}
+
+
+
+	/**
+	 * Contact Form 7
+	 */
+
+		.wpcf7 p {margin-top: 1.62em}
+			.wpcf7 p:first-child {margin-top: 0}
+
+		.wpcf7-form-control-wrap br {display: none}
+
+		.wpcf7 span.wpcf7-list-item {
+			display: block;
+			padding-top: .5em;
+			margin: 0;
+		}
+
+
+
+	/**
+	 * Disqus
+	 */
+
+		#disqus_thread {margin-top: 1.62em}
+
+
+
+	/**
+	 * Fancier Author Box
+	 */
+
+		.ts-fab-list {
+			padding: .5em 1em;
+			background: rgba(0,0,0, .05);
+		}
+			.ts-fab-list,
+			.ts-fab-list li a {border-radius: 4px}
+
+		.ts-fab-tabs .ts-fab-tab {
+			padding: 1.62em 0 0;
+			background: none;
+			color: inherit;
+			border: 0;
+		}
+		#ts-fab-above {margin-top: 0}
+		#ts-fab-above .ts-fab-tab {
+			padding: 1.62em 0;
+			border: 0;
+			border-bottom: 2px solid;
+			border-color: inherit;
+		}
+
+			.ts-fab-avatar {width: 60px}
+				.ts-fab-avatar img {
+					width: 100%;
+					height: auto;
+					border-radius: 50%;
+				}
+				.ts-fab-social-links {line-height: 1em}
+					.ts-fab-social-links a {
+						width: 16px;
+						margin: 2px;
+					}
+
+			.ts-fab-text {margin-left: 80px}
+
+
+
+	/**
+	 * Formidable Forms
+	 */
+
+		.frm-show-form > h3 {padding-bottom: .62em}
+		form.frm-show-form .frm_description {padding-bottom: 1.62em}
+
+
+
+	/**
+	 * Gravity Forms
+	 */
+
+		.content-section .gform_wrapper {margin-top: 1.62em}
+		.content-section .gform_wrapper .gform_body ul > li {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.content-section .gform_wrapper .gform_body .gsection {margin: 2.62em 0 1em}
+		.content-section .gform_wrapper .validation_message {font-style: italic}
+
+
+
+	/**
+	 * JetPack
+	 */
+
+		.infinite-scroll .wm-pagination {display: none}
+
+		.infinite-scroll #infinite-handle {
+			margin-top: 40px;
+			text-align: center;
+		}
+			.infinite-scroll.blog.no-sidebar #infinite-handle {margin-top: 60px}
+
+			.infinite-scroll #infinite-handle span {
+				padding: .62em 1.62em;
+				font-size: 4.24em;
+				background: none;
+				color: inherit;
+				opacity: .66;
+				filter: alpha(opacity=66); /* For IE8 */
+			}
+				.infinite-scroll #infinite-handle span:hover {
+					opacity: 1;
+					filter: alpha(opacity=100); /* For IE8 */
+				}
+
+		.infinite-scroll .infinite-loader {
+			display: block;
+			margin: 1.62em;
+			text-align: center;
+			color: inherit;
+		}
+			.infinite-scroll .infinite-loader .spinner {margin: 0 auto}
+
+		.infinite-scroll .infinite-wrap {margin-top: 40px}
+			.infinite-scroll.blog.no-sidebar .infinite-wrap {margin-top: 60px}
+
+
+
+	/**
+	 * Love It (Pro)
+	 */
+
+		.love-it-wrapper {display: inline}
+		.love-it-wrapper .love-it,
+		.love-it-wrapper .love-it.loved,
+		.love-it-wrapper .loved {
+			display: inline-block;
+			position: relative;
+			width: 1em;
+			text-indent: -999em;
+		}
+		.love-it-wrapper .loved {
+			width: 2.62em;
+			cursor: not-allowed;
+		}
+			.love-it-wrapper .love-it:before,
+			.love-it-wrapper .loved:before {
+				content: '+';
+				position: absolute;
+				width: 1em;
+				left: 0;
+				margin-right: .62em;
+				text-indent: 0;
+				text-transform: none;
+				font-family: 'basic-icons';
+				font-weight: normal;
+				font-size: 1.2em;
+			}
+				.love-it-wrapper .loved:before {content: '9'}
+
+			.love-it-wrapper .loved .love-count {
+				position: absolute;
+				left: 1.4em;
+				text-indent: 0;
+			}
+		.entry-likes.entry-meta-element:before {display: none}
+
+
+
+	/**
+	 * Posts Views Count
+	 */
+
+		.entry-views.entry-meta-element:before {content: '7'}
+
+
+
+	/**
+	 * Rotating Tweets
+	 */
+
+		.widget_rotatingtweets_widget,
+		.rotatingtweets,
+		.rotatingtweet {width: 100% !important}
+
+		#content-section .widget_rotatingtweets_widget .rotatingtweets {
+			padding: 0;
+			margin: 0;
+			border: 0;
+		}
+			#content-section .widget_rotatingtweets_widget .rotatingtweet {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+
+		.rotatingtweet {
+			position: relative;
+			padding-left: 2.62em;
+		}
+
+			.rotatingtweets_format_0 .rotatingtweet:before {
+				content: '¬';
+				position: absolute;
+				left: 0;
+				top: .25em;
+				font-family: 'basic-icons';
+				font-size: 1.62em;
+				speak: none;
+			}
+
+			.rotatingtweets_format_0 .rotatingtweet .rtw_main {
+				font-family: Georgia, serif;
+				font-size: 1.28em;
+				font-style: italic;
+			}
+			.rotatingtweets_format_0 .rotatingtweet .rtw_meta {
+				margin: 1em 0 0;
+				font-size: .9em;
+			}
+
+
+
+	/**
+	 * WP-PageNavi
+	 *
+	 * See the "Pagination" section inside the core.css file.
+	 */
+
+
+
+	/**
+	 * WPML
+	 */
+
+ 		.icl_lang_sel_widget {
+ 			position: relative;
+ 			z-index: 9;
+ 		}
+
+		.widget #lang_sel {
+			display: inline; /* hack to keep the height normal */
+			height: auto;
+			white-space: nowrap;
+			font-family: inherit;
+		}
+		.widget #lang_sel ul ul,
+		.widget #lang_sel li {width: auto}
+
+		.widget #lang_sel a,
+		.widget #lang_sel a:visited,
+		.widget #lang_sel ul ul a,
+		.widget #lang_sel ul ul a:visited {
+			padding: 0;
+			line-height: inherit;
+			font-size: 1em;
+			color: inherit;
+			background: none;
+			border: 0;
+		}
+		.widget #lang_sel ul ul a,
+		.widget #lang_sel ul ul a:visited {padding: .25em 3em .25em 1em}
+
+		.widget #lang_sel ul ul {
+			height: auto;
+			top: 100%;
+			padding: 10px 0 !important;
+			background: #fff;
+			color: #333;
+			border: 0;
+			border-radius: 10px;
+			-webkit-box-shadow: 0 5px 20px 0 rgba(0,0,0, .2);
+			        box-shadow: 0 5px 20px 0 rgba(0,0,0, .2);
+		}
+
+		.widget #lang_sel a:hover,
+		.widget #lang_sel ul ul a:hover,
+		.widget #lang_sel :hover > a,
+		.widget #lang_sel ul ul :hover > a {
+			color: inherit;
+			background: none;
+		}
+
+		.widget #lang_sel ul ul a {
+			opacity: .6;
+			filter: alpha(opacity=60); /* For IE8 */
+		}
+		.widget #lang_sel ul ul a:hover {
+			opacity: 1;
+			filter: alpha(opacity=100); /* For IE8 */
+		}
+
+		.widget #lang_sel img.iclflag{vertical-align: baseline}
+
+
+
+	/**
+	 * WooSidebars
+	 *
+	 * No styles required.
+	 */
+
+
+
+	/**
+	 * ZillaLikes
+	 */
+
+		.zilla-likes {display: none} /* Hide the plugin from displaying in post content */
+
+		.entry-meta-element .zilla-likes,
+		.entry-meta-element .zilla-likes:hover {
+			display: inline;
+			min-height: 0;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: none;
+		}
+		.entry-meta-element .zilla-likes-postfix {display: none}
+
+		.zilla-likes.active {cursor: not-allowed}
+
+			.zilla-likes:before {
+				content: '+';
+				margin-right: .62em;
+				text-indent: 0;
+				text-transform: none;
+				font-family: 'basic-icons';
+				font-weight: normal;
+				font-size: 1.2em;
+			}
+				.zilla-likes.active:before {content: '9'}
+
+
+
+

@@ -1,0 +1,439 @@
+/**
+ * Form styles
+ *
+ * @since    1.0
+ * @version  1.8.2
+ */
+
+
+
+	/**
+	 * Forms reset
+	 */
+
+		button,
+		input,
+		select,
+		textarea {
+			padding: .43em .62em;
+			font-family: inherit;
+			background: transparent;
+			color: inherit;
+			outline: 0;
+		}
+		[type="checkbox"],
+		[type="radio"] {padding: 0}
+		fieldset {
+			padding: 0;
+			margin: 0;
+			border: 0;
+			border-color: inherit !important;
+		}
+
+
+
+	/**
+	 * Basic form styles
+	 */
+
+		form {margin: 0}
+		p + form,
+		h1 + form,
+		h2 + form,
+		h3 + form,
+		h4 + form,
+		h5 + form,
+		h6 + form,
+		div + form,
+		ul + form,
+		ol + form {margin-top: 1.62em}
+
+
+		/* Labels */
+			label {
+				display: inline-block;
+				padding-bottom: .28em;
+			}
+			label[for] {cursor: pointer}
+
+		/* Input elements */
+			button,
+			input,
+			select,
+			textarea {
+				max-width: 100%;
+				vertical-align: middle;
+			}
+				button,
+				[type="button"],
+				[type="submit"],
+				[type="date"],
+				[type="email"],
+				[type="file"],
+				[type="number"],
+				[type="search"],
+				[type="password"],
+				[type="text"],
+				[type="url"],
+				[type="tel"],
+				select,
+				textarea {
+					line-height: 1.62em;
+					/*(*/
+					background-color: #f6f6f6;
+					/*)*/
+					/*//
+					background-color: ___bg_color_brighter;
+					//*/
+					border-radius: 4px;
+				}
+					[type="date"]:focus,
+					[type="email"]:focus,
+					[type="file"]:focus,
+					[type="number"]:focus,
+					[type="search"]:focus,
+					[type="password"]:focus,
+					[type="text"]:focus,
+					[type="url"]:focus,
+					[type="tel"]:focus,
+					select:focus,
+					textarea:focus {
+						-webkit-box-shadow: 0 1px .62em rgba(0,0,0, .15);
+						        box-shadow: 0 1px .62em rgba(0,0,0, .15);
+					}
+				[type="button"],
+				[type="submit"] {
+					height: 2.62em;
+					line-height: 2.62em;
+				}
+				button.fullwidth,
+				button.stretch,
+				input.fullwidth,
+				input.stretch,
+				select.fullwidth,
+				select.stretch,
+				textarea.fullwidth,
+				textarea.stretch {width: 100% !important}
+
+		/* Text input */
+			[type="date"],
+			[type="email"],
+			[type="number"],
+			[type="search"],
+			[type="password"],
+			[type="text"],
+			[type="url"],
+			[type="tel"] {width: 17em}
+
+			textarea {
+				vertical-align: top;
+				word-wrap: break-word;
+				overflow-y: auto;
+				resize: vertical;
+			}
+
+			[type="search"] { box-sizing: border-box; }
+
+		/* Checkboxes and radio buttons */
+			[type="checkbox"],
+			[type="radio"] {
+				position: relative;
+				width: 1em;
+				height: 1em;
+				bottom: -.15em;
+				margin-right: .28em;
+				vertical-align: baseline;
+			}
+			label + [type="checkbox"] {margin-left: .28em}
+
+		/* Select */
+			select {
+				position: relative;
+				width: 17em;
+				height: auto;
+				line-height: 1.62em;
+			}
+
+		/* Submit buttons */
+			[type="button"],
+			[type="submit"] {
+				padding: 0 1em;
+				line-height: normal;
+				cursor: pointer;
+			}
+
+		/* Disabled inputs */
+			input[disabled] {
+				filter: alpha(opacity=60); /* For IE8 */
+				opacity: .6;
+			}
+
+
+
+	/**
+	 * Search form
+	 */
+
+		.form-search,
+		.woocommerce-product-search,
+		#searchform,
+		#bbp-search-form {
+			display: block;
+			position: relative;
+			width: 17em;
+			height: 2.62em;
+			max-width: 100%;
+			max-width: 100%;
+			margin: 0;
+			text-align: left;
+		}
+			.form-search:before,
+			.woocommerce-product-search:before,
+			#searchform:before,
+			#bbp-search-form:before {
+				content: '\3c';
+				display: block;
+				position: absolute;
+				width: 1.62em;
+				height: 2.04em;
+				line-height: 2.04em;
+				text-align: center;
+				text-indent: 0;
+				font-family: 'basic-icons';
+				font-size: 1.28em;
+				z-index: 1;
+			}
+			.sidebar .form-search,
+			.sidebar .woocommerce-product-search,
+			.sidebar #searchform {width: 100%}
+
+			.form-search [type="text"],
+			.widget .form-search [type="text"],
+			.widget .woocommerce-product-search [type="search"],
+			#searchform [type="text"],
+			#bbp-search-form [type="text"] {
+				position: absolute;
+				width: 100%;
+				left: 0;
+				top: 0;
+				padding-left: 2em;
+				z-index: 0;
+			}
+			.lie8 .form-search [type="text"],
+			.lie8 .widget .form-search [type="text"],
+			.lie8 .widget .woocommerce-product-search [type="search"],
+			.lie8 #searchform [type="text"],
+			.lie8 #bbp-search-form [type="text"] {z-index: -1}
+
+			.form-search [type="submit"],
+			.widget .woocommerce-product-search [type="submit"],
+			#searchform [type="submit"],
+			#bbp-search-form [type="submit"] {
+				position: absolute;
+				width: 2em;
+				height: 2.62em;
+				left: 0;
+				top: 0;
+				text-indent: -999em;
+				background: transparent !important;
+				border: 0;
+				border-radius: 0;
+				z-index: 10;
+				-webkit-box-shadow: none;
+				        box-shadow: none;
+			}
+			.lie8 .form-search [type="submit"],
+			.lie8 .widget .woocommerce-product-search [type="submit"],
+			.lie8 #searchform [type="submit"],
+			.lie8 #bbp-search-form [type="submit"] {
+				background: #fff !important;
+				filter: alpha(opacity=1);
+			}
+				.form-search [type="submit"]:hover,
+				.form-search [type="submit"]:active,
+				.widget .woocommerce-product-search [type="submit"]:hover,
+				.widget .woocommerce-product-search [type="submit"]:active,
+				#searchform [type="submit"]:hover,
+				#searchform [type="submit"]:active,
+				#bbp-search-form [type="submit"]:hover,
+				#bbp-search-form [type="submit"]:active {
+					-webkit-box-shadow: none;
+					        box-shadow: none;
+				}
+
+
+
+		/**
+		 * Search form in header
+		 */
+
+			#menu-search a,
+			#menu-search a:hover,
+			#menu-search a:active {
+				padding: .35em 0;
+				margin-left: .62em;
+				font-weight: 400;
+				font-size: 1.62em;
+				-webkit-box-shadow: none;
+				        box-shadow: none;
+			}
+				#menu-search a:before {
+					content: '\3c';
+					font-family: 'basic-icons';
+				}
+
+			#search-container {display: none}
+				#search-container,
+				#search-container .form-close {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					left: 0;
+					top: 0;
+					z-index: 100;
+				}
+				#search-container .form-search,
+				#search-container input {
+					width: 100%;
+					height: 100%;
+					padding: 0;
+					border: 0;
+				}
+				#search-container .form-search:before {display: none}
+					#search-container input {padding-right: 60px}
+					#search-container input:focus {
+						-webkit-box-shadow: none;
+						        box-shadow: none;
+					}
+					#search-container [type="submit"] {display: none}
+
+				#search-container .form-close {
+					left: auto;
+					right: 0;
+					width: 50px;
+					text-align: center;
+					color: inherit;
+				}
+					#search-container .form-close:before {
+						content: 'X';
+						position: absolute;
+						width: 32px;
+						height: 32px;
+						right: 0;
+						top: 50%;
+						margin: -16px 0 0 -16px;
+						line-height: 30px;
+						font-family: 'basic-icons';
+						font-size: 32px;
+					}
+
+
+
+	/**
+	 * Password protected post form
+	 */
+
+		.post-password-form {margin-top: 1.62em}
+
+
+
+	/**
+	 * Comments form
+	 */
+
+		.comment-respond {
+			position: relative;
+			padding: 20px 0 0;
+		}
+			.comment-respond form {margin-top: 0}
+			.comment-form p {
+				position: relative;
+				padding: 0 0 1em;
+				margin: 0;
+			}
+
+			.comment-form .required,
+			.comment-notes {display: none}
+
+			/* Title */
+				.comment-reply-title {
+					margin: 0 0 1em;
+					overflow: hidden;
+				}
+					.comment-reply-title small {float: right}
+
+			/* Labels */
+				.comment-form-author label,
+				.comment-form-email label,
+				.comment-form-url label,
+				.comment-form-comment label {
+					position: absolute;
+					display: block;
+					width: 2.62em;
+					height: 2.62em;
+					left: 0;
+					top: 0;
+					text-indent: -999em;
+				}
+					.comment-form-author label:before,
+					.comment-form-email label:before,
+					.comment-form-url label:before,
+					.comment-form-comment label:before {
+						position: absolute;
+						display: inline-block;
+						width: 2.62em;
+						left: 0;
+						top: 0;
+						line-height: 2.62em;
+						font-family: 'basic-icons';
+						font-size: 1em;
+						font-style: normal;
+						font-weight: normal;
+						speak: none;
+						text-align: center;
+						text-indent: 0;
+					}
+						.comment-form-author label:before {content: 'r'}
+						.comment-form-email label:before {content: '?'}
+						.comment-form-url label:before {content: 'W'}
+						.comment-form-comment label:before {content: 'e'}
+
+			/* Inputs */
+				.comment-respond .comment-form-author,
+				.comment-respond .comment-form-email,
+				.comment-respond .comment-form-url {
+					float: left;
+					width: 32%;
+					margin: 0 0 0 2%;
+				}
+					.comment-respond .comment-form-author {margin: 0}
+					.comment-form-url input,
+					.comment-form-email input,
+					.comment-form-author input,
+					.comment-form-comment textarea {
+						width: 100%;
+						padding-left: 2.62em;
+					}
+
+			/* Textarea */
+				.comment-form-comment {
+					clear: both;
+					margin-top: 0;
+				}
+					.comment-form-comment textarea {
+						height: 100px;
+						margin: 0;
+					}
+
+			/* Submit */
+				.comment-form .form-submit {
+					clear: both;
+					margin-top: 0;
+				}
+
+			/* Comment form when replying */
+				.comment-list .comment-respond .note {display: none}
+
+
+
+

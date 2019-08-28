@@ -1,0 +1,274 @@
+/**
+ * RTL Responsive Styles
+ *
+ * Adds support for languages written in a Right To Left (RTL) direction.
+ *
+ * @link  http://codex.wordpress.org/Right_to_Left_Language_Support
+ *
+ * @since    1.0
+ * @version  1.7
+ */
+
+
+
+	/**
+	 * 1199px max
+	 */
+
+		@media only screen and (max-width: 1199px) {
+
+			/**
+			 * Navigation
+			 */
+
+				.responsive-design .nav-main #menu-cart a,
+				.responsive-design .nav-main #menu-cart a:hover,
+				.responsive-design .nav-main #menu-cart a:active {margin-left: 0}
+
+		} /* /(max-width: 1199px) */
+
+
+
+	/**
+	 * 1024px max
+	 */
+
+		@media only screen and (max-width: 1024px) {
+
+			/**
+			 * Header
+			 */
+
+				/* Logo */
+					.responsive-design .logo,
+					.responsive-design h1.logo {
+						left: auto;
+						right: 60px;
+					}
+
+				/* Navigation */
+					#nav-main {
+						left: auto;
+						right: -100%;
+					}
+
+					#nav-main > .menu {
+						padding-left: 0;
+						padding-right: 32px;
+					}
+
+						/* Submenu expander */
+							#nav-main .inner > i.expander { float: left; }
+
+					#nav-main li a,
+					#nav-main li li a,
+					#nav-main li .inner {text-align: right}
+
+					#nav-main a[class*="icon-"]:before,
+					#nav-main .inner[class*="icon-"]:before {
+						margin-right: 0;
+						margin-left: .62em;
+					}
+
+						#nav-main li li a:before,
+						#nav-main li li .inner:before { margin: 0; }
+
+					/* Mobile nav button */
+						.mobile-nav,
+						#navigation-special li a,
+						#navigation-special li a:hover,
+						#navigation-special li a:active {float: right}
+
+						#nav-main a.mobile-nav {
+							left: auto;
+							right: 0;
+						}
+							#nav-main .mobile-nav:before {
+								margin-left: 0;
+								margin-right: -.28em;
+							}
+
+					/* Special navigation */
+						#navigation-special li a,
+						#navigation-special li a:hover,
+						#navigation-special li a:active {
+							float: none;
+							margin: 0;
+						}
+
+					/* Navigation colors */
+
+						#nav-main > .menu > li {
+							border-left: 0 !important;
+							border-right: 1px solid #eee !important;
+						}
+
+						#nav-main li a,
+						#nav-main li li a,
+						#nav-main li .inner {
+							border-left: 0;
+							border-right: 1px solid #f6f6f6;
+						}
+
+
+
+			/**
+			 * Content
+			 */
+
+				/**
+				 * Shortcodes
+				 */
+
+					/**
+					 * Content Modules
+					 */
+
+						/* Make the default layout small size */
+							.responsive-design .wm-iconbox-module .wm-content-module-element {
+								padding-left: 0;
+								padding-right: 68px;
+							}
+							.responsive-design .wm-iconbox-module .wm-content-module-element.image {padding-right: 0}
+							.responsive-design .no-icon-background .wm-iconbox-module .wm-content-module-element {
+								padding-left: 0;
+								padding-right: 58px;
+							}
+							.responsive-design .text-center .wm-iconbox-module .wm-content-module-element,
+							.responsive-design .no-icon-background .wm-iconbox-module .image {padding-right: 0}
+
+
+
+			/**
+			 * Footer
+			 */
+
+				/* To the top button */
+					.responsive-design .top-of-page {
+						left: auto;
+						right: 2%;
+					}
+
+		} /* /(max-width: 1024px) */
+
+
+
+	/**
+	 * 800px max
+	 */
+
+		@media only screen and (max-width: 800px) {
+
+			/**
+			 * Header
+			 */
+
+				.responsive-design.topbar-extra-enabled .topbar-extra {
+					left: auto !important;
+					right: 0 !important;
+				}
+
+
+
+			/**
+			 * Content
+			 */
+
+				/* Comments */
+					.responsive-design .comment-list > li,
+					.responsive-design .comment-list .children > li {padding-right: 40px}
+					.responsive-design .comment-list .children {margin-right: -20px}
+
+
+
+				/**
+				 * Shortcodes
+				 */
+
+					/**
+					 * Gallery
+					 */
+
+						.responsive-design .gallery .gallery-item {float: right}
+
+					/**
+					 * Message
+					 */
+
+						/* l, xl */
+							.responsive-design .wm-message.size-large[class*="icon-"],
+							.responsive-design .wm-message.size-extra-large[class*="icon-"] {padding-right: 5.25em}
+							.responsive-design .wm-message.size-large[class*="icon-"]:before,
+							.responsive-design .wm-message.size-extra-large[class*="icon-"]:before {
+								left: auto;
+								right: .9em;
+							}
+
+					/**
+					 * Pricing table
+					 * + Posts (Logos)
+					 */
+
+						.responsive-design .wm-price,
+						.responsive-design .wm-posts-wm_logos .wm-posts-item {float: right}
+
+					/**
+					 * Isotope
+					 * Masonry
+					 */
+
+						/* Isotope, Masonry */
+							.responsive-design .filter-this .wm-column,
+							.responsive-design .masonry-this .wm-column {float: right}
+							.responsive-design .filter-this.with-margin .wm-column,
+							.responsive-design .masonry-this.with-margin .wm-column {
+								margin-right: 0 !important;
+								margin-left: 3.7462% !important; /* should be 3.8462%, lowering it for better layout implementation */
+							}
+
+
+
+			/**
+			 * Footer
+			 */
+
+				/* Footer widgets */
+					.responsive-design .footer-widgets {padding: 40px 0}
+
+				/* Credits area */
+					.responsive-design .credits .widget,
+					.responsive-design .credits .widgets-count-2 .widget,
+					.responsive-design .credits .widgets-count-3 .widget {text-align: right}
+
+		} /* /(max-width: 800px) */
+
+
+
+	/**
+	 * 420px max
+	 */
+
+		@media only screen and (max-width: 420px) {
+
+			/**
+			 * Content
+			 */
+
+				/**
+				 * Shortcodes
+				 */
+
+					/**
+					 * Isotope
+					 * Masonry
+					 */
+
+						/* Isotope */
+							.responsive-design .filter-this.with-margin .wm-column,
+							.responsive-design .masonry-this.with-margin .wm-column {margin-left: 0 !important}
+
+		} /* /(max-width: 420px) */
+
+
+
+

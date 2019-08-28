@@ -1,0 +1,149 @@
+/**
+ * Headings
+ */
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6, [class*="heading-style-"] {
+		padding: 0;
+		margin: 0;
+	}
+		p + h1, div + h1, ul + h1, ol + h1, dl + h1, table + h1, pre + h1, blockquote + h1,
+		p + h2, div + h2, ul + h2, ol + h2, dl + h2, table + h2, pre + h2, blockquote + h2,
+		p + h3, div + h3, ul + h3, ol + h3, dl + h3, table + h3, pre + h3, blockquote + h3,
+		p + h4, div + h4, ul + h4, ol + h4, dl + h4, table + h4, pre + h4, blockquote + h4,
+		p + h5, div + h5, ul + h5, ol + h5, dl + h5, table + h5, pre + h5, blockquote + h5,
+		p + h6, div + h6, ul + h6, ol + h6, dl + h6, table + h6, pre + h6, blockquote + h6,
+		p + .h1, div + .h1, ul + .h1, ol + .h1, dl + .h1, table + .h1, pre + .h1, blockquote + .h1,
+		p + .h2, div + .h2, ul + .h2, ol + .h2, dl + .h2, table + .h2, pre + .h2, blockquote + .h2,
+		p + .h3, div + .h3, ul + .h3, ol + .h3, dl + .h3, table + .h3, pre + .h3, blockquote + .h3,
+		p + .h4, div + .h4, ul + .h4, ol + .h4, dl + .h4, table + .h4, pre + .h4, blockquote + .h4,
+		p + .h5, div + .h5, ul + .h5, ol + .h5, dl + .h5, table + .h5, pre + .h5, blockquote + .h5,
+		p + .h6, div + .h6, ul + .h6, ol + .h6, dl + .h6, table + .h6, pre + .h6, blockquote + .h6,
+		p + [class*="heading-style-"],
+		div + [class*="heading-style-"],
+		ul + [class*="heading-style-"],
+		ol + [class*="heading-style-"],
+		dl + [class*="heading-style-"],
+		table + [class*="heading-style-"],
+		pre + [class*="heading-style-"],
+		blockquote + [class*="heading-style-"] {margin-top: 2.62em}
+
+		h1 + div,
+		h2 + div,
+		h3 + div,
+		h4 + div,
+		h5 + div,
+		h6 + div,
+		.h1 + div,
+		.h2 + div,
+		.h3 + div,
+		.h4 + div,
+		.h5 + div,
+		.h6 + div,
+		[class*="heading-style-"] + div {margin-top: 1.62em}
+
+		h1 + h2,
+		h2 + h3,
+		h3 + h4,
+		h4 + h5,
+		h5 + h6 {margin-top: .4em}
+
+		h1 a,
+		h2 a,
+		h3 a,
+		h4 a,
+		h5 a,
+		h6 a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		.content-section .custom-font-color h1,
+		.content-section .custom-font-color h2,
+		.content-section .custom-font-color h3,
+		.content-section .custom-font-color h4,
+		.content-section .custom-font-color h5,
+		.content-section .custom-font-color h6,
+		.content-section .custom-font-color .h1,
+		.content-section .custom-font-color .h2,
+		.content-section .custom-font-color .h3,
+		.content-section .custom-font-color .h4,
+		.content-section .custom-font-color .h5,
+		.content-section .custom-font-color .h6,
+		.content-section .custom-font-color [class*="heading-style-"] {color: inherit}
+
+
+
+	/**
+	 * Article title
+	 */
+
+		.entry-title {
+			padding: 0;
+			margin: .5em 0;
+		}
+
+
+
+	/**
+	 * Main heading
+	 */
+
+		.main-heading {
+			position: relative;
+			margin-bottom: -1px;
+			clear: both;
+			z-index: 4;
+		}
+			.main-heading .twelve.pane {
+				padding-top: 1.62em;
+				padding-bottom: 1.62em;
+			}
+
+			.main-heading h1 {display: inline}
+
+			.taxonomy-description {
+				max-width: 50%;
+				margin-top: 1.62em;
+				cursor: help;
+				opacity: .7;
+			}
+
+			.main-heading-widgets {
+				display: block;
+				position: absolute;
+				width: auto;
+				height: 100%;
+				right: 20px;
+				top: 0;
+				margin: 0;
+			}
+				.main-heading-widgets .widget-area {
+					display: table;
+					height: 100%;
+				}
+				.main-heading-widgets .widget {
+					display: table-cell;
+					vertical-align: middle;
+				}
+
+
+
+	/**
+	 * Widgets headings
+	 */
+
+		.widget-heading {
+			padding: 0 0 .81em;
+			margin: 0 0 .81em;
+		}
+			.sidebar .widget-heading {
+				padding: 0 0 1.62em;
+				margin: 0 0 1.62em;
+				letter-spacing: .2em;
+				text-transform: uppercase;
+			}
+
+
+
+

@@ -1,0 +1,134 @@
+/**
+ * Grid styles
+ *
+ * Generator - http://gridpak.com/
+ * 12 Column Grid
+ * Responsive
+ */
+
+
+
+	/**
+	 * Default screen
+	 */
+
+		.boxed .wrap,
+		.wrap.boxed,
+		.boxed.post-meta-layout .wrap {
+			width: 1240px;
+			max-width: 100%;
+			padding: 0;
+		}
+			.wrap.fullwidth,
+			.fullwidth.post-meta-layout .wrap {width: 100%}
+		.wrap-inner {
+			width: 1240px;
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 0 60px;
+		}
+		.pane {
+			position: relative;
+			float: left;
+			display: block;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.row {margin-bottom: 20px}
+
+		.one.pane    { width:   8.333% }
+		.two.pane    { width:  16.666% }
+		.three.pane  { width:  25.0%   }
+		.four.pane   { width:  33.333% }
+		.five.pane   { width:  41.666% }
+		.six.pane    { width:  50.0%   }
+		.seven.pane  { width:  58.333% }
+		.eight.pane  { width:  66.666% }
+		.nine.pane   { width:  75.0%   }
+		.ten.pane    { width:  83.333% }
+		.eleven.pane { width:  91.666% }
+		.twelve.pane { width: 100%     }
+
+		/* Golden ratio */
+			.golden-wide.pane   { width: 62% }
+			.golden-narrow.pane { width: 38% }
+
+
+
+	/**
+	 * Narrower desktop/tablet screen
+	 */
+
+		@media only screen and (min-width: 801px) and (max-width: 1024px) {
+
+			.pane {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+
+		} /* /(min-width: 801px) and (max-width: 1024px) */
+
+
+
+	/**
+	 * Mobile screen
+	 */
+
+		@media only screen and (max-width: 800px) {
+
+			body {
+				width: 100%;
+				min-width: 0;
+				padding-left: 0;
+				padding-right: 0;
+				margin-left: 0;
+				margin-right: 0;
+				-webkit-text-size-adjust: none;
+				    -ms-text-size-adjust: none;
+			}
+
+			.boxed .wrap,
+			.wrap.boxed,
+			.boxed.post-meta-layout .wrap {
+				width: 420px;
+				max-width: 100%;
+			}
+				.wrap.fullwidth {width: 100%}
+			.wrap-inner {
+				width: 420px;
+				padding: 0 20px;
+			}
+			.pane {
+				float: none;
+				clear: both;
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			.one.pane,
+			.one.pane,
+			.two.pane,
+			.three.pane,
+			.four.pane,
+			.five.pane,
+			.six.pane,
+			.seven.pane,
+			.eight.pane,
+			.nine.pane,
+			.ten.pane,
+			.eleven.pane,
+			.twelve.pane,
+			.golden-wide.pane,
+			.golden-narrow.pane { width: 100% }
+
+			.wrap .column {
+				width: 100%;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+		} /* /(max-width: 800px) */
+
+
+
+

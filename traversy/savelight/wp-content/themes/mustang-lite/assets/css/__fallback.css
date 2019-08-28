@@ -1,0 +1,863 @@
+@charset "UTF-8";
+
+/**
+ * Mustang fallback styles
+ *
+ * This stylesheet is only used when main theme stylesheet is not created.
+ * This fallback stylesheet is not compatible with RTL.
+ *
+ * @since    1.1.1
+ * @version  1.8.2
+ */
+
+/* Base */
+
+@import url( 'reset.css' );
+
+@import url( 'icons-basic.css' );
+
+@import url( 'core.css' );
+
+@import url( 'columns.css' );
+
+@import url( 'typography.css' );
+
+@import url( 'wp-styles.css' );
+
+@import url( 'forms.css' );
+
+@import url( 'headings.css' );
+
+@import url( 'header.css' );
+
+@import url( 'slider.css' );
+
+@import url( 'content.css' );
+
+@import url( 'comments.css' );
+
+@import url( 'sidebar.css' );
+
+@import url( 'footer.css' );
+
+@import url( 'prettyphoto.css' );
+
+@import url( 'plugins.css' );
+
+@import url( 'shortcodes.css' );
+
+@import url( 'borders.css' );
+
+@import url( 'ltr-borders.css' );
+
+/* @import url( 'animate.css' ); */
+
+@import url( 'specials.css' );
+
+@import url( 'responsive.css' );
+
+@import url( 'high-dpi.css' );
+
+/* Plugins */
+
+@import url( '../../setup/premium/assets/css/plugins-bbpress.css' );
+
+@import url( '../../setup/premium/assets/css/responsive-plugins-bbpress.css' );
+
+@import url( '../../setup/premium/assets/css/plugins-woocommerce.css' );
+
+@import url( '../../setup/premium/assets/css/responsive-plugins-woocommerce.css' );
+
+
+
+/**
+ * Skin styles
+ */
+
+
+	/* Layout */
+
+		.boxed .website-container,
+		.boxed .wrap,
+		.wrap.boxed,
+		.boxed.post-meta-layout .wrap,
+		.wrap-inner {
+			width: 1560px;
+		}
+
+		.nav-main > ul > li {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+
+	/* Accent color */
+
+		a,
+		ul.hover-enlarge li:hover:before,
+		.text-color-accent {
+			color: #3d5b9b;
+		}
+
+		a:hover,
+		a:active {
+			color: #6f8dcd;
+		}
+
+
+	/* Colors: Global backgrounds based on accent color */
+
+		.header,
+		#search-container input,
+		.mobile-nav,
+		.footer-widgets,
+		ol > li:before,
+		.next-prev-post-in-tax a,
+		.wm-posts-wm_staff .wm-posts-item:hover .title,
+		.content-section .custom-font-color .wm-posts-wm_staff .wm-posts-item:hover .title,
+		.wm-posts-wm_projects.wm-posts-layout-default .wm-posts-item:hover,
+		.wm-posts-wm_projects.wm-posts-layout-simple .wm-posts-item:hover .title,
+		.wm-posts-post.wm-posts-layout-simple .wm-posts-item:hover .title,
+		.floating-cart-switch,
+		.floating-cart-switch:hover,
+		.floating-cart-switch:active,
+		.background-color-accent,
+		.bg-color-accent,
+		.wm-iconbox-module .font-icon,
+		.wm-pagination > span,
+		.wm-pagination a:active,
+		.wm-pagination .current,
+		.bbp-pagination .bbp-pagination-links > span,
+		.bbp-pagination .bbp-pagination-links a:active,
+		.bbp-pagination .bbp-pagination-links .current,
+		.woocommerce-pagination > span,
+		.woocommerce-pagination a:active,
+		.woocommerce-pagination .current {
+			background: #3d5b9b;
+			color: #ffffff;
+		}
+
+		#search-container input::-webkit-input-placeholder {
+			color: #ffffff;
+		}
+
+		#search-container input::-moz-placeholder {
+			color: #ffffff;
+		}
+
+		#search-container input:-ms-input-placeholder {
+			color: #ffffff;
+		}
+
+		.topbar,
+		.topbar-extra,
+		.topbar-extra .topbar-extra-switch,
+		.credits {
+			background: #345292;
+			color: #ffffff;
+		}
+
+		.topbar,
+		.topbar-extra,
+		.wm-pagination > span,
+		.wm-pagination a:active,
+		.wm-pagination .current,
+		.bbp-pagination .bbp-pagination-links > span,
+		.bbp-pagination .bbp-pagination-links a:active,
+		.bbp-pagination .bbp-pagination-links .current,
+		.woocommerce-pagination > span,
+		.woocommerce-pagination a:active,
+		.woocommerce-pagination .current {
+			border-color: #345292;
+		}
+
+		.footer-widgets {
+			border-color: #4d6bab;
+		}
+
+		.credits {
+			border-color: #4462a2;
+		}
+
+		.topbar a,
+		.topbar-extra a,
+		.footer-widgets a,
+		.credits a {
+			color: #d3f1ff;
+		}
+
+		.wm-iconbox-module .font-icon a {
+			color: #ffffff;
+		}
+
+		.wm-iconbox-module.wm-content-module-item:hover .image [class^="icon-"]:before,
+		.wm-iconbox-module.wm-content-module-item:hover .image [class*=" icon-"]:before {
+			text-shadow: 0 0 .5em rgba(0,0,0, .62);
+		}
+
+		.topbar-extra [type="date"],
+		.topbar-extra [type="email"],
+		.topbar-extra [type="file"],
+		.topbar-extra [type="number"],
+		.topbar-extra [type="search"],
+		.topbar-extra [type="password"],
+		.topbar-extra [type="text"],
+		.topbar-extra [type="url"],
+		.topbar-extra [type="tel"],
+		.topbar-extra select,
+		.topbar-extra textarea {
+			background-color: #3d5b9b;
+		}
+
+		.footer-widgets [type="date"],
+		.footer-widgets [type="email"],
+		.footer-widgets [type="file"],
+		.footer-widgets [type="number"],
+		.footer-widgets [type="search"],
+		.footer-widgets [type="password"],
+		.footer-widgets [type="text"],
+		.footer-widgets [type="url"],
+		.footer-widgets [type="tel"],
+		.footer-widgets select,
+		.footer-widgets textarea {
+			background-color: #4664a4;
+		}
+
+		.credits [type="date"],
+		.credits [type="email"],
+		.credits [type="file"],
+		.credits [type="number"],
+		.credits [type="search"],
+		.credits [type="password"],
+		.credits [type="text"],
+		.credits [type="url"],
+		.credits [type="tel"],
+		.credits select,
+		.credits textarea {
+			background-color: #3d5b9b;
+		}
+
+
+	/* Colors: Shortcodes default colors */
+
+		.wm-button,
+		button,
+		[type="button"],
+		[type="submit"],
+		.wm-marker,
+		.wm-dropcap,
+		.wm-progress-bar,
+		#bbpress-forums .quicktags-toolbar input,
+		#bbpress-forums .bbp-new-post-toggle .wm-item-title,
+		.bbp-logged-in a.button {
+			text-shadow: 0 -1px 0 rgba(0,0,0, .6);
+			color: #ffffff !important;
+			background-color: #3d5b9b;
+			border-color: #345292;
+		}
+
+		.wm-button:hover,
+		button:hover,
+		[type="button"]:hover,
+		[type="submit"]:hover,
+		.wm-button:active,
+		button:active,
+		[type="button"]:active,
+		[type="submit"]:active,
+		#bbpress-forums .quicktags-toolbar input:hover,
+		#bbpress-forums .quicktags-toolbar input:active,
+		#bbpress-forums .bbp-new-post-toggle .wm-item-title:hover,
+		#bbpress-forums .bbp-new-post-toggle .wm-item.active .wm-item-title,
+		.bbp-logged-in a.button:hover,
+		.bbp-logged-in a.button:active {
+			background-color: #4f6dad;
+			border-color: #2b4989;
+		}
+
+		.wm-call-to-action {
+			border-left-color: #3d5b9b;
+		}
+
+		.woocommerce a.button,
+		.woocommerce button.button,
+		.woocommerce input.button,
+		.woocommerce-page a.button,
+		.woocommerce-page button.button,
+		.woocommerce-page input.button,
+		.woocommerce-page #respond input#submit,
+		.woocommerce-page a.button.alt,
+		.woocommerce-page button.button.alt,
+		.woocommerce-page input.button.alt,
+		.woocommerce-page #respond input#submit.alt {
+			text-shadow: 0 -1px 0 rgba(0,0,0, .6);
+			color: #ffffff !important;
+			background: #3d5b9b;
+			border-color: #345292;
+		}
+
+		.woocommerce a.button:hover,
+		.woocommerce button.button:hover,
+		.woocommerce input.button:hover,
+		.woocommerce-page a.button:hover,
+		.woocommerce-page button.button:hover,
+		.woocommerce-page input.button:hover,
+		.woocommerce-page #respond input#submit:hover,
+		.woocommerce-page a.button.alt:hover,
+		.woocommerce-page button.button.alt:hover,
+		.woocommerce-page input.button.alt:hover,
+		.woocommerce-page #respond input#submit.alt:hover,
+		.woocommerce a.button:active,
+		.woocommerce button.button:active,
+		.woocommerce input.button:active,
+		.woocommerce-page a.button:active,
+		.woocommerce-page button.button:active,
+		.woocommerce-page input.button:active,
+		.woocommerce-page #respond input#submit:active,
+		.woocommerce-page a.button.alt:active,
+		.woocommerce-page button.button.alt:active,
+		.woocommerce-page input.button.alt:active,
+		.woocommerce-page #respond input#submit.alt:active {
+			background: #4f6dad;
+			border-color: #2b4989;
+		}
+
+
+	/* Colors: Blue color */
+
+		.color-blue,
+		.wm-button.color-blue,
+		button.color-blue,
+		[type="button"].color-blue,
+		[type="submit"].color-blue {
+			text-shadow: 0 -1px 0 rgba(0,0,0, .6);
+			color: #ffffff !important;
+			background-color: #3d5b9b;
+			border-color: #345292;
+		}
+
+		.wm-button.color-blue:hover,
+		button.color-blue:hover,
+		[type="button"].color-blue:hover,
+		[type="submit"].color-blue:hover,
+		.wm-button.color-blue:active,
+		button.color-blue:active,
+		[type="button"].color-blue:active,
+		[type="submit"].color-blue:active {
+			background-color: #4f6dad;
+			border-color: #2b4989;
+		}
+
+		.wm-call-to-action.cta-button-color-blue {
+			border-left-color: #3d5b9b;
+		}
+
+
+	/* Colors: Gray color */
+
+		.color-gray,
+		.wm-button.color-gray,
+		button.color-gray,
+		[type="button"].color-gray,
+		[type="submit"].color-gray {
+			text-shadow: 0 1px 0 rgba(255,255,255, .6);
+			color: #151515 !important;
+			background-color: #dddddd;
+			border-color: #d4d4d4;
+		}
+
+		.wm-button.color-gray:hover,
+		button.color-gray:hover,
+		[type="button"].color-gray:hover,
+		[type="submit"].color-gray:hover,
+		.wm-button.color-gray:active,
+		button.color-gray:active,
+		[type="button"].color-gray:active,
+		[type="submit"].color-gray:active {
+			background-color: #efefef;
+			border-color: #cbcbcb;
+		}
+
+		.wm-call-to-action.cta-button-color-gray {
+			border-left-color: #dddddd;
+		}
+
+
+	/* Colors: Green color */
+
+		.color-green,
+		.wm-button.color-green,
+		button.color-green,
+		[type="button"].color-green,
+		[type="submit"].color-green {
+			text-shadow: 0 1px 0 rgba(255,255,255, .6);
+			color: #e2ffff !important;
+			background-color: #1abc9c;
+			border-color: #11b393;
+		}
+
+		.wm-button.color-green:hover,
+		button.color-green:hover,
+		[type="button"].color-green:hover,
+		[type="submit"].color-green:hover,
+		.wm-button.color-green:active,
+		button.color-green:active,
+		[type="button"].color-green:active,
+		[type="submit"].color-green:active {
+			background-color: #2cceae;
+			border-color: #08aa8a;
+		}
+
+		.wm-call-to-action.cta-button-color-green {
+			border-left-color: #1abc9c;
+		}
+
+
+	/* Colors: Orange color */
+
+		.color-orange,
+		.wm-button.color-orange,
+		button.color-orange,
+		[type="button"].color-orange,
+		[type="submit"].color-orange {
+			text-shadow: 0 1px 0 rgba(255,255,255, .6);
+			color: #250000 !important;
+			background-color: #edaa4e;
+			border-color: #e4a145;
+		}
+
+		.wm-button.color-orange:hover,
+		button.color-orange:hover,
+		[type="button"].color-orange:hover,
+		[type="submit"].color-orange:hover,
+		.wm-button.color-orange:active,
+		button.color-orange:active,
+		[type="button"].color-orange:active,
+		[type="submit"].color-orange:active {
+			background-color: #ffbc60;
+			border-color: #db983c;
+		}
+
+		.wm-call-to-action.cta-button-color-orange {
+			border-left-color: #edaa4e;
+		}
+
+
+	/* Colors: Red color */
+
+		.color-red,
+		.wm-button.color-red,
+		button.color-red,
+		[type="button"].color-red,
+		[type="submit"].color-red {
+			text-shadow: 0 -1px 0 rgba(0,0,0, .6);
+			color: #ffffff !important;
+			background-color: #e74c3c;
+			border-color: #de4333;
+		}
+
+		.wm-button.color-red:hover,
+		button.color-red:hover,
+		[type="button"].color-red:hover,
+		[type="submit"].color-red:hover,
+		.wm-button.color-red:active,
+		button.color-red:active,
+		[type="button"].color-red:active,
+		[type="submit"].color-red:active {
+			background-color: #f95e4e;
+			border-color: #d53a2a;
+		}
+
+		.wm-call-to-action.cta-button-color-red {
+			border-left-color: #e74c3c;
+		}
+
+		.woocommerce-page .woocommerce-error,
+		div.bbp-template-notice.error,
+		div.bbp-template-notice.warning {
+			border-color: #e74c3c;
+		}
+
+
+	/* Background: HTML and body */
+
+		html {
+			background: #f6f6f6;
+		}
+
+
+	/* Background: Topbar */
+
+
+	/* Background: Header and navigation */
+
+		.header,
+		#search-container input,
+		.mobile-nav {
+			border-color: #eeeeee !important;
+		}
+
+		.nav-main li ul {
+			background-color: #ffffff;
+			color: #666666;
+		}
+
+		.nav-main li ul {
+			border-color: #eeeeee;
+		}
+
+		.nav-main li li:hover > a,
+		.nav-main li li a:hover,
+		.nav-main li li.active-menu-item > a {
+			background-color: #ededed;
+		}
+
+		.nav-main > ul > li > .inner:hover,
+		.nav-main > ul > li:hover > .inner {
+			-webkit-box-shadow: inset 0 .15em .72em 0 rgba(0,0,0, 0.195);
+			box-shadow: inset 0 .15em .72em 0 rgba(0,0,0, 0.195);
+		}
+
+		.nav-main > ul > li.active-menu-item > a /* Brightness (accent) = 89 */ {
+			-webkit-box-shadow: inset 0 .15em 1.4em 0 rgba(0,0,0, 0.39);
+			box-shadow: inset 0 .15em 1.4em 0 rgba(0,0,0, 0.39);
+		}
+
+
+	/* Background: Special slider */
+
+		.slider {
+			background-color: #f6f6f6;
+			color: #ffffff;
+			border-color: #ffffff !important;
+		}
+
+		.slider .wm-accordion .wm-item.active .wm-item-title,
+		.slider .wm-posts-post.wm-posts-layout-default .meta,
+		.slider .wm-posts-forum .meta,
+		.slider .wm-posts-wm_staff .title,
+		.slider .wm-price-header,
+		.slider .wm-price-feature-row,
+		.slider .wm-progress,
+		.slider .wm-tabs .wm-tab-links li.active,
+		.slider .wm-tabs.layout-top .wm-tab-links li.active,
+		.slider .wm-tabs-items .wm-item,
+		.slider .wm-table.type-striped tr.even th,
+		.slider .wm-table.type-striped tr.even td,
+		.slider .wm-table.type-bordered-striped tr.even th,
+		.slider .wm-table.type-bordered-striped tr.even td,
+		.slider .bypostauthor .comment-author .fn {
+			background-color: #ededed;
+		}
+
+		.slider .wm-tabs .wm-tab-links li.active,
+		.slider .wm-tabs.layout-top .wm-tab-links li.active {
+			border-bottom-color: #ededed;
+		}
+
+		.slider div.wm-tabs.layout-left .wm-tab-links li.active {
+			border-right-color: #ededed;
+		}
+
+		.slider div.wm-tabs.layout-right .wm-tab-links li.active {
+			border-left-color: #ededed;
+		}
+
+		.slider [type="date"],
+		.slider [type="email"],
+		.slider [type="file"],
+		.slider [type="number"],
+		.slider [type="search"],
+		.slider [type="password"],
+		.slider [type="text"],
+		.slider [type="url"],
+		.slider [type="tel"],
+		.slider select,
+		.slider textarea {
+			background-color: #ededed;
+		}
+
+		.slider a,
+		.slider ul.hover-enlarge li:hover:before {
+			color: #e8e8e8;
+		}
+
+		.slider a:hover,
+		.slider a:active {
+			color: #b6b6b6;
+		}
+
+		.slider .wm-iconbox-module .font-icon {
+			background: #e8e8e8;
+			color: #202020;
+		}
+
+		.slider .wm-iconbox-module .font-icon a {
+			color: #202020;
+		}
+
+		.slider .wm-iconbox-module.wm-content-module-item:hover .image [class^="icon-"]:before,
+		.slider .wm-iconbox-module.wm-content-module-item:hover .image [class*=" icon-"]:before {
+			text-shadow: 0 0 .5em rgba(255,255,255, .75);
+		}
+
+
+	/* Background: Main heading */
+
+		.main-heading {
+			background: #f6f6f6;
+			color: #333333;
+			border-color: #e9e9e9 !important;
+		}
+
+		.main-heading [type="date"],
+		.main-heading [type="email"],
+		.main-heading [type="file"],
+		.main-heading [type="number"],
+		.main-heading [type="search"],
+		.main-heading [type="password"],
+		.main-heading [type="text"],
+		.main-heading [type="url"],
+		.main-heading [type="tel"],
+		.main-heading select,
+		.main-heading textarea {
+			background-color: #ededed;
+		}
+
+
+	/* Background: Content area */
+
+		.content-section,
+		.page-template-page-templateblank-php {
+			background: #ffffff;
+			color: #777777;
+		}
+
+		.content-section h1,
+		.content-section h2,
+		.content-section h3,
+		.content-section h4,
+		.content-section h5,
+		.content-section h6,
+		.content-section .h1,
+		.content-section .h2,
+		.content-section .h3,
+		.content-section .h4,
+		.content-section .h5,
+		.content-section .h6,
+		.content-section [class*="heading-style-"],
+		.content-section .no-icon-background .wm-iconbox-module .wm-content-module-element.image,
+		.content-section .no-icon-bg .wm-iconbox-module .wm-content-module-element.image,
+		.content-section pre,
+		.single .content-section blockquote,
+		.single .content-section .entry-summary {
+			color: #333333;
+		}
+
+		.woocommerce-page .quantity .plus,
+		.woocommerce-page .quantity .minus {
+			color: #777777 !important;
+		}
+
+		.content-section .wm-accordion .wm-item.active .wm-item-title,
+		.content-section .wm-posts-post.wm-posts-layout-default .meta,
+		.content-section .wm-posts-forum .meta,
+		.content-section .wm-posts-wm_staff .title,
+		.content-section .wm-price-header,
+		.content-section .wm-price-feature-row,
+		.content-section .wm-progress,
+		.content-section .wm-tabs .wm-tab-links li.active,
+		.content-section .wm-tabs.layout-top .wm-tab-links li.active,
+		.content-section .wm-tabs-items .wm-item,
+		.content-section .wm-table.type-striped tr.even th,
+		.content-section .wm-table.type-striped tr.even td,
+		.content-section .wm-table.type-bordered-striped tr.even th,
+		.content-section .wm-table.type-bordered-striped tr.even td,
+		.content-section .bypostauthor .comment-author .fn,
+		.wm-pagination a,
+		.wm-pagination span,
+		.bbp-pagination .bbp-pagination-links a,
+		.bbp-pagination .bbp-pagination-links span,
+		.woocommerce-pagination a,
+		.woocommerce-pagination span,
+		.list-articles .entry-meta,
+		.woocommerce-page .order-total th,
+		.woocommerce-page .order-total td,
+		.woocommerce-page #payment,
+		.bbp-large-topic,
+		#bbpress-forums div.bbp-reply-header,
+		#bbpress-forums .bbp-search-results div.bbp-forum-header,
+		#bbpress-forums .bbp-search-results div.bbp-topic-header {
+			background-color: #f6f6f6;
+		}
+
+		.content-section .wm-tabs .wm-tab-links li.active,
+		.content-section .wm-tabs.layout-top .wm-tab-links li.active {
+			border-bottom-color: #f6f6f6;
+		}
+
+		.content-section div.wm-tabs.layout-left .wm-tab-links li.active {
+			border-right-color: #f6f6f6;
+		}
+
+		.content-section div.wm-tabs.layout-right .wm-tab-links li.active {
+			border-left-color: #f6f6f6;
+		}
+
+		.content-section [type="date"],
+		.content-section [type="email"],
+		.content-section [type="file"],
+		.content-section [type="number"],
+		.content-section [type="search"],
+		.content-section [type="password"],
+		.content-section [type="text"],
+		.content-section [type="url"],
+		.content-section [type="tel"],
+		.content-section select,
+		.content-section textarea,
+		.woocommerce .form-row .select2-container,
+		.woocommerce-checkout .form-row .select2-container,
+		#bbpress-forums #bbp-your-profile fieldset input,
+		#bbpress-forums #bbp-your-profile fieldset textarea {
+			background-color: #f6f6f6;
+		}
+
+		blockquote,
+		blockquote.alignleft,
+		blockquote.alignright {
+			border-color: #3d5b9b;
+		}
+
+
+	/* Background: Footer widgets */
+
+		.footer-widgets {
+			color: #dddddd;
+		}
+
+		.footer-widgets h1,
+		.footer-widgets h2,
+		.footer-widgets h3,
+		.footer-widgets h4,
+		.footer-widgets h5,
+		.footer-widgets h6,
+		.footer-widgets .h1,
+		.footer-widgets .h2,
+		.footer-widgets .h3,
+		.footer-widgets .h4,
+		.footer-widgets .h5,
+		.footer-widgets .h6,
+		.footer-widgets [class*="heading-style-"],
+		.footer-widgets .no-icon-background .wm-iconbox-module .wm-content-module-element.image,
+		.footer-widgets .no-icon-bg .wm-iconbox-module .wm-content-module-element.image {
+			color: #ffffff;
+		}
+
+
+	/* Background: Credits */
+
+		.credits h1,
+		.credits h2,
+		.credits h3,
+		.credits h4,
+		.credits h5,
+		.credits h6,
+		.credits .h1,
+		.credits .h2,
+		.credits .h3,
+		.credits .h4,
+		.credits .h5,
+		.credits .h6,
+		.credits [class*="heading-style-"],
+		.credits .no-icon-background .wm-iconbox-module .wm-content-module-element.image,
+		.credits .no-icon-bg .wm-iconbox-module .wm-content-module-element.image {
+			color: #444444;
+		}
+
+
+	/* Typography */
+
+		body {
+			font-family: "Open Sans", Helvetica, Arial, Verdana, sans-serif;
+			font-size: 14px;
+		}
+
+		.sidebar {
+			font-size: .9em;
+		}
+
+		.logo.type-text,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		.h1,
+		.h2,
+		.h3,
+		.h4,
+		.h5,
+		.h6,
+		[class*="heading-style-"],
+		blockquote {
+			font-family: "Comfortaa", Helvetica, Arial, Verdana, sans-serif;
+		}
+
+		h1,
+		.h1,
+		.heading-style-1,
+		#bbpress-forums h1 {
+			font-size: 265%;
+		}
+
+		h2,
+		.h2,
+		.heading-style-2,
+		#bbpress-forums h2 {
+			font-size: 165%;
+		}
+
+		h3,
+		.h3,
+		.heading-style-3,
+		#bbpress-forums h3 {
+			font-size: 130%;
+		}
+
+		h4,
+		h5,
+		h6,
+		.h4,
+		.h5,
+		.h6,
+		.heading-style-4,
+		.heading-style-5,
+		.heading-style-6,
+		#bbpress-forums h4,
+		#bbpress-forums h5,
+		#bbpress-forums h6 {
+			font-size: 115%;
+		}
+
+
+	/* High DPI/Retina displays styles */
+
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+		only screen and (min--moz-device-pixel-ratio: 1.5),
+		only screen and (-moz-min-device-pixel-ratio: 1.5),
+		only screen and (-o-min-device-pixel-ratio: 3/2),
+		only screen and (min-device-pixel-ratio: 1.5),
+		only screen and (min-resolution: 144dpi),
+		only screen and (min-resolution: 1.5dppx) {
+
+
+	} /* /High DPI */
+
+
+	/* Logo padding - centering logo in header */
+
+		.logo,
+		h1.logo {
+			padding-top: 19px;
+		}

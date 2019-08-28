@@ -1,0 +1,250 @@
+/**
+ * Theme Customizer Additioanl Styles
+ *
+ * @package     WebMan WordPress Theme Framework
+ * @subpackage  Skinning System
+ * @copyright   2014 WebMan - Oliver Juhas
+ *
+ * @since       3.0
+ * @version     3.2
+ * @version  1.5
+ */
+
+
+
+	/**
+	 * Basic custom styles
+	 */
+
+		.no-overflow { overflow: hidden; }
+
+		.donation-link,
+		.donation-link:hover,
+		.donation-link:active {
+			display: block;
+			width: 100%;
+			padding: 1em 0;
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: bold;
+			font-size: .81em;
+			background: #0aac8e;
+			color: #fafcfe;
+		}
+
+			.donation-link:hover { letter-spacing: 1px; }
+
+		.customize-control h3,
+		.customize-control h4 {
+			padding: 1em 20px;
+			margin: 2em -20px .5em;
+			text-transform: uppercase;
+			font-size: 1em;
+			letter-spacing: 1px;
+			color: #555;
+			border-top: 2px solid #bbb;
+		}
+
+			.customize-control h4 {
+				padding: 1em 0;
+				margin: 1em 0 .5em;
+				border-top-style: dotted;
+			}
+
+			.customize-control:first-child h3:first-child,
+			.customize-section-description-container + .customize-control h3:first-child {
+				margin-top: 0;
+				border: 0;
+			}
+
+		.customize-control hr {
+			margin: 1em 0;
+			background: transparent;
+			border: 0;
+			border-top: 2px dashed #bbb;
+		}
+
+
+
+	/**
+	 * Controls
+	 */
+
+		.customize-control select,
+		.customize-control textarea { width: 100%; }
+
+			.customize-control select[multiple] { height: 8em; }
+
+			.customize-control textarea {
+				min-height: 12em;
+				resize: vertical;
+			}
+
+		.customize-control-hidden { display: none !important; }
+
+
+
+	/**
+	 * Color
+	 */
+
+		.customize-control-color .wp-picker-container { display: block; }
+
+			.wp-color-result {
+				box-sizing: border-box;
+				width: 100%;
+				height: 30px;
+				padding-left: 50%;
+				margin-right: 0;
+				border-color: rgba(0, 0, 0, 0.2);
+			}
+
+			.wp-color-result:focus,
+			.wp-color-result:hover { border-color: rgba(0, 0, 0, 0.3); }
+
+				.wp-color-result:focus::after,
+				.wp-color-result:hover::after {
+					background: rgba(0, 0, 0, 0.35);
+					color: #fff;
+					border: 0;
+				}
+
+				.wp-color-result::after {
+					margin: -1px -1px 0 0;
+					line-height: 30px;
+					font-weight: 700;
+					text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+					background: rgba(0, 0, 0, 0.2);
+					color: #fff;
+					border: 0;
+					box-shadow: none;
+				}
+
+			.wp-picker-open + .wp-picker-input-wrap { display: block; }
+
+				.wp-picker-input-wrap .button,
+				.wp-picker-input-wrap input[type=text].wp-color-picker { width: 48%; }
+
+				.wp-picker-input-wrap .button { float: right; }
+
+				.wp-picker-container .iris-picker { width: 100% !important; }
+
+					.wp-picker-container .iris-picker .iris-square { margin-right: 5%; }
+
+
+
+	/**
+	 * Radio matrix (3x3)
+	 */
+
+		.matrix {
+			padding: 2px 0 3px 2px;
+			margin-bottom: .5em;
+			border: 2px solid #bbb;
+			overflow: hidden;
+		}
+
+			.matrix span { display: none; }
+
+			.matrix label {
+				float: left;
+				display: block;
+				width: 33.33%;
+				padding: .5em 0 .5em 4px;
+				margin: 0 -1px -1px 0;
+				text-align: center;
+				border: 1px dotted #bbb;
+				box-sizing: border-box;
+			}
+
+		.matrix label:hover { background: #fff; }
+
+		.matrix label.active { background: #aaa; }
+
+		.matrix label.active:hover { background: #ccc; }
+
+
+
+	/**
+	 * Image radios
+	 */
+
+		.image-radio span { display: none; }
+
+		.image-radio label {
+			float: left;
+			display: inline-block;
+			margin: 4px;
+			text-align: center;
+		}
+
+			.image-radio label.active img,
+			.image-radio label:hover img { opacity: 1; }
+
+			.image-radio img {
+				display: block;
+				width: 42px;
+				opacity: .5;
+			}
+
+			.image-radio input {
+				position: relative;
+				top: -.75em;
+				margin: 0;
+			}
+
+
+
+	/**
+	 * Range / jQuery UI Slider
+	 */
+
+		.customize-control-range .slide-number-wrapper {
+			display: block;
+			width: 90%;
+			width: calc( 100% - 40px );
+			padding: 0 20px;
+			margin: 15px 0;
+			transition: margin .4s;
+		}
+
+		.customize-control-range .ui-slider {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 2px;
+			margin: 10px 0;
+			text-align: left;
+			background: #fff;
+			border: 2px solid #bbb;
+			border-radius: 10px;
+		}
+
+		.customize-control-range .ui-slider-handle {
+			position: absolute;
+			z-index: 2;
+			min-width: 18px;
+			min-height: 10px;
+			top: 0;
+			padding: .19em .62em;
+			text-align: center;
+			font-size: .81em;
+			font-weight: 700;
+			background-color: #28b;
+			color: #fff;
+			border: 2px solid #069;
+			outline: 0;
+			border-radius: 100px;
+			cursor: e-resize;
+			box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2);
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			    -ms-transform: translateX(-50%) translateY(-50%);
+			        transform: translateX(-50%) translateY(-50%);
+			-webkit-transform-origin: 50% 50%;
+			    -ms-transform-origin: 50% 50%;
+			        transform-origin: 50% 50%;
+		}
+
+
+
+/* End of file */

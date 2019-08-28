@@ -1,0 +1,113 @@
+/**
+ * WordPress required styles
+ *
+ * @version  1.9.0
+ */
+
+
+
+	/**
+	 * Make WordPress embeds responsive
+	 */
+
+		embed,
+		iframe,
+		object,
+		video {max-width: 100%}
+
+		.twitter-tweet-rendered {
+			max-width: 100% !important;
+			margin: 1.62em 0 !important;
+		}
+
+
+
+	/**
+	 * Alignment
+	 */
+
+		.alignleft,
+		.wp-caption.alignleft,
+		img.alignleft {
+			float: left;
+			margin-right: 1.62em;
+			margin-bottom: .81em
+		}
+		.alignright,
+		.wp-caption.alignright,
+		img.alignright {
+			float: right;
+			margin-left: 1.62em;
+			margin-bottom: .81em
+		}
+		.aligncenter,
+		.wp-caption.aligncenter,
+		img.aligncenter {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.alignnone,
+		img.alignnone {margin: 0}
+
+
+
+	/**
+	 * Image captions
+	 */
+
+		.wp-caption {
+			position: relative;
+			max-width: 100%;
+			text-align: center;
+		}
+
+			p + .wp-caption,
+			div + .wp-caption,
+			ul + .wp-caption,
+			ol + .wp-caption,
+			dl + .wp-caption,
+			table + .wp-caption,
+			pre + .wp-caption,
+			blockquote + .wp-caption,
+			h1 + .wp-caption, h2 + .wp-caption, h3 + .wp-caption, h4 + .wp-caption, h5 + .wp-caption, h6 + .wp-caption,
+			.h1 + .wp-caption, .h2 + .wp-caption, .h3 + .wp-caption, .h4 + .wp-caption, .h5 + .wp-caption, .h6 + .wp-caption, [class*="heading-style-"] + .wp-caption {margin-top: 1.62em}
+
+			.wp-caption {
+				display: inline-block;
+				position: relative;
+				padding: 4px;
+				margin: 0 auto;
+				text-align: center;
+				background: transparent;
+				overflow: hidden;
+			}
+			.wp-caption .wp-caption-text {
+				padding: 10px 0 5px;
+				overflow: hidden;
+			}
+
+
+
+	/**
+	 * Smilies
+	 */
+
+		img.wp-smiley {
+			display: inline !important;
+			width: auto;
+			max-height: 1em;
+			margin: 0 .15em !important;
+		}
+
+
+
+	/**
+	 * Sticky posts
+	 */
+
+		.sticky { /* No specific styles here. */ }
+
+
+
+

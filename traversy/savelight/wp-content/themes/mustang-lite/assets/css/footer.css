@@ -1,0 +1,119 @@
+/**
+ * Footer
+ *
+ * @version  1.4
+ */
+
+	.footer {
+		clear: both;
+		position: relative;
+		z-index: 1;
+		-webkit-backface-visibility: hidden;
+		        backface-visibility: hidden;
+	}
+		.footer-shadow,
+		.woocommerce .footer-shadow,
+		.woocommerce-page .footer-shadow {
+			position: absolute;
+			width: 100%;
+			height: 30px;
+			left: 0;
+			top: 0;
+			pointer-events: none;
+		}
+
+
+
+	/**
+	 * Footer widgets
+	 */
+
+		.footer-widgets {
+			position: relative;
+			padding: 20px 0 60px;
+		}
+		.footer-widgets .footer-widgets-container > .widget,
+		.footer-widgets.masonry-disabled .footer-widgets-container > .widget {margin-top: 40px}
+
+
+
+	/**
+	 * Credits area
+	 */
+
+		.credits {
+			position: relative;
+			padding: 40px 0;
+		}
+
+			.credits .widget-heading {display: none}
+				.credits .widget-heading + div {margin-top: 0}
+
+			.credits .widget li {
+				display: inline-block;
+				margin: 0 .5em;
+			}
+				.credits .widget li li {display: none}
+
+			.credits .widgets-count-2 .widget,
+			.credits .widgets-count-3 .widget {
+				float: right;
+				text-align: right;
+			}
+
+			.credits .widgets-count-2 .widget:first-child {
+				float: left;
+				text-align: left;
+			}
+
+			.credits .widgets-count-3 .widget:first-child {
+				float: none;
+				clear: both;
+				width: 100%;
+				padding: 0 0 20px;
+				text-align: left;
+			}
+			.credits .widgets-count-3 .widget:first-child + .widget {
+				float: left;
+				text-align: left;
+			}
+
+
+
+	/**
+	 * To the top button
+	 */
+
+		.top-of-page {
+			clear: both;
+			display: block;
+			position: fixed;
+			width: 40px;
+			height: 40px;
+			right: 2%;
+			bottom: 2.62em;
+			text-align: center;
+			background: #000;
+			border-radius: 0 50% 50%;
+			overflow: hidden;
+			z-index: 999;
+			opacity: .25;
+			filter: alpha(opacity=25); /* For IE8 */
+		}
+			.top-of-page:before {
+				content: 'l';
+				width: 100%;
+				margin: 0;
+				line-height: 40px;
+				font-family: 'basic-icons';
+				color: #fff;
+			}
+			.top-of-page:hover {
+				text-decoration: none;
+				opacity: .75;
+				filter: alpha(opacity=75); /* For IE8 */
+			}
+
+
+
+

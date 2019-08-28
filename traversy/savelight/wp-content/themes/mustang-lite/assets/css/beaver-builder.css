@@ -1,0 +1,99 @@
+/**
+ * Beaver Builder styles
+ *
+ * @since    1.6
+ * @version  1.8.2
+ */
+
+
+
+/* Row */
+
+	.fl-row-content {
+		max-width: 1920px;
+	}
+
+	body .fl-row-fixed-width {
+		width: 100%;
+		max-width: 1440px; /* 1560px ($content_width) - 2 * 60px */
+		margin: 0 auto;
+	}
+
+	@media only screen and (min-width: 801px) {
+
+		body .fl-row-fixed-width {
+			width: 90%;
+			width: calc( 100% - 120px );
+		}
+
+	}
+
+	body .fl-row-fixed-width .fl-row-fixed-width {
+		width: 100%;
+		max-width: 100%;
+	}
+
+
+
+/* Column */
+
+	.fl-col {
+		max-width: 100%;
+	}
+
+	.fl-col-group {
+		width: 100%;
+		width: calc( 100% + 2.62rem } );
+		margin-left: -2.62rem / 2;
+		margin-right: -2.62rem / 2;
+	}
+
+	.fl-row-layout-full-full .fl-col-group {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.fl-col-content {
+		padding: 3.62rem 1.31rem;
+	}
+
+	body .fl-col-small {
+		max-width: 100%;
+	}
+
+
+
+/* Modules */
+
+	@media only screen and (max-width: 800px) {
+
+		body .fl-module > .fl-module-content {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+	}
+
+	.fl-input-group {
+		margin-bottom: 1em;
+	}
+
+	.fl-contact-form label {
+		display: block;
+	}
+
+	.fl-contact-form [type="submit"],
+	.fl-contact-form [type="text"],
+	.fl-contact-form [type="email"],
+	.fl-contact-form textarea {
+		width: 100%;
+	}
+
+	.fl-photo-content {
+		width: 100%;
+	}
+
+	.fullwidth .fl-photo-content img {
+		width: 100% !important;
+	}

@@ -1,0 +1,259 @@
+/**
+ * Typography
+ *
+ * Tips from:
+ * @link  http://goo.gl/Hhb0jD
+ * @link  http://typeplate.com
+ * @link  http://www.pearsonified.com/typography/
+ *
+ * @version  1.6
+ */
+
+
+
+	/**
+	 * Base
+	 */
+
+		/*
+		body,
+		input,
+		button {-webkit-font-smoothing: antialiased}
+		body {text-rendering: optimizeLegibility}
+		*/
+
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 100%;
+			line-height: 1.62em;
+		}
+
+		strong {font-weight: bold}
+		em {font-style: italic}
+
+		small,
+		.small {font-size: .78em}
+
+		abbr {
+			font-weight: 600;
+			font-variant: small-caps; /* https://developer.mozilla.org/en-US/docs/CSS/font-variant */
+			text-transform: lowercase;
+		}
+
+		pre,
+		code {
+			font-family: 'Lucida Console', Monaco, 'Courier New', monospace;
+			font-size: 1em;
+		}
+			pre {white-space: pre}
+			pre code {
+				word-wrap: normal;
+				white-space: -moz-pre-wrap;
+				white-space: pre-wrap; /* http://css-tricks.com/almanac/properties/w/whitespace */
+			}
+
+		p {
+			padding: 0;
+			margin: 0;
+		}
+			* + p {margin-top: 1.62em}
+
+			.screen-reader-text + p {
+				margin-top: 0;
+			}
+
+
+
+		/**
+		 * Word wrap
+		 */
+
+			.breakword {word-wrap: break-word}
+			.normal-wrap {word-wrap: normal}
+			.inherit-wrap {word-wrap: inherit}
+
+
+
+		/**
+		 * Headings
+		 */
+
+			h1, h2, h3, h4, h5, h6,
+			.h1, .h2, .h3, .h4, .h5, .h6, [class*="heading-style-"] {
+				line-height: 1;
+				text-rendering: optimizeLegibility; /* https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
+			}
+
+
+
+	/**
+	 * Font sizes
+	 *
+	 * @version  1.1.1
+	 */
+
+		body {font-size: 14px}
+
+		blockquote cite,
+		ol > li:before,
+		.breadcrumbs,
+		.wm-pagination, .woocommerce-pagination, .bbp-pagination,
+		.topbar,
+		.logo .description,
+		.sidebar .widget-heading,
+		.comment-metadata,
+		.pingback .edit-link,
+		.comment .reply,
+		.form-allowed-tags,
+		.entry-meta,
+		.more-link,
+		.gallery-caption,
+		.widget .wm-posts-post .meta,
+		.wm-twitter-container .tweet-time,
+		.wm-tour-nav,
+		.wm-posts .taxonomy,
+		.wp-caption .wp-caption-text {font-size: .78em}
+
+		pre,
+		.credits,
+		.nav-main > ul > li > ul,
+		.taxonomy-description,
+		.wm-filter li a,
+		.wm-progress-caption,
+		.wm-testimonials .source,
+		.wm-posts .content,
+		.white-transparent, .black-transparent,
+		.post-table-of-contents {font-size: .9em}
+
+		input, select, textarea,
+		blockquote blockquote,
+		.logo.type-img, h1.logo.type-img,
+		.wm-accordion .wm-item-title,
+		.wm-posts-wm_projects.wm-posts-layout-simple .title h2,
+		.wm-posts-wm_projects.wm-posts-layout-simple .title h3,
+		.wm-posts-wm_projects.wm-posts-layout-simple .title h4,
+		.wm-testimonials blockquote {font-size: 1em}
+
+		h4, h5, h6,
+		.h4, .h5, .h6, .heading-style-4, .heading-style-5, .heading-style-6,
+		blockquote,
+		.single .entry-summary,
+		.widget .wm-posts-post h3,
+		.format-link > a, .format-link p a {font-size: 1.17em}
+
+		h3,
+		.h3, .heading-style-3,
+		big,
+		.wm-posts-wm_staff .contacts,
+		.comments-title {font-size: 1.28em}
+
+		.wm-content-module.small-icons .wm-iconbox-module .title h2,
+		.wm-content-module.small-icons .wm-iconbox-module .title h3,
+		.wm-content-module.small-icons .wm-iconbox-module .title h4 {font-size: 1.38em}
+
+		.wm-posts .title h2,
+		.wm-posts .title h3,
+		.wm-posts .title h4 {font-size: 1.38em}
+
+		h2,
+		.h2, .heading-style-2,
+		.logo.type-text,
+		.main-heading h1,
+		.list-articles-short .list-articles .entry-title {font-size: 1.62em}
+
+		#search-container input,
+		.wm-iconbox-module h2,
+		.wm-iconbox-module h3,
+		.wm-iconbox-module h4 {font-size: 2em}
+
+		h1,
+		.h1, .heading-style-1,
+		.no-sidebar.list-articles-short .list-articles .entry-title {font-size: 2.62em}
+
+
+
+	/**
+	 * Font weights
+	 */
+
+		h1, h2, h3, h4, h5, h6,
+		.h1, .h2, .h3, .h4, .h5, .h6, [class*="heading-style-"],
+		.nav-main,
+		.wm-posts.wm-posts-wm_staff .title h2,
+		.wm-posts.wm-posts-wm_staff .title h3,
+		.wm-posts.wm-posts-wm_staff .title h4 {font-weight: 300}
+
+		.nav-main li li {font-weight: 400}
+
+		strong,
+		dt,
+		th, tfoot td,
+		blockquote cite,
+		.sidebar .widget-heading,
+		.nav-main li.megamenu > ul > li > a,
+		.nav-main li.megamenu > ul > li > .inner,
+		.nav-main > ul > li.active-menu-item > a,
+		.cat-links,
+		.comments-title,
+		.format-link > a, .format-link p a,
+		.wm-tabbed-widgets .wm-tab-links li.active,
+		.widget .wm-posts-post h3,
+		.widget .current-menu-item > a,
+		.widget .current-menu-item > .inner,
+		.widget .current_page_item > a,
+		.wm-filter li.active a,
+		.wm-posts .title h2,
+		.wm-posts .title h3,
+		.wm-posts .title h4,
+		.wm-accordion .wm-item-title:before,
+		.wm-accordion .wm-item.active .wm-item-title,
+		.white-transparent, .black-transparent,
+		.post-table-of-contents .active {font-weight: 700}
+
+
+
+	/**
+	 * Font styles
+	 */
+
+		blockquote,
+		.main-heading .taxonomy-description,
+		.wm-progress-caption,
+		.gallery-caption,
+		.recentcomments a {font-style: italic}
+
+		.wm-testimonials .source {font-style: normal}
+
+
+
+	/**
+	 * Line heights
+	 */
+
+		body,
+		blockquote,
+		.sidebar,
+		.tagcloud,
+		.taxonomy-description,
+		.single .entry-summary,
+		.wm-message,
+		.wm-posts .content,
+		.form-allowed-tags {line-height: 1.62em}
+
+		.gallery-caption,
+		.wm-posts-wm_projects .taxonomy {line-height: 1.38em}
+
+		h1, h2, h3, h4, h5, h6,
+		.h1, .h2, .h3, .h4, .h5, .h6, [class*="heading-style-"],
+		table,
+		.wm-iconbox-module h2,
+		.wm-iconbox-module h3,
+		.wm-iconbox-module h4,
+		.wm-testimonials .source,
+		.wp-caption .wp-caption-text {line-height: 1.28em}
+
+		.logo {line-height: 1em}
+
+
+
+
