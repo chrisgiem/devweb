@@ -37,6 +37,7 @@ services:
     restart: unless-stopped
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - wordpress:/var/www/html
       - ./nginx-conf:/etc/nginx/conf.d
@@ -51,7 +52,7 @@ services:
     volumes:
       - certbot-etc:/etc/letsencrypt
       - wordpress:/var/www/html
-    command: certonly --webroot --webroot-path=/var/www/html --email krzysztofgiemza1@gmail.com --agree-tos --no-eff-email --staging -d a.nextgen.biz.pl -d www.a.nextgen.biz.pl
+    command: certonly --webroot --webroot-path=/var/www/html --email krzysztofgiemza1@gmail.com --agree-tos --no-eff-email --force-renewal -d a.nextgen.biz.pl -d www.a.nextgen.biz.pl
 volumes:
   certbot-etc:
   wordpress:
