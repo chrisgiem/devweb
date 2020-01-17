@@ -16,7 +16,7 @@ services:
   wordpress:
     depends_on: 
       - db
-    image: wordpress:5.1.1-fpm-alpine
+    image: wordpress:5.3.2-fpm-alpine
     container_name: wordpress
     restart: unless-stopped
     env_file: .env
@@ -32,7 +32,7 @@ services:
   webserver:
     depends_on:
       - wordpress
-    image: nginx:1.15.12-alpine
+    image: nginx:1.17.7-alpine
     container_name: webserver
     restart: unless-stopped
     ports:
@@ -52,7 +52,7 @@ services:
     volumes:
       - certbot-etc:/etc/letsencrypt
       - wordpress:/var/www/html
-    command: certonly --webroot --webroot-path=/var/www/html --email krzysztofgiemza1@gmail.com --agree-tos --no-eff-email --force-renewal -d a.nextgen.biz.pl -d www.a.nextgen.biz.pl
+    command: certonly --webroot --webroot-path=/var/www/html --email krzysztofgiemza1@gmail.com --agree-tos --no-eff-email --force-renewal -d nextgen.biz.pl -d www.nextgen.biz.pl
 volumes:
   certbot-etc:
   wordpress:
