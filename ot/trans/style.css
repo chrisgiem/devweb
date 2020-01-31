@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 200vh;
+  background: #fff;
+}
+section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: url(bg.jpg), linear-gradient(230deg, #f533d4, #2461bb);
+  background-blend-mode: luminosity;
+  background-size: cover;
+}
+section .skewed {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: skewY(-10deg);
+  transform-origin: top left;
+}
