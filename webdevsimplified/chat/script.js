@@ -4,7 +4,7 @@ const messageForm = document.getElementById('send-container');
 const messageInput = document.getElementById('message-input');
 
 const name = prompt('wpisz nick');
-appendMessage('polaczono poprawnie');
+appendMessage('połączono poprawnie');
 socket.emit('new-user', name);
 
 socket.on('chat-message', data => {
@@ -12,11 +12,11 @@ socket.on('chat-message', data => {
 });
 
 socket.on('user-connected', name => {
-  appendMessage(`${name} polaczony`);
+  appendMessage(`${name} połączony`);
 });
 
 socket.on('user-disconnected', name => {
-  appendMessage(`${name} rozlaczony`);
+  appendMessage(`${name} rozłączony`);
 });
 
 messageForm.addEventListener('submit', e => {

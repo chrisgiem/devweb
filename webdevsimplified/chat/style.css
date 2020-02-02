@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  font-family: 'Roboto', sans-serif;
 }
 .main { 
   position: absolute;
@@ -27,12 +30,21 @@ body {
 }
 
 #message-container div {
-  background-color: #ccc;
+  background-color: rgba(18, 100, 177, 0.062);
   padding: 5px;
+  /*margin: 0.25em 0 0.25em 1.5em !important;
+  width: calc(100% -3em);
+  border-radius: 1.5em;
+  padding: .75em 1em;
+  box-shadow: 0 1px 10px rgba(#000, 0.08);
+  opacity: 0;
+  text-align: right;
+  max-height: 0;*/
+
 }
 
 #message-container div:nth-child(2n) {
-  background-color: #fff;
+  background-color: rgba(16, 30, 224, 0.699);
 }
 
 #send-container {
