@@ -1,6 +1,7 @@
 FROM node:lts-alpine
 
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+#RUN npm install -g nodemon
 
 # create app directory
 WORKDIR /home/node/app
