@@ -5,7 +5,7 @@ FROM node:lts-alpine
 
 # create app directory
 #WORKDIR /home/node/app
-WORKDIR /home/abc/chat
+WORKDIR /usr/src/app
 
 # rowniez lock
 COPY package*.json ./
@@ -19,9 +19,11 @@ RUN npm install
 #COPY --chown=node:node . .
 COPY . .
 
-EXPOSE 8080
+#EXPOSE 8080
+EXPOSE 3000
 
 #CMD [ "nodemon", "server.js" ]
-CMD [ "node", "server.js" ]
+#CMD [ "node", "server.js" ]
+CMD [ "npm", "devStart" ]
 
 # docker build -t chat . && docker run -p 443:8080 -it chat  
