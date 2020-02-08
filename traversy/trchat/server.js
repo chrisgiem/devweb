@@ -2,7 +2,7 @@ const mongo = require('mongodb').MongoClient;
 const client = require('socket.io').listen(4000).sockets;
 
 // connect to mongodb
-mongo.connect('mongodb://127.0.0.1/mongochat', function(err, db) {
+mongo.connect('mongodb://127.0.0.1/mongochat', function (err, db) {
   if (err) {
     throw err;
   }
@@ -10,11 +10,11 @@ mongo.connect('mongodb://127.0.0.1/mongochat', function(err, db) {
   console.log('MongoDB connected');
 
   //connect do socket.io
-  client.on('connection', function() {
+  client.on('connection', function (socket) {
     let chat = db.collection('chats');
 
-    //create function to send status
-    sendStatus = function(s) {
+    // Create function to send status
+    sendStatus = function (s) {
       socket.emit('status', s);
     };
 
@@ -23,7 +23,7 @@ mongo.connect('mongodb://127.0.0.1/mongochat', function(err, db) {
       .find()
       .limit(100)
       .sort({ _id: 1 })
-      .toArray(function(err, res) {
+      .toArray(function (err, res) {
         if (err) {
           throw err;
         }
@@ -33,7 +33,7 @@ mongo.connect('mongodb://127.0.0.1/mongochat', function(err, db) {
       });
 
     //handle input events
-    socket.on('input', function(data) {
+    socket.on('input', function (data) {
       let name = data.name;
       let message = data.message;
 
@@ -41,7 +41,27 @@ mongo.connect('mongodb://127.0.0.1/mongochat', function(err, db) {
       if (name == '' || message == '') {
         //send error status
         sendStatus('podaj nick i wiadomość');
+      } else {
+        // insert message
+        chat.insert({ name: name, message: message }, function () {
+          client.emit('output', [data]);
+
+          // send status object
+          sendStatus({
+            message: 'Wiadomość wysłana',
+            clear: true
+          });
+        });
       }
+    });
+
+    // handle clear
+    socket.on('clear', function (data) {
+      // remove all chats from collection
+      chat.remove({}, function () {
+        //emit cleared
+        socket.emit('cleared');
+      });
     });
   });
 });
