@@ -16,21 +16,17 @@ mongo.connect('mongodb://127.0.0.1/mongochat', function (err, db) {
     // Create function to send status
     sendStatus = function (s) {
       socket.emit('status', s);
-    };
+    }
 
     //get chats from mongo collection
-    chat
-      .find()
-      .limit(100)
-      .sort({ _id: 1 })
-      .toArray(function (err, res) {
-        if (err) {
-          throw err;
-        }
+    chat.find().limit(100).sort({ _id: 1 }).toArray(function (err, res) {
+      if (err) {
+        throw err;
+      }
 
-        //emit the messages
-        socket.emit('output', res);
-      });
+      //emit the messages
+      socket.emit('output', res);
+    });
 
     //handle input events
     socket.on('input', function (data) {
@@ -40,15 +36,15 @@ mongo.connect('mongodb://127.0.0.1/mongochat', function (err, db) {
       //check for name and message
       if (name == '' || message == '') {
         //send error status
-        sendStatus('podaj nick i wiadomość');
+        sendStatus('podaj nick i wiadomosc');
       } else {
         // insert message
         chat.insert({ name: name, message: message }, function () {
           client.emit('output', [data]);
 
-          // send status object
+          // Send status object
           sendStatus({
-            message: 'Wiadomość wysłana',
+            message: 'Wiadomosc wyslana',
             clear: true
           });
         });

@@ -1,0 +1,15 @@
+{
+  "name": "mongochat",
+  "version": "1.0.0",
+  "description": "prosty chat",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.5.2",
+    "socket.io": "^2.3.0"
+  }
+}
