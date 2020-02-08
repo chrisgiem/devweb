@@ -2,7 +2,12 @@ const mongo = require('mongodb').MongoClient;
 const klient = require('socket.io').listen(4000).sockets;
 
 // connect to mongodb 3!!
-mongo.connect('mongodb://127.0.0.1/mongochat', (err, client) => {
+///mongo.connect('mongodb://127.0.0.1/mongochat', (err, client) => {
+///  var db = client.db('mongochat');
+///  if (err) {
+///    throw err;
+///  }
+mongo.connect('mongodb://mongo/mongochat', (err, client) => {
   var db = client.db('mongochat');
   if (err) {
     throw err;
