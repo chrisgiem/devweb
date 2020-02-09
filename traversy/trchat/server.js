@@ -7,7 +7,7 @@ const klient = require('socket.io').listen(4000).sockets;
 ///  if (err) {
 ///    throw err;
 ///  }
-mongo.connect('mongodb://mongo/mongochat', (err, client) => {
+mongo.connect('mongodb://127.0.0.1/mongochat', (err, client) => {
   var db = client.db('mongochat');
   if (err) {
     throw err;
@@ -42,7 +42,7 @@ mongo.connect('mongodb://mongo/mongochat', (err, client) => {
       //check for name and message
       if (name == '' || message == '') {
         //send error status
-        sendStatus('podaj nick i wiadomosc');
+        sendStatus('podaj nazwę użytkownika i wiadomość');
       } else {
         // insert message
         chat.insert({ name: name, message: message }, function () {
@@ -50,7 +50,7 @@ mongo.connect('mongodb://mongo/mongochat', (err, client) => {
 
           // Send status object
           sendStatus({
-            message: 'Wiadomosc wyslana',
+            message: 'Wiadomość wysłana',
             clear: true
           });
         });
