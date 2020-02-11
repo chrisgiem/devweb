@@ -7,7 +7,7 @@ const klient = require('socket.io').listen(4000).sockets;                       
 ///  if (err) {
 ///    throw err;
 ///  }
-mongo.connect('mongodb://mongo:27017/mongochat', (err, client) => {
+mongo.connect('mongodb://mongochat:27017/mongochat', (err, client) => {
   var db = client.db('mongochat');                                                  // port !!!!!!!!!!!!!!!!!
   if (err) {
     throw err;
