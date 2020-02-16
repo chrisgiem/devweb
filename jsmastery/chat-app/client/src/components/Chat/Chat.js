@@ -17,7 +17,7 @@ const Chat = ({ location }) => {
     const [users, setUsers] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
-    const ENDPOINT = 'https://herokuapp.com'; // adres backend !!!
+    const ENDPOINT = 'https://o13mesendzer.herokuapp.com/'; // adres backend !!!
 
     useEffect(() => {
         const { name, room } = queryString.parse(location.search);
