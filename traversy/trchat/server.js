@@ -2,16 +2,16 @@ const mongo = require('mongodb').MongoClient;
 const klient = require('socket.io').listen(4000).sockets;                         // port !!!!!!!!!!!!!!!!!
 
 // connect to mongodb 3!!
-///mongo.connect('mongodb://127.0.0.1/mongochat', (err, client) => {
-///  var db = client.db('mongochat');
-///  if (err) {
-///    throw err;
-///  }
-mongo.connect('mongodb://mongochat:27017/mongochat', (err, client) => {
-  var db = client.db('mongochat');                                                  // port !!!!!!!!!!!!!!!!!
+mongo.connect('mongodb://127.0.0.1/mongochat', (err, client) => {
+  var db = client.db('mongochat');
   if (err) {
     throw err;
   }
+//mongo.connect('mongodb://mongochat:27017/mongochat', (err, client) => {
+ // var db = client.db('mongochat');                                                  // port !!!!!!!!!!!!!!!!!
+//  if (err) {
+ //   throw err;
+ // }
 
   console.log('MongoDB connected');
 
