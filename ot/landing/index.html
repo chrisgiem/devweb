@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Landing page design</title>
+    <title>Piłkarze</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -24,7 +24,7 @@
         <div class="imgBx">
             <img src="./img/img.png">
         </div>
-        <ul class="nav">
+        <ul class="nav" id="nav">
             <li><a href="#">Home</a></li>
             <li><a href="#" class="active">About</a></li>
             <li><a href="#">Performance</a></li>
@@ -37,6 +37,16 @@
             <li><a href="#">Instagram</a></li>
         </ul>
     </section>
+    <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+    <!--span.menuicon#toggle-->
+    <script type="text/javascript">
+        function menuToggle() {
+            var nav = document.getElementById("nav");
+            nav.classList.toggle('active')
+            var toggle = document.getElementById("toggle");
+            toggle.classList.toggle('active')
+        }
+    </script>
 </body>
 
 </html>
