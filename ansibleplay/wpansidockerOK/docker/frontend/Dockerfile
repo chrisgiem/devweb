@@ -1,4 +1,4 @@
-FROM nginx:1.9
+FROM nginx:1.17.9
 
 #add your keys here
 #COPY public.crt /etc/nginx/ssl/public.crt

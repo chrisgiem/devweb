@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:buster
 
 RUN apt-get update && \
     apt-get install -y php5-fpm php5-mysql php5-memcache php5-curl memcached supervisor
