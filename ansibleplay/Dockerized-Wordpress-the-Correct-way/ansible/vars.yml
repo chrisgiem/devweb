@@ -1,0 +1,3 @@
+newuser: "{{ lookup('env', 'NEWUSER') }}"
+work_dir: /var/lib/{{ site_name }}
+ssh_key: "{{ lookup('env', 'SSH_KEY') }}"

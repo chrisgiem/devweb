@@ -1,0 +1,7 @@
+venv
+.env
+site_backup.tar.gz
+wp_backup.sql.tar.gz
+.DS_Store
+.vagrant
+vmwordpress/**/*

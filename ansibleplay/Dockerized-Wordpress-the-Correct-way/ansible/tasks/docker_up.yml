@@ -1,0 +1,15 @@
+---
+  - name: Copy wordpress for editing
+    command: "cp -R {{ work_dir }}/data/{{ site_name }}/ /var/www/html/"
+    when: edit|bool
+
+  - name: Remove Wordpress
+    file: path={{ work_dir }}/data/{{ site_name }} state=absent
+
+  - name: bring it all up
+    command: chdir={{ work_dir }} docker-compose up -d --no-recreate
+
+  - name: Clean all unused images
+    command: docker images -q -f "dangling=true" | xargs docker rmi
+    register: command_result
+    failed_when: "'requires a maximum of 1 argument' not in command_result.stderr"
