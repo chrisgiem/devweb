@@ -1,4 +1,5 @@
 https://www.youtube.com/watch?v=vFPOv3zn7eY&t=478s
+kompatybilne z apt based Debian i Ubuntu
 
 # Wordpress on Docker the correct way
 This project is designed to create a series of Docker containers running Wordpress. The modifier "correct way" is used because this process uses multiple containers instead of stuffing everything into one container. This makes the entire process more robust and extensible.

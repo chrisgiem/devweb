@@ -1,0 +1,66 @@
+lesson_name("Getting Started")
+make_and_go_ws
+
+"Hello, welcome to the Ansible Interactive Tutorial!"
+
+"This lesson is to make you familiar with the environment."
+
+"Now, you are inside a docker container on which you have ansible installed."
+
+"Verify that you have `ansible` installed by running the following command:"
+
+"*ansible --version*"
+
+prompt {
+    if success && command == "ansible --version" {
+        expect ("ansible --version")
+        ""
+        break
+    }
+} 
+
+"There are 3 more docker containers which behave exactly same as (virtual or physical) machines acting as Ansible nodes throughout the tutorial."
+
+"Run the following command to verify that they are up and running:"
+
+"*fping host{0,1,2}.example.org*"
+
+prompt {
+    if success && command == "fping host{0,1,2}.example.org" {
+        expect ("fping host{0,1,2}.example.org")
+        ""
+        "Cool!"
+        break
+    }
+}
+
+"These hosts were already provisioned with the ssh key of this node. So you don't have to deal with setting up keys and can directly ssh into any of them as root user."
+
+"Try it and don't forget to get back to continue (run *exit* once you got there):"
+
+"*ssh host0.example.org*"
+
+prompt {
+    if success && command =~ "ssh host0.example.org.*" {
+        expect (`ssh host0.example.org -o "StrictHostKeyChecking no" "whoami"`)
+        ""
+        "Welcome back :)"
+        break
+    }
+}
+
+"`ansible-interactive-tutorial/workspace` folder is mounted as `/root/workspace` inside this container. So, you can use your favorite editor on your local machine to edit files. Editing files is not necessary to follow the lessons though."
+
+"You can run each lesson invididually but it is `highly encoureged to follow the order` as most of them are built on top of the previous one!"
+
+"Please keep in mind, you can quit from any lesson by running *exit* from terminal"
+
+"Now you are ready to start!"
+
+"Please press the \"`Enter`\" key to continue!"
+prompt {
+    if command == "" {
+        expect (" ")
+        break
+    }
+}

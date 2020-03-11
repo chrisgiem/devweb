@@ -8,7 +8,7 @@ mysql:
   mem_limit: 128m
 
 data:
-  #image: debian:jessie
+  #image: debian:buster
   {% if edit|bool %}
   volumes:
     - /var/www/html/{{ site_name }}:/var/www/html/{{ site_name}}
