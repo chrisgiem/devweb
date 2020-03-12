@@ -1,0 +1,86 @@
+---
+# after variable input, run all roles necessary to deploy and run (out of box)
+# WordPress instance: 3 separate containers running WordPress, Nginx (Let's Encrypt) and MySQL
+- hosts: aws_wp
+  remote_user: "{{ system_user }}"
+  become: yes
+  gather_facts: yes
+
+  vars_prompt:
+
+    - name: distribution 
+      prompt: "\n------
+              \n\nEnter the number of Linux distribution you're deploying to:\n\n1. Ubuntu, Debian\n2. CentOS, RedHat\n\n"
+      private: no 
+      default: "1"
+
+    - name: system_user
+      prompt: "\n------
+              \n\n What is the system username?"
+      private: no 
+      default: "ubuntu"
+
+    - name: domain
+      prompt: "\n------
+              \n\nSpecify blog URL"
+      private: no
+      default: "foolcontrol.org"
+
+    - name: stage
+      prompt: "\n------
+              \n\nIs specified site live (DNS is setup)?
+              \n\nImportant info: https://goo.gl/XMbnPH"
+      private: no
+      default: "staging"
+
+    - name: wp_version
+      prompt: "\n------
+              \n\nSpecify WordPress version you'd like to use"
+      private: no
+      default: "5.2.3"
+
+    - name: wp_db_name
+      prompt: "\n------
+              \n\nSpecify WordPress database name"
+      private: no
+      default: "wordpress"
+
+    - name: wp_db_user
+      prompt: "\n------
+              \n\nSpecify WordPress database user"
+      private: no
+      default: "admin"
+
+    - name: wp_db_psw
+      prompt: "\n------
+              \n\nSpecify WordPress database password"
+      private: no
+      default: "change-M3"
+
+    - name: wp_db_tb_pre
+      prompt: "\n------
+              \n\nSpecify WordPress table prefix"
+      private: no
+      default: "wp_"
+
+    - name: wp_db_host
+      prompt: "\n------
+              \n\nSpecify WordPress host"
+      private: no
+      default: "mysql"
+
+    - name: db_root_psw
+      prompt: "\n------
+              \n\nSpecify database (MySQL) root password"
+      private: yes
+      default: "change-M3"
+      confirm: yes
+
+  roles:
+  - { role: AdnanHodzic.python-ubuntu-bootstrap, when: distribution == "1"}
+  - { role: AdnanHodzic.system-upgrade, when: distribution == "1"}
+  - { role: AdnanHodzic.docker-compose, when: distribution == "1"} 
+  - { role: ansible-role-python-centos-bootstrap, when: distribution == "2" }
+  - { role: ansible-role-centos-system-upgrade, when: distribution == "2" }
+  - { role: ansible-role-centos-docker-compose-setup, when: distribution == "2" }
+  - AdnanHodzic.containerized-wordpress

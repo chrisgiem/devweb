@@ -1,0 +1,7 @@
+- name: AdnanHodzic.python-ubuntu-bootstrap
+- name: AdnanHodzic.system-upgrade
+- name: AdnanHodzic.docker-compose
+- name: AdnanHodzic.containerized-wordpress
+- src: https://github.com/iMartzen/ansible-role-python-centos-bootstrap
+- src: https://github.com/iMartzen/ansible-role-centos-system-upgrade
+- src: https://github.com/iMartzen/ansible-role-centos-docker-compose-setup
