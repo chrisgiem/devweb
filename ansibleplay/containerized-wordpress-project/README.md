@@ -45,6 +45,18 @@ ansible-galaxy install -r requirements.yml
 ```
 
 #### 4. Run containerized-wordpress playbook, using hosts inventory file, i.e:
+i
+
+trzeba odkomentowac
+~/.ansible/roles/AdnanHodzic.system-upgrade/tasks/main.yml trzeba odkompentowac
+ 74     #- name: Check if there are available updates
+ 75     #  command: /usr/lib/update-notifier/apt-check --package-names
+ 76     #  register: pkg_list
+ 77     #
+ 78     #- name: Perform upgrade of all packages to the latest version
+ 79     #  apt:
+ 80     #    upgrade: dist
+ 81     #  when: pkg_list.stderr != ""
 
 ```
 ansible-playbook containerized-wordpress.yml -i hosts

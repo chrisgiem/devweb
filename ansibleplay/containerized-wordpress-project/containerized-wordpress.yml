@@ -4,7 +4,6 @@
 - hosts: aws_wp
   remote_user: "{{ system_user }}"
   become: yes
-  sudo: yes
   gather_facts: yes
 
   vars_prompt:
