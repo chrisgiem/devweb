@@ -7,9 +7,14 @@ body {
 
 .wrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 0 75px;
+}
+
+.home {
+    background: url('../img/home/bg.jpg');
+    background-size: cover;
 }
 
 h1 {
