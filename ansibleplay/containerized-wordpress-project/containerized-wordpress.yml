@@ -4,6 +4,7 @@
 - hosts: aws_wp
   remote_user: "{{ system_user }}"
   become: yes
+  sudo: yes
   gather_facts: yes
 
   vars_prompt:
@@ -18,13 +19,13 @@
       prompt: "\n------
               \n\n What is the system username?"
       private: no 
-      default: "ubuntu"
+      default: "abc"
 
     - name: domain
       prompt: "\n------
               \n\nSpecify blog URL"
       private: no
-      default: "foolcontrol.org"
+      default: "ampere.pro"
 
     - name: stage
       prompt: "\n------
@@ -37,7 +38,7 @@
       prompt: "\n------
               \n\nSpecify WordPress version you'd like to use"
       private: no
-      default: "5.2.3"
+      default: "5.3.2"
 
     - name: wp_db_name
       prompt: "\n------
@@ -49,13 +50,13 @@
       prompt: "\n------
               \n\nSpecify WordPress database user"
       private: no
-      default: "admin"
+      default: "wordpressuser"
 
     - name: wp_db_psw
       prompt: "\n------
               \n\nSpecify WordPress database password"
       private: no
-      default: "change-M3"
+      default: "$3a3$uyB!j%KDQD4M7Qg59Wk$@m"
 
     - name: wp_db_tb_pre
       prompt: "\n------
@@ -73,7 +74,7 @@
       prompt: "\n------
               \n\nSpecify database (MySQL) root password"
       private: yes
-      default: "change-M3"
+      default: "G^v4v3md@fZJQtYB^VXN3P7##Ph"
       confirm: yes
 
   roles:
