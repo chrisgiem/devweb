@@ -10,12 +10,12 @@ compose_project_dir: /home/{{ system_user }}/compose-wordpress
 # Which will allow to interactively specify variable values, if no action is 
 # taken during prompts, following values for those variables will be used:
 #
-domain: blog.ampere.pro
+domain: ampere.pro
 stage: staging
 wp_version: 5.3.2
-wp_db_user: kapitan
-wp_db_psw: G^v4v3md@fZJQtYB^VXN3P7##Ph
-db_root_psw: $3a3$uyB!j%KDQD4M7Qg59Wk$@m
+wp_db_user: wordpressuser
+wp_db_psw: wka9GSs#fzyv#dA^Pwj%J8KNe@KdJUvpsU836qvDRN3T!gR
+db_root_psw: 9hePJRVYmrJ82*mrEZGv6fvsmC%%Y4g!42ST3*3DkNcb^
 wp_db_name: wordpress
 wp_db_tb_pre: wp_
 wp_db_host: mysql
