@@ -1,0 +1,88 @@
+
+Started Import Process
+# System Details: 
+Debug Mode 		: Disabled
+Operating System 	: Linux
+Software 		: Apache/2.4.38 (Debian)
+MySQL version 		: 5.5.5
+XML Reader 		: Yes
+PHP Version 		: 7.3.14
+PHP Max Input Vars 	: 1000
+PHP Max Post Size 	: 30M
+PHP Extension GD 	: Yes
+PHP Max Execution Time 	: 600
+Max Upload Size 	: 30 MB
+Memory Limit 		: Current memory limit 40M. We recommend setting memory to at least 64M.
+Timezone 		: 0
+
+-----
+
+Importing Started! - 11:24:49 UTC
+---
+
+WHY IMPORT PROCESS CAN FAIL? READ THIS - 
+https://wpastra.com/docs/?p=1314&utm_source=demo-import-panel&utm_campaign=import-error&utm_medium=wp-dashboard
+
+---
+
+Inserted WP Form 16
+Imported Customizer Settings {"astra-settings":{"blog-single-post-structure":["single-title-meta","single-image"],"blog-single-width":"custom","blog-single-max-width":1000,"blog-single-meta":["comments","category","author"],"blog-post-structure":["image","title-meta"],"blog-width":"default","blog-max-width":1000,"blog-post-content":"excerpt","blog-meta":["comments","category","author"],"text-color":"#261a36","link-color":"#ff9c00","theme-color":"#ff9c00","link-h-color":"#ff9c00","footer-bg-obj":{"background-color":"#f5f5f6","background-image":"","background-repeat":"repeat","background-position":"center center","background-size":"auto","background-attachment":"scroll"},"footer-color":"#292524","footer-link-color":"rgba(41,37,36,0.8)","footer-link-h-color":"#ff9c00","footer-adv-bg-obj":{"background-color":"","background-image":"","background-repeat":"repeat","background-position":"center center","background-size":"auto","background-attachment":"scroll"},"footer-adv-text-color":"","footer-adv-link-color":"","footer-adv-link-h-color":"","footer-adv-wgt-title-color":"","button-color":"#ffffff","button-h-color":"#ffffff","button-bg-color":"#ff9c00","button-bg-h-color":"#6c00ff","theme-button-padding":{"desktop":{"top":"15","right":"36","bottom":"15","left":"36"},"tablet":{"top":"","right":"","bottom":"","left":""},"mobile":{"top":"","right":"","bottom":"","left":""},"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"button-radius":50,"theme-button-border-group-border-size":{"top":"","right":"","bottom":"","left":""},"footer-sml-layout":"footer-sml-layout-2","footer-sml-section-1":"custom","footer-sml-section-1-credit":"Copyright \u00a9 [current_year] [site_title] | <a href=\"#\">Credits<\/a>","footer-sml-section-2":"custom","footer-sml-section-2-credit":"Powered by [site_title]","footer-sml-dist-equal-align":true,"footer-sml-divider":1,"footer-sml-divider-color":"#e5e5e5","footer-layout-width":"content","ast-header-retina-logo":"https:\/\/websitedemos.net\/pet-sitting-02\/wp-content\/uploads\/sites\/471\/2019\/07\/logo1@2x-free-img.png","ast-header-logo-width":"","ast-header-responsive-logo-width":{"desktop":"140","tablet":"55","mobile":"55"},"display-site-title":false,"display-site-tagline":0,"logo-title-inline":1,"disable-primary-nav":false,"header-layouts":"header-main-layout-1","header-main-rt-section":"button","header-display-outside-menu":false,"header-main-rt-section-html":"<a href=\"#download\"><button><i class=\"fa fa-download\"><\/i> \u00a0 Download App<\/button><\/a>","header-main-rt-section-button-text":"Download App","header-main-rt-section-button-link":"#download","header-main-rt-section-button-style":"theme-button","header-main-rt-section-button-text-color":"","header-main-rt-section-button-back-color":"","header-main-rt-section-button-text-h-color":"","header-main-rt-section-button-back-h-color":"","header-main-rt-section-button-padding":{"desktop":{"top":"7","right":"30","bottom":"7","left":"30"},"tablet":{"top":"","right":"","bottom":"","left":""},"mobile":{"top":"","right":"","bottom":"","left":""},"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"header-main-rt-section-button-border-size":{"top":"","right":"","bottom":"","left":""},"header-main-sep":0,"header-main-sep-color":"","header-main-layout-width":"content","primary-submenu-border":{"top":"2","right":"0","bottom":"0","left":"0"},"primary-submenu-item-border":false,"primary-submenu-b-color":"","primary-submenu-item-b-color":"","header-main-menu-label":"","header-main-menu-align":"inline","header-main-submenu-container-animation":"fade","mobile-header-breakpoint":"","mobile-header-logo":"https:\/\/websitedemos.net\/pet-sitting-02\/wp-content\/uploads\/sites\/471\/2019\/07\/favicon-free-img.png","mobile-header-logo-width":"","site-layout":"ast-full-width-layout","site-content-width":1200,"site-layout-outside-bg-obj":{"background-color":"#ffffff","background-image":"","background-repeat":"repeat","background-position":"center center","background-size":"auto","background-attachment":"scroll"},"site-content-layout":"boxed-container","single-page-content-layout":"default","single-post-content-layout":"plain-container","archive-post-content-layout":"default","body-font-family":"'Work Sans', sans-serif","body-font-variant":"","body-font-weight":"400","font-size-body":{"desktop":"16","tablet":"","mobile":"","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"body-line-height":"1.5","para-margin-bottom":"","body-text-transform":"","headings-font-family":"'Changa One', display","headings-font-weight":"400","headings-text-transform":"","headings-line-height":"","font-size-site-title":{"desktop":35,"tablet":"","mobile":"","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"font-size-site-tagline":{"desktop":15,"tablet":"","mobile":"","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"font-size-entry-title":{"desktop":30,"tablet":"","mobile":"","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"font-size-archive-summary-title":{"desktop":40,"tablet":"","mobile":"","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"font-size-page-title":{"desktop":40,"tablet":"","mobile":"","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"font-size-h1":{"desktop":"72","tablet":"52","mobile":"32","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"font-size-h2":{"desktop":"50","tablet":"38","mobile":"28","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"font-size-h3":{"desktop":"25","tablet":"25","mobile":"25","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"font-size-h4":{"desktop":"20","tablet":"20","mobile":"20","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"font-size-h5":{"desktop":"18","tablet":"18","mobile":"18","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"font-size-h6":{"desktop":"15","tablet":"15","mobile":"15","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"site-sidebar-layout":"no-sidebar","site-sidebar-width":30,"single-page-sidebar-layout":"default","single-post-sidebar-layout":"default","archive-post-sidebar-layout":"default","footer-adv":"disabled","footer-adv-border-width":"","footer-adv-border-color":"#7a7a7a","mobile-header-toggle-btn-style":"fill","hide-custom-menu-mobile":1,"mobile-header-toggle-target":"icon","transparent-header-logo":"https:\/\/websitedemos.net\/pet-sitting-02\/wp-content\/uploads\/sites\/471\/2019\/07\/logo-free-img.png","transparent-header-retina-logo":"https:\/\/websitedemos.net\/pet-sitting-02\/wp-content\/uploads\/sites\/471\/2019\/07\/logo@2x-free-img.png","different-transparent-logo":true,"different-transparent-retina-logo":true,"transparent-header-logo-width":{"desktop":"","tablet":"","mobile":""},"transparent-header-enable":0,"transparent-header-disable-archive":1,"transparent-header-disable-latest-posts-index":1,"transparent-header-on-devices":"desktop","transparent-header-main-sep":0,"transparent-header-main-sep-color":"","transparent-header-bg-color":"","transparent-header-color-site-title":"","transparent-header-color-h-site-title":"","transparent-menu-bg-color":"","transparent-menu-color":"","transparent-menu-h-color":"","transparent-submenu-bg-color":"","transparent-submenu-color":"","transparent-submenu-h-color":"","transparent-header-bg-color-responsive":{"desktop":"","tablet":"","mobile":""},"transparent-header-color-site-title-responsive":{"desktop":"","tablet":"","mobile":""},"transparent-header-color-h-site-title-responsive":{"desktop":"","tablet":"","mobile":""},"transparent-menu-bg-color-responsive":{"desktop":"","tablet":"","mobile":""},"transparent-menu-color-responsive":{"desktop":"#ffffff","tablet":"#261a36","mobile":""},"transparent-menu-h-color-responsive":{"desktop":"#ff9c00","tablet":"#ff9c00","mobile":""},"transparent-submenu-bg-color-responsive":{"desktop":"","tablet":"","mobile":""},"transparent-submenu-color-responsive":{"desktop":"","tablet":"","mobile":""},"transparent-submenu-h-color-responsive":{"desktop":"","tablet":"","mobile":""},"transparent-content-section-text-color-responsive":{"desktop":"","tablet":"","mobile":""},"transparent-content-section-link-color-responsive":{"desktop":"","tablet":"","mobile":""},"transparent-content-section-link-h-color-responsive":{"desktop":"","tablet":"","mobile":""},"breadcrumb-font-family":"inherit","breadcrumb-font-weight":"inherit","breadcrumb-text-transform":"","breadcrumb-text-color-responsive":{"desktop":"","tablet":"","mobile":""},"breadcrumb-active-color-responsive":{"desktop":"","tablet":"","mobile":""},"breadcrumb-hover-color-responsive":{"desktop":"","tablet":"","mobile":""},"breadcrumb-separator-color":{"desktop":"","tablet":"","mobile":""},"breadcrumb-bg-color":{"desktop":"","tablet":"","mobile":""},"breadcrumb-spacing":{"desktop":{"top":"","right":"","bottom":"","left":""},"tablet":{"top":"","right":"","bottom":"","left":""},"mobile":{"top":"","right":"","bottom":"","left":""},"desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"h1-color":"","h2-color":"","h3-color":"","h4-color":"","h5-color":"","h6-color":"","font-family-h1":"inherit","font-weight-h1":"inherit","text-transform-h1":"","line-height-h1":"1","font-family-h2":"inherit","font-weight-h2":"inherit","text-transform-h2":"","line-height-h2":"","font-family-h3":"inherit","font-weight-h3":"inherit","text-transform-h3":"","line-height-h3":"","font-weight-button":"inherit","font-family-button":"inherit","font-size-button":{"desktop":"","tablet":"","mobile":"","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"text-transform-button":"","theme-btn-line-height":"1","theme-btn-letter-spacing":"","header-main-rt-section-search-box-type":"slide-search","below-header-section-2-search-box-type":"slide-search","below-header-section-1-search-box-type":"slide-search","above-header-section-1-search-box-type":"slide-search","above-header-section-2-search-box-type":"slide-search","astra-addon-auto-version":"2.2.2","theme-auto-version":"2.2.1","different-retina-logo":true,"different-mobile-logo":true,"button-v-padding":16,"button-h-padding":36,"_astra_pb_compatibility_completed":true,"is_theme_queue_running":false,"submenu-open-below-header":false,"is_addon_queue_running":true,"heading-base-color":"#261a36"},"custom-css":""}
+Importing from XML https://websitedemos.net/wp-content/uploads/astra-sites/471/wxr.xml
+Inserted - Term 3 - {"term_id":3,"name":"page","slug":"page","term_group":0,"term_taxonomy_id":2,"taxonomy":"elementor_library_type","description":"","parent":0,"count":0,"filter":"raw"}
+Inserted - Term 4 - {"term_id":4,"name":"section","slug":"section","term_group":0,"term_taxonomy_id":3,"taxonomy":"elementor_library_type","description":"","parent":0,"count":0,"filter":"raw"}
+Inserted - Term 5 - {"term_id":5,"name":"Main Menu","slug":"main-menu","term_group":0,"term_taxonomy_id":4,"taxonomy":"nav_menu","description":"","parent":0,"count":0,"filter":"raw"}
+Inserted - Post 23 - attachment - pet-sitting-favicon
+Inserted - Post 37 - attachment - pet-sitting-hero
+Inserted - Post 54 - attachment - pet-sitting-cat
+Inserted - Post 55 - attachment - pet-sitting-girl
+Inserted - Post 59 - attachment - pet-sitting-grooming
+Inserted - Post 60 - attachment - pet-sitting-minding
+Inserted - Post 61 - attachment - pet-sitting-icon
+Inserted - Post 62 - attachment - pet-sitting-training
+Inserted - Post 72 - attachment - pet-sitting-footer-dog
+Inserted - Post 75 - attachment - pet-sitting-quotes
+Inserted - Post 76 - attachment - pet-sitting-client-2
+Inserted - Post 77 - attachment - pet-sitting-client-1
+Inserted - Post 78 - attachment - pet-sitting-client
+Inserted - Post 88 - attachment - pet-sitting-logo-2
+Inserted - Post 89 - attachment - pet-sitting-logo-1
+Inserted - Post 124 - attachment - pet-sitting-cute-dog
+Inserted - Post 133 - attachment - pet-sitting-founder-2
+Inserted - Post 136 - attachment - pet-sitting-founder-1
+Inserted - Post 152 - attachment - pet-sitting-teammate-2
+Inserted - Post 153 - attachment - pet-sitting-teammate-1
+Inserted - Post 154 - page - Home
+Inserted - Post 155 - page - About Us
+Inserted - Post 26 - nav_menu_item - 
+Inserted - Post 27 - nav_menu_item - Who We Are
+Inserted - Post 28 - nav_menu_item - 
+Inserted - Post 30 - nav_menu_item - Get In Touch
+Inserted - Post 91 - elementor-hf - Site Footer
+Inserted - Post 156 - attachment - pet-sitting-teammate
+Inserted - Post 158 - attachment - pet-sitting-ball-1
+Inserted - Post 159 - attachment - pet-sitting-collar
+Inserted - Post 160 - attachment - pet-sitting-food-1
+Inserted - Post 161 - attachment - pet-sitting-food
+Inserted - Post 162 - attachment - pet-sitting-heart
+Inserted - Post 165 - attachment - pet-sitting-video
+Inserted - Post 211 - attachment - pet-sitting-dog-bench
+Inserted - Post 267 - attachment - pet-sitting-founder
+Inserted - Post 269 - attachment - pet-sitting-logo-2x
+Inserted - Post 270 - attachment - pet-sitting-logo
+Inserted - Post 281 - attachment - pet-sitting-app
+Inserted - Post 338 - attachment - pet-sitting-yoast
+Inserted - Post 339 - page - Services
+Inserted - Post 340 - page - Contact Us
+Imported - Site Options {"woocommerce_product_attributes":[],"woocommerce_product_cat_list":[],"woocommerce_product_cat":[],"custom_logo":"https:\/\/websitedemos.net\/pet-sitting-02\/wp-content\/uploads\/sites\/471\/2019\/07\/logo1-free-img.png","nav_menu_locations":{"primary":"main-menu"},"show_on_front":"page","page_on_front":"Home","page_for_posts":"","_fl_builder_enabled_icons":null,"_fl_builder_enabled_modules":null,"_fl_builder_post_types":null,"_fl_builder_color_presets":null,"_fl_builder_services":null,"_fl_builder_settings":null,"_fl_builder_user_access":null,"_fl_builder_enabled_templates":null,"elementor_container_width":"1200","elementor_cpt_support":["post","page"],"elementor_css_print_method":"external","elementor_default_generic_fonts":"Sans-serif","elementor_disable_color_schemes":"yes","elementor_disable_typography_schemes":"yes","elementor_editor_break_lines":"","elementor_exclude_user_roles":null,"elementor_global_image_lightbox":"yes","elementor_page_title_selector":"","elementor_scheme_color":{"1":"#6ec1e4","2":"#54595f","3":"#7a7a7a","4":"#61ce70"},"elementor_scheme_color-picker]":{"1":"#292524","2":"#54595f","3":"#7a7a7a","4":"#ff9c00","5":"#6c00ff","6":"#ff9c00","7":"#000","8":"#fff"},"elementor_scheme_typography":{"1":{"font_family":"Roboto","font_weight":"600"},"2":{"font_family":"Roboto Slab","font_weight":"400"},"3":{"font_family":"Roboto","font_weight":"400"},"4":{"font_family":"Roboto","font_weight":"500"}},"elementor_space_between_widgets":"","elementor_stretched_section_container":"","elementor_load_fa4_shim":"yes","woocommerce_shop_page_title":"","woocommerce_cart_page_title":"","woocommerce_checkout_page_title":"","woocommerce_myaccount_page_title":"","woocommerce_edit_address_page_title":"","woocommerce_view_order_page_title":"","woocommerce_change_password_page_title":"","woocommerce_logout_page_title":"","woocommerce_enable_guest_checkout":null,"woocommerce_enable_checkout_login_reminder":null,"woocommerce_enable_signup_and_login_from_checkout":null,"woocommerce_enable_myaccount_registration":null,"woocommerce_registration_generate_username":null,"wpforms_settings":{"disable-css":"2","global-assets":false,"gdpr":false},"learndash_settings_theme_ld30":null,"learndash_settings_courses_themes":null}
+Imported - Widgets {"sidebar-1":{"search-2":{"title":""},"recent-posts-2":{"title":"","number":5},"recent-comments-2":{"title":"","number":5},"archives-2":{"title":"","count":0,"dropdown":0},"categories-2":{"title":"","count":0,"hierarchical":0,"dropdown":0},"meta-2":{"title":""}}}
+Complete 
+Batch Process Started!
+Astra Sites - Importing Images for Blog name 'ampere' (1)
+---- Processing Images from Widgets -----
+---- Processing WordPress Posts / Pages - for "Gutenberg" ----
+---- Processing MISC ----
+Post ID: 30
+Post ID: 26
+Post ID: 27
+Post ID: 28
+Batch Process Complete!
